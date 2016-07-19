@@ -14,6 +14,8 @@
 		24F75E671D3D5D7700F49536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E651D3D5D7700F49536 /* LaunchScreen.storyboard */; };
 		24F75E6F1D3D5D9400F49536 /* Arthur_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E6E1D3D5D9400F49536 /* Arthur_Storyboard.storyboard */; };
 		24F75E711D3D5DA000F49536 /* Bia_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */; };
+		CEA44E3B1D3ECAF7000A9619 /* GothamRnd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */; };
+		CEA44E3C1D3ECAF7000A9619 /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		24F75E681D3D5D7700F49536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24F75E6E1D3D5D9400F49536 /* Arthur_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur_Storyboard.storyboard; sourceTree = "<group>"; };
 		24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bia_Storyboard.storyboard; sourceTree = "<group>"; };
+		CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Book.otf"; sourceTree = "<group>"; };
+		CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		24F75E5B1D3D5D7700F49536 /* HealthApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEA44E381D3ECA1F000A9619 /* Resources */,
 				24F75E761D3D5DE900F49536 /* Controllers */,
 				24F75E771D3D5DF600F49536 /* Internals */,
 				24F75E721D3D5DB300F49536 /* Storyboards */,
@@ -116,6 +121,15 @@
 				24F75E681D3D5D7700F49536 /* Info.plist */,
 			);
 			name = Internals;
+			sourceTree = "<group>";
+		};
+		CEA44E381D3ECA1F000A9619 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */,
+				CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA44E3B1D3ECAF7000A9619 /* GothamRnd-Book.otf in Resources */,
+				CEA44E3C1D3ECAF7000A9619 /* GothamRnd-Medium.otf in Resources */,
 				24F75E671D3D5D7700F49536 /* LaunchScreen.storyboard in Resources */,
 				24F75E6F1D3D5D9400F49536 /* Arthur_Storyboard.storyboard in Resources */,
 				24F75E641D3D5D7700F49536 /* Assets.xcassets in Resources */,
@@ -342,6 +358,7 @@
 				24F75E6D1D3D5D7700F49536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
