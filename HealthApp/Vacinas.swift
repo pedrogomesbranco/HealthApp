@@ -12,7 +12,7 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let nomeVacinas = ["BCG", "Anti-tetânica", "HPV"]
     let administracaoVacinas = ["12/06/16", "16/07/16", "19/08/16"]
-    let validadeVacinas = [""]
+    let validadeVacinas = ["12/06/16", "16/07/16", "19/08/16"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +32,19 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? VacinaCell
+        
+        
+        
+        
     
         cell?.title.text = nomeVacinas[indexPath.row]
+        
         cell?.administrada.text = "Administrada: " + administracaoVacinas[indexPath.row]
+        
         cell?.validade.text = "Validade: " + validadeVacinas[indexPath.row]
         
         return cell!
+        
     }
     
    
