@@ -14,6 +14,8 @@
 		24F75E671D3D5D7700F49536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E651D3D5D7700F49536 /* LaunchScreen.storyboard */; };
 		24F75E6F1D3D5D9400F49536 /* Arthur_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E6E1D3D5D9400F49536 /* Arthur_Storyboard.storyboard */; };
 		24F75E711D3D5DA000F49536 /* Bia_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */; };
+		CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */; };
+		CE6586B61D3F17F500100D4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6586B51D3F17F500100D4C /* RegisterViewController.swift */; };
 		CEA44E3B1D3ECAF7000A9619 /* GothamRnd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */; };
 		CEA44E3C1D3ECAF7000A9619 /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		24F75E681D3D5D7700F49536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24F75E6E1D3D5D9400F49536 /* Arthur_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur_Storyboard.storyboard; sourceTree = "<group>"; };
 		24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bia_Storyboard.storyboard; sourceTree = "<group>"; };
+		CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE6586B51D3F17F500100D4C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Book.otf"; sourceTree = "<group>"; };
 		CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				24F75E5E1D3D5D7700F49536 /* ViewController.swift */,
+				CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */,
+				CE6586B51D3F17F500100D4C /* RegisterViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -207,8 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */,
 				24F75E5F1D3D5D7700F49536 /* ViewController.swift in Sources */,
 				24F75E5D1D3D5D7700F49536 /* AppDelegate.swift in Sources */,
+				CE6586B61D3F17F500100D4C /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
