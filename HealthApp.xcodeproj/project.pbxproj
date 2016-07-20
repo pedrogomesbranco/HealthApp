@@ -16,6 +16,15 @@
 		24F75E711D3D5DA000F49536 /* Bia_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */; };
 		54B4F7941D3FC50B00D294E9 /* Vacinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4F7931D3FC50B00D294E9 /* Vacinas.swift */; };
 		54B4F7961D3FC93D00D294E9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F7951D3FC93D00D294E9 /* .gitignore */; };
+		54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */; };
+		54B4F7991D3FD92200D294E9 /* GothamRnd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F78B1D3FC3C800D294E9 /* GothamRnd-Bold.otf */; };
+		54B4F79A1D3FD92200D294E9 /* GothamRnd-BoldIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F78C1D3FC3C800D294E9 /* GothamRnd-BoldIta.otf */; };
+		54B4F79B1D3FD92200D294E9 /* GothamRnd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F78D1D3FC3C800D294E9 /* GothamRnd-Book.otf */; };
+		54B4F79C1D3FD92200D294E9 /* GothamRnd-BookIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F78E1D3FC3C800D294E9 /* GothamRnd-BookIta.otf */; };
+		54B4F79D1D3FD92200D294E9 /* GothamRnd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F78F1D3FC3C800D294E9 /* GothamRnd-Light.otf */; };
+		54B4F79E1D3FD92200D294E9 /* GothamRnd-LightIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F7901D3FC3C800D294E9 /* GothamRnd-LightIta.otf */; };
+		54B4F79F1D3FD92200D294E9 /* GothamRnd-MedIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F7911D3FC3C800D294E9 /* GothamRnd-MedIta.otf */; };
+		54B4F7A01D3FD92200D294E9 /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F7921D3FC3C800D294E9 /* GothamRnd-Medium.otf */; };
 		CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */; };
 		CE6586B61D3F17F500100D4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6586B51D3F17F500100D4C /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +49,7 @@
 		54B4F7921D3FC3C800D294E9 /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-Medium.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-Medium.otf"; sourceTree = "<group>"; };
 		54B4F7931D3FC50B00D294E9 /* Vacinas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacinas.swift; sourceTree = "<group>"; };
 		54B4F7951D3FC93D00D294E9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacinaCell.swift; sourceTree = "<group>"; };
 		CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE6586B51D3F17F500100D4C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +136,7 @@
 				CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */,
 				CE6586B51D3F17F500100D4C /* RegisterViewController.swift */,
 				54B4F7931D3FC50B00D294E9 /* Vacinas.swift */,
+				54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +223,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B4F7991D3FD92200D294E9 /* GothamRnd-Bold.otf in Resources */,
+				54B4F79A1D3FD92200D294E9 /* GothamRnd-BoldIta.otf in Resources */,
+				54B4F79B1D3FD92200D294E9 /* GothamRnd-Book.otf in Resources */,
+				54B4F79C1D3FD92200D294E9 /* GothamRnd-BookIta.otf in Resources */,
+				54B4F79D1D3FD92200D294E9 /* GothamRnd-Light.otf in Resources */,
+				54B4F79E1D3FD92200D294E9 /* GothamRnd-LightIta.otf in Resources */,
+				54B4F79F1D3FD92200D294E9 /* GothamRnd-MedIta.otf in Resources */,
+				54B4F7A01D3FD92200D294E9 /* GothamRnd-Medium.otf in Resources */,
 				24F75E671D3D5D7700F49536 /* LaunchScreen.storyboard in Resources */,
 				24F75E6F1D3D5D9400F49536 /* Arthur_Storyboard.storyboard in Resources */,
 				24F75E641D3D5D7700F49536 /* Assets.xcassets in Resources */,
@@ -229,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */,
+				54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */,
 				24F75E5F1D3D5D7700F49536 /* ViewController.swift in Sources */,
 				24F75E5D1D3D5D7700F49536 /* AppDelegate.swift in Sources */,
 				54B4F7941D3FC50B00D294E9 /* Vacinas.swift in Sources */,

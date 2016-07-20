@@ -24,6 +24,12 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>GothamRnd-BoldIta.otf</string>
+		<string>GothamRnd-Bold.otf</string>
+		<string>GothamRnd-BookIta.otf</string>
+		<string>GothamRnd-MediumIta.otf</string>
+		<string>GothamRnd-LightIta.otf</string>
+		<string>GothamRnd-Light.otf</string>
 		<string>GothamRnd-Book.otf</string>
 		<string>GothamRnd-Medium.otf</string>
 	</array>

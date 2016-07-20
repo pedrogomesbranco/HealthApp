@@ -11,7 +11,8 @@ import UIKit
 class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let nomeVacinas = ["BCG", "Anti-tetânica", "HPV"]
-    let datas = ["Administrada: 12/06/16 \n Validade: 12/06/26", "Administrada: 16/7", "Administrada: 19/8"]
+    let administracaoVacinas = ["12/06/16", "16/07/16", "19/08/16"]
+    let validadeVacinas = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,19 +31,14 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")
-        
-        cell!.textLabel?.text = nomeVacinas[indexPath.row]
-        cell?.detailTextLabel!.text = datas[indexPath.row]
-        
-       
-        allowMultipleLines(cell!)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? VacinaCell
+    
+        cell?.title.text = nomeVacinas[indexPath.row]
+        cell?.administrada.text = "Administrada: " + administracaoVacinas[indexPath.row]
+        cell?.validade
         
         return cell!
     }
     
-    func allowMultipleLines(tableViewCell:UITableViewCell) {
-        tableViewCell.textLabel?.numberOfLines = 0
-        tableViewCell.textLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
-    }
+   
 }
