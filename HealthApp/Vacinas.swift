@@ -12,7 +12,7 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let nomeVacinas = ["BCG", "Anti-tetânica", "HPV"]
     let administracaoVacinas = ["12/06/16", "16/07/16", "19/08/16"]
-    let validadeVacinas = []
+    let validadeVacinas = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
         cell?.title.text = nomeVacinas[indexPath.row]
         cell?.administrada.text = "Administrada: " + administracaoVacinas[indexPath.row]
-        cell?.validade
+        cell?.validade.text = "Validade: " + gitvalidadeVacinas[indexPath.row]
         
         return cell!
     }
