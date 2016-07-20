@@ -35,7 +35,7 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
         cell?.title.text = nomeVacinas[indexPath.row]
         cell?.administrada.text = "Administrada: " + administracaoVacinas[indexPath.row]
-        cell?.validade.text = "Validade: " + gitvalidadeVacinas[indexPath.row]
+        cell?.validade.text = "Validade: " + validadeVacinas[indexPath.row]
         
         return cell!
     }
