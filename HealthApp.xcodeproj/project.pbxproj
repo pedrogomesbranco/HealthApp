@@ -16,8 +16,6 @@
 		24F75E711D3D5DA000F49536 /* Bia_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */; };
 		CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */; };
 		CE6586B61D3F17F500100D4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6586B51D3F17F500100D4C /* RegisterViewController.swift */; };
-		CEA44E3B1D3ECAF7000A9619 /* GothamRnd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */; };
-		CEA44E3C1D3ECAF7000A9619 /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +28,16 @@
 		24F75E681D3D5D7700F49536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24F75E6E1D3D5D9400F49536 /* Arthur_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur_Storyboard.storyboard; sourceTree = "<group>"; };
 		24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bia_Storyboard.storyboard; sourceTree = "<group>"; };
+		54B4F78B1D3FC3C800D294E9 /* GothamRnd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-Bold.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-Bold.otf"; sourceTree = "<group>"; };
+		54B4F78C1D3FC3C800D294E9 /* GothamRnd-BoldIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-BoldIta.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-BoldIta.otf"; sourceTree = "<group>"; };
+		54B4F78D1D3FC3C800D294E9 /* GothamRnd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-Book.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-Book.otf"; sourceTree = "<group>"; };
+		54B4F78E1D3FC3C800D294E9 /* GothamRnd-BookIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-BookIta.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-BookIta.otf"; sourceTree = "<group>"; };
+		54B4F78F1D3FC3C800D294E9 /* GothamRnd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-Light.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-Light.otf"; sourceTree = "<group>"; };
+		54B4F7901D3FC3C800D294E9 /* GothamRnd-LightIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-LightIta.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-LightIta.otf"; sourceTree = "<group>"; };
+		54B4F7911D3FC3C800D294E9 /* GothamRnd-MedIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-MedIta.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-MedIta.otf"; sourceTree = "<group>"; };
+		54B4F7921D3FC3C800D294E9 /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRnd-Medium.otf"; path = "../../../Downloads/The Top 100 Best Fonts of All Time/41. Gotham     [2000 - Tobias Frere-Jones]/GothamRnd-Medium.otf"; sourceTree = "<group>"; };
 		CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE6586B51D3F17F500100D4C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Book.otf"; sourceTree = "<group>"; };
-		CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +136,14 @@
 		CEA44E381D3ECA1F000A9619 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CEA44E391D3ECA55000A9619 /* GothamRnd-Book.otf */,
-				CEA44E3A1D3ECA55000A9619 /* GothamRnd-Medium.otf */,
+				54B4F78B1D3FC3C800D294E9 /* GothamRnd-Bold.otf */,
+				54B4F78C1D3FC3C800D294E9 /* GothamRnd-BoldIta.otf */,
+				54B4F78D1D3FC3C800D294E9 /* GothamRnd-Book.otf */,
+				54B4F78E1D3FC3C800D294E9 /* GothamRnd-BookIta.otf */,
+				54B4F78F1D3FC3C800D294E9 /* GothamRnd-Light.otf */,
+				54B4F7901D3FC3C800D294E9 /* GothamRnd-LightIta.otf */,
+				54B4F7911D3FC3C800D294E9 /* GothamRnd-MedIta.otf */,
+				54B4F7921D3FC3C800D294E9 /* GothamRnd-Medium.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -196,8 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA44E3B1D3ECAF7000A9619 /* GothamRnd-Book.otf in Resources */,
-				CEA44E3C1D3ECAF7000A9619 /* GothamRnd-Medium.otf in Resources */,
 				24F75E671D3D5D7700F49536 /* LaunchScreen.storyboard in Resources */,
 				24F75E6F1D3D5D9400F49536 /* Arthur_Storyboard.storyboard in Resources */,
 				24F75E641D3D5D7700F49536 /* Assets.xcassets in Resources */,
