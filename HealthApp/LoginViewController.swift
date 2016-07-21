@@ -23,11 +23,9 @@ class LoginViewController: UIViewController {
     var isViewMovedUp: Bool?
     
     func animateTextField(up: Bool) {
-        if isViewMovedUp == false {
         let movement = (up ? -keyboardHeight : keyboardHeight)
         
         UIView.animateWithDuration(0.3, animations: { self.view.frame = CGRectOffset(self.view.frame, 0, movement) } )
-        }
     }
     
     func keyboardWillShow(notification: NSNotification) {
@@ -43,6 +41,12 @@ class LoginViewController: UIViewController {
         self.animateTextField(false)
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        var touch: UITouch = touches.first!
+        if !touch.view!.isMemberOfClass(UITextField.self) {
+            touch.view!.endEditing(true)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

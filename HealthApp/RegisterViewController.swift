@@ -42,7 +42,13 @@ class RegisterViewController: UIViewController {
     func keyboardWillHide(notification: NSNotification) {
         self.animateTextField(false)
     }
-
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        var touch: UITouch = touches.first!
+        if !touch.view!.isMemberOfClass(UITextField.self) {
+            touch.view!.endEditing(true)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
