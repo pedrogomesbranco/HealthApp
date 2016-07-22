@@ -33,14 +33,14 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? VacinaCell
         
-/**********************************************************************************
+/***********************************************************************************
  ********************************** SHADOW *****************************************
  **********************************************************************************/
  
         cell?.layer.shadowOffset = CGSizeMake(0, 1)
         cell?.layer.shadowColor = UIColor.blackColor().CGColor
         cell?.layer.shadowRadius = 1
-        cell?.layer.shadowOpacity = 0.6
+        cell?.layer.shadowOpacity = 0.3
         cell?.clipsToBounds = false
  
  /********************************************************************************
