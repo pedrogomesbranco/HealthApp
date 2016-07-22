@@ -145,6 +145,7 @@
 				54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				240034261D428A8100CB55A0 /* HomeViewController.swift */,
 				240034281D4292EB00CB55A0 /* MedicosViewController.swift */,
 =======
@@ -153,6 +154,9 @@
 =======
 				54EE5C811D42924C008A6AD6 /* AdicionarVacina.swift */,
 >>>>>>> origin/master
+=======
+				54EE5C811D42924C008A6AD6 /* AdicionarVacina.swift */,
+>>>>>>> a9f96c80b480f6dfa1ace8c5b2ba3c16738eb24c
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +270,7 @@
 				CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				240034291D4292EB00CB55A0 /* MedicosViewController.swift in Sources */,
 =======
 				54EE5C821D42924C008A6AD6 /* AdicionarVacina.swift in Sources */,
@@ -273,6 +278,9 @@
 =======
 				54EE5C821D42924C008A6AD6 /* AdicionarVacina.swift in Sources */,
 >>>>>>> origin/master
+=======
+				54EE5C821D42924C008A6AD6 /* AdicionarVacina.swift in Sources */,
+>>>>>>> a9f96c80b480f6dfa1ace8c5b2ba3c16738eb24c
 				54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */,
 				24F75E5F1D3D5D7700F49536 /* ViewController.swift in Sources */,
 				24F75E5D1D3D5D7700F49536 /* AppDelegate.swift in Sources */,
