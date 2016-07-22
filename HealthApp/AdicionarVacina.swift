@@ -10,12 +10,12 @@ import UIKit
 
 class AdicionarVacina: UIViewController {
     
+    
+    //esses são os textfields em que o usuário vai dar input nas informações
+    
     @IBOutlet var textField1: UITextField!
-    
     @IBOutlet var textField2: UITextField!
-    
     @IBOutlet var textField3: UITextField!
-    
     @IBOutlet var textField4: UITextField!
 
     override func viewDidLoad() {
