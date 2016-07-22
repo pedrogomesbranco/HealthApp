@@ -42,6 +42,7 @@ class LoginViewController: UIViewController {
         self.animateTextField(false)
     }
     
+    // Sair do teclado clicando na tela
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         var touch: UITouch = touches.first!
         if !touch.view!.isMemberOfClass(UITextField.self) {
