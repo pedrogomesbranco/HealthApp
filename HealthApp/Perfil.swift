@@ -8,10 +8,15 @@
 
 import UIKit
 
-class Perfil: UIViewController {
+class Perfil: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    //MARK: Outlets
     
     @IBOutlet var imagemUsuario: UIImageView!
     @IBOutlet var scrollView: UIScrollView!
+    
+    //MARK: ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +24,11 @@ class Perfil: UIViewController {
         scrollView.contentSize.height = 1000
         
         arredondarImagem(imagemUsuario)
+
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    //MARK: Funções
     
     func arredondarImagem (imagem:UIImageView) {
         
@@ -36,19 +39,53 @@ class Perfil: UIViewController {
         imagem.clipsToBounds = true
         imagem.layer.borderWidth = 1.0
         imagem.contentMode = UIViewContentMode.ScaleAspectFill
-    
+        
     }
     
     
+    //MARK: TableView
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    @IBOutlet var tableView: UITableView!
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
+            if indexPath.row == 0 {
+        
+                let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell1")
+                    
+                return cell
+                
+            } else if indexPath.row == 1 {
+                
+                let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ("cell2"))
+                return cell
+                
+            } else if indexPath.row == 2 {
+                
+                let cell = tableView.dequeueReusableCellWithIdentifier("cell3")
+                return cell!
+                
+            } else if indexPath.row == 3 {
+                
+                let cell = tableView.dequeueReusableCellWithIdentifier("cell4")
+                return cell!
+                
+            } else if indexPath.row == 4 {
+                
+                let cell = tableView.dequeueReusableCellWithIdentifier("cell5")
+                return cell!
+                
+            } else {
+                
+                let cell = tableView.dequeueReusableCellWithIdentifier("cell6")
+                
+                return cell!
+            }
+            
+    }
 }
