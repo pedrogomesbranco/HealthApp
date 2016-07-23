@@ -9,7 +9,18 @@
 import UIKit
 
 class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    //variaveis auxiliares para passar as Labels da Cell pra outra VC
+    
+    var nome: String!
+    var administracao: String!
+    var validade: String!
+    
+    
     //array para salvar o nome das vacinas
     let nomeVacinas = ["BCG", "Anti-tetânica", "HPV"]
     
@@ -56,13 +67,55 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
  *********************************************************************************
  *********************************************************************************/
     
-        cell?.title.text = nomeVacinas[indexPath.row]
+        cell!.title.text = nomeVacinas[indexPath.row]
         
-        cell?.administrada.text = "Administrada: " + administracaoVacinas[indexPath.row]
+        cell!.administracao.text = "Administrada: " + administracaoVacinas[indexPath.row]
         
-        cell?.validade.text = "Validade: " + validadeVacinas[indexPath.row]
+        cell!.validade.text = "Validade: " + validadeVacinas[indexPath.row]
         
         return cell!
+        
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let row = indexPath.row
+        print("a row selecionada foi: \(row + 1)")
+        
+        let indexPath = tableView.indexPathForSelectedRow
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! VacinaCell
+        
+        
+        //aqui, estou pegando as variaveis auxiliares que declarei no começo da classe e dizendo que essas strings são os textos das labels da cell
+        
+        self.nome = currentCell.title.text
+
+        self.administracao = currentCell.administracao.text
+        
+        self.validade = currentCell.validade.text
+        
+        
+        performSegueWithIdentifier("segue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "segue") {
+            
+            let viewController = segue.destinationViewController as! DetalheVacina
+            
+            viewController.recebeString = nome
+            viewController.recebeString2 = administracao
+            viewController.recebeString3 = validade
+            
+            
+//            viewController.administracaoVacina.text = self.valueToPass
+//            viewController.validadeVacina.text = self.valueToPass
+        
+            
+            
+        }
+        
         
     }
     

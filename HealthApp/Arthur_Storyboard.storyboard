@@ -79,7 +79,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="Title" destination="lWW-xR-wuz" id="PRp-Fk-1Xs"/>
-                                            <outlet property="administrada" destination="AUN-ge-Yxj" id="Y90-ph-HfA"/>
+                                            <outlet property="administracao" destination="AUN-ge-Yxj" id="ih6-Tq-MGC"/>
                                             <outlet property="title" destination="lWW-xR-wuz" id="GZj-3s-Eyb"/>
                                             <outlet property="validade" destination="cJ5-kz-erV" id="W14-s3-9lc"/>
                                         </connections>
@@ -94,10 +94,57 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="sc1-r0-Cfg" kind="show" identifier="segue" id="Jy4-ae-Vu1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJt-Do-PoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62.5" y="251.5"/>
+            <point key="canvasLocation" x="397.5" y="-360.5"/>
+        </scene>
+        <!--Detalhe Vacina-->
+        <scene sceneID="0cI-9Y-98k">
+            <objects>
+                <viewController storyboardIdentifier="detalhe" id="sc1-r0-Cfg" customClass="DetalheVacina" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xbQ-MF-iw6"/>
+                        <viewControllerLayoutGuide type="bottom" id="hJU-1o-D0W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rAV-f8-6b5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sx-FZ-Ypo">
+                                <rect key="frame" x="36" y="428" width="222" height="152"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYl-r2-f3Y">
+                                <rect key="frame" x="27" y="337" width="240" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnE-84-Vsf">
+                                <rect key="frame" x="36" y="210" width="215" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="administracaoVacina" destination="PYl-r2-f3Y" id="Dq8-FE-Ncu"/>
+                        <outlet property="nomeVacina" destination="cnE-84-Vsf" id="DhT-mV-U1f"/>
+                        <outlet property="validadeVacina" destination="6Sx-FZ-Ypo" id="kPs-vx-lB6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8G-1y-vnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.5" y="-360.5"/>
         </scene>
         <!--Adicionar Vacina-->
         <scene sceneID="VqU-ew-D3A">
@@ -187,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dse-F9-OAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405.5" y="251.5"/>
+            <point key="canvasLocation" x="397.5" y="485.5"/>
         </scene>
     </scenes>
 </document>
