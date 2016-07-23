@@ -19,6 +19,11 @@ class DetalheVacina: UIViewController {
     @IBOutlet var administracaoVacina: UILabel!
     @IBOutlet var validadeVacina: UILabel!
     
+    @IBAction func dismissViewController(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
