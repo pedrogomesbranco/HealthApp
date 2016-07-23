@@ -10,8 +10,13 @@ import UIKit
 
 class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    //array para salvar o nome das vacinas
     let nomeVacinas = ["BCG", "Anti-tetânica", "HPV"]
+    
+    //array para salvar as datas em que foram tomadas as vacinas
     let administracaoVacinas = ["12/06/16", "16/07/16", "19/08/16"]
+    
+    //array para salvar as datas de validade das vacinas
     let validadeVacinas = ["12/06/16", "16/07/16", "19/08/16"]
     
     override func viewDidLoad() {
@@ -37,6 +42,10 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
  ********************************** SHADOW *****************************************
  **********************************************************************************/
  
+        let shadowFrame: CGRect = (cell?.layer.bounds)!
+        let shadowPath: CGPathRef = UIBezierPath(rect: shadowFrame).CGPath
+        cell?.layer.shadowPath = shadowPath
+        
         cell?.layer.shadowOffset = CGSizeMake(0, 1)
         cell?.layer.shadowColor = UIColor.blackColor().CGColor
         cell?.layer.shadowRadius = 1
@@ -46,11 +55,6 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
  /********************************************************************************
  *********************************************************************************
  *********************************************************************************/
-        
-        let shadowFrame: CGRect = (cell?.layer.bounds)!
-        let shadowPath: CGPathRef = UIBezierPath(rect: shadowFrame).CGPath
-        cell?.layer.shadowPath = shadowPath
-        
     
         cell?.title.text = nomeVacinas[indexPath.row]
         
