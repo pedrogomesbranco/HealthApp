@@ -14,9 +14,7 @@ class Login: UIViewController {
     @IBOutlet weak var senhaTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+    override func prefersStatusBarHidden() -> Bool { return true }
     
     // Movimentar a View quando o Keyboard surgir
     var keyboardHeight: CGFloat!
@@ -44,7 +42,7 @@ class Login: UIViewController {
     
     // Sair do Keyboard clicando na Screen
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        var touch: UITouch = touches.first!
+        let touch: UITouch = touches.first!
         if !touch.view!.isMemberOfClass(UITextField.self) {
             touch.view!.endEditing(true)
         }

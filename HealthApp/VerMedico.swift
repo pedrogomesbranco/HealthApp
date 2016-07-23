@@ -10,9 +10,20 @@ import UIKit
 
 class VerMedico: UIViewController {
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var fotoImageView: UIImageView!
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var crmTextField: UITextField!
+    @IBOutlet weak var especialidadeTextField: UITextField!
+    @IBOutlet weak var telefoneTextField: UITextField!
+    @IBOutlet weak var celularTextField: UITextField!
+    @IBOutlet weak var enderecoTextField: UITextField!
+    
+    @IBAction func editarButton(sender: AnyObject) {
     }
+    
+    
+    override func prefersStatusBarHidden() -> Bool { return true }
 
     override func viewDidLoad() {
         super.viewDidLoad()
