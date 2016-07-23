@@ -10,6 +10,15 @@ import UIKit
 
 class AdicionarMedico: UIViewController {
     
+    @IBOutlet weak var fotoImageView: UIImageView!
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var crmTextField: UITextField!
+    @IBOutlet weak var especialidadeTextField: UITextField!
+    @IBOutlet weak var telefoneTextField: UITextField!
+    @IBOutlet weak var celularTextField: UITextField!
+    @IBOutlet weak var enderecoTextField: UITextField!
+    @IBOutlet weak var confirmarButton: UIButton!
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }

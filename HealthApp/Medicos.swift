@@ -10,14 +10,17 @@ import UIKit
 
 class Medicos: UIViewController {
     
+    @IBAction func addMedicoButton(sender: AnyObject) {
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
