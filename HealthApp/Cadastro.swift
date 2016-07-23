@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class Cadastro: UIViewController {
     
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -43,7 +43,7 @@ class RegisterViewController: UIViewController {
         self.animateTextField(false)
     }
     
-    // Sair do teclado clicando na tela
+    // Sair do Keyboard clicando na Screen
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         var touch: UITouch = touches.first!
         if !touch.view!.isMemberOfClass(UITextField.self) {
@@ -110,8 +110,8 @@ class RegisterViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RegisterViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RegisterViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Cadastro.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Cadastro.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
     }
     
@@ -133,7 +133,7 @@ class RegisterViewController: UIViewController {
 
 
 
-extension RegisterViewController: UITextFieldDelegate {
+extension Cadastro: UITextFieldDelegate {
     
     // Dismiss Keyboard quando clicar em Return
     func textFieldShouldReturn(textField: UITextField) -> Bool {

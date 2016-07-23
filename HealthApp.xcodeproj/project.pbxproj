@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		240034271D428A8100CB55A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240034261D428A8100CB55A0 /* HomeViewController.swift */; };
-		240034291D4292EB00CB55A0 /* MedicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240034281D4292EB00CB55A0 /* MedicosViewController.swift */; };
+		240034271D428A8100CB55A0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240034261D428A8100CB55A0 /* Home.swift */; };
+		240034291D4292EB00CB55A0 /* Medicos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240034281D4292EB00CB55A0 /* Medicos.swift */; };
 		243A575D1D3FEAFF00D4431F /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A57551D3FEA9E00D4431F /* GothamRounded-Bold.otf */; };
 		243A575E1D3FEAFF00D4431F /* GothamRounded-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A57561D3FEA9E00D4431F /* GothamRounded-BoldItalic.otf */; };
 		243A575F1D3FEAFF00D4431F /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A57571D3FEA9E00D4431F /* GothamRounded-Book.otf */; };
@@ -28,13 +28,16 @@
 		54B4F7961D3FC93D00D294E9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F7951D3FC93D00D294E9 /* .gitignore */; };
 		54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */; };
 		54EE5C821D42924C008A6AD6 /* AdicionarVacina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE5C811D42924C008A6AD6 /* AdicionarVacina.swift */; };
-		CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */; };
-		CE6586B61D3F17F500100D4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6586B51D3F17F500100D4C /* RegisterViewController.swift */; };
+		CE1D75AC1D3ED0C90011D5E1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D75AB1D3ED0C90011D5E1 /* Login.swift */; };
+		CE6586B61D3F17F500100D4C /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6586B51D3F17F500100D4C /* Cadastro.swift */; };
+		CEBE56181D42F07F002689C7 /* AdicionarMedico.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE56171D42F07F002689C7 /* AdicionarMedico.swift */; };
+		CEBE561A1D42F0A7002689C7 /* VerMedico.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE56191D42F0A7002689C7 /* VerMedico.swift */; };
+		CEBE561C1D42F85B002689C7 /* EditarMedico.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE561B1D42F85B002689C7 /* EditarMedico.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		240034261D428A8100CB55A0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		240034281D4292EB00CB55A0 /* MedicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicosViewController.swift; sourceTree = "<group>"; };
+		240034261D428A8100CB55A0 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		240034281D4292EB00CB55A0 /* Medicos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicos.swift; sourceTree = "<group>"; };
 		243A57551D3FEA9E00D4431F /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
 		243A57561D3FEA9E00D4431F /* GothamRounded-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-BoldItalic.otf"; sourceTree = "<group>"; };
 		243A57571D3FEA9E00D4431F /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
@@ -56,8 +59,11 @@
 		54B4F7951D3FC93D00D294E9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacinaCell.swift; sourceTree = "<group>"; };
 		54EE5C811D42924C008A6AD6 /* AdicionarVacina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarVacina.swift; sourceTree = "<group>"; };
-		CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CE6586B51D3F17F500100D4C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CE1D75AB1D3ED0C90011D5E1 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		CE6586B51D3F17F500100D4C /* Cadastro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
+		CEBE56171D42F07F002689C7 /* AdicionarMedico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarMedico.swift; sourceTree = "<group>"; };
+		CEBE56191D42F0A7002689C7 /* VerMedico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerMedico.swift; sourceTree = "<group>"; };
+		CEBE561B1D42F85B002689C7 /* EditarMedico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarMedico.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,14 +145,16 @@
 			isa = PBXGroup;
 			children = (
 				24F75E5E1D3D5D7700F49536 /* ViewController.swift */,
-				CE1D75AB1D3ED0C90011D5E1 /* LoginViewController.swift */,
-				CE6586B51D3F17F500100D4C /* RegisterViewController.swift */,
+				CE1D75AB1D3ED0C90011D5E1 /* Login.swift */,
+				CE6586B51D3F17F500100D4C /* Cadastro.swift */,
 				54B4F7931D3FC50B00D294E9 /* Vacinas.swift */,
 				54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */,
-				240034261D428A8100CB55A0 /* HomeViewController.swift */,
-				240034281D4292EB00CB55A0 /* MedicosViewController.swift */,
+				240034261D428A8100CB55A0 /* Home.swift */,
+				240034281D4292EB00CB55A0 /* Medicos.swift */,
 				54EE5C811D42924C008A6AD6 /* AdicionarVacina.swift */,
-
+				CEBE56171D42F07F002689C7 /* AdicionarMedico.swift */,
+				CEBE56191D42F0A7002689C7 /* VerMedico.swift */,
+				CEBE561B1D42F85B002689C7 /* EditarMedico.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -257,15 +265,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1D75AC1D3ED0C90011D5E1 /* LoginViewController.swift in Sources */,
-				240034291D4292EB00CB55A0 /* MedicosViewController.swift in Sources */,
+				CEBE56181D42F07F002689C7 /* AdicionarMedico.swift in Sources */,
+				CE1D75AC1D3ED0C90011D5E1 /* Login.swift in Sources */,
+				CEBE561A1D42F0A7002689C7 /* VerMedico.swift in Sources */,
+				240034291D4292EB00CB55A0 /* Medicos.swift in Sources */,
+				CEBE561C1D42F85B002689C7 /* EditarMedico.swift in Sources */,
 				54EE5C821D42924C008A6AD6 /* AdicionarVacina.swift in Sources */,
 				54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */,
 				24F75E5F1D3D5D7700F49536 /* ViewController.swift in Sources */,
 				24F75E5D1D3D5D7700F49536 /* AppDelegate.swift in Sources */,
 				54B4F7941D3FC50B00D294E9 /* Vacinas.swift in Sources */,
-				240034271D428A8100CB55A0 /* HomeViewController.swift in Sources */,
-				CE6586B61D3F17F500100D4C /* RegisterViewController.swift in Sources */,
+				240034271D428A8100CB55A0 /* Home.swift in Sources */,
+				CE6586B61D3F17F500100D4C /* Cadastro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

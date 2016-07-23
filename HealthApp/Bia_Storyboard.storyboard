@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fEX-ma-AGZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pfo-Hr-ka9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,13 +25,16 @@
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="Lki-tw-My1">
             <objects>
-                <viewController id="fEX-ma-AGZ" customClass="LoginViewController" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fEX-ma-AGZ" customClass="Login" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="glk-Yp-9Uy"/>
                         <viewControllerLayoutGuide type="bottom" id="KbE-EL-D0p"/>
@@ -103,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="322.5" y="294.5"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Cadastro-->
         <scene sceneID="tpT-8o-MUu">
             <objects>
-                <viewController id="oOr-5v-C0M" customClass="RegisterViewController" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oOr-5v-C0M" customClass="Cadastro" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="26T-y8-lro"/>
                         <viewControllerLayoutGuide type="bottom" id="Onb-Zd-sqH"/>
@@ -182,12 +185,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PwE-Xe-Cus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868.5" y="294.5"/>
+            <point key="canvasLocation" x="-219.5" y="294.5"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="FLX-dw-IIw">
             <objects>
-                <viewController id="pfo-Hr-ka9" customClass="HomeViewController" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pfo-Hr-ka9" customClass="Home" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cSz-o8-hK2"/>
                         <viewControllerLayoutGuide type="bottom" id="Vu6-1G-zgc"/>
@@ -216,6 +219,9 @@
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jK-TZ-Rkf">
                                 <rect key="frame" x="220" y="124" width="108" height="69"/>
                                 <state key="normal" image="medicos"/>
+                                <connections>
+                                    <segue destination="mo1-PI-I91" kind="show" id="Mi3-Ba-rP4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHa-wP-JyZ">
                                 <rect key="frame" x="73" y="312" width="60" height="54"/>
@@ -249,6 +255,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="GwB-Qk-2Bd">
+                                <rect key="frame" x="40" y="430" width="295" height="197"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oIl-g0-id1">
+                                <rect key="frame" x="44" y="430" width="288" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -257,12 +270,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndW-GR-6Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322.5" y="1177.5"/>
+            <point key="canvasLocation" x="878.5" y="294.5"/>
         </scene>
-        <!--Medicos View Controller-->
+        <!--Medicos-->
         <scene sceneID="Qph-sz-Ehc">
             <objects>
-                <viewController id="mo1-PI-I91" customClass="MedicosViewController" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mo1-PI-I91" customClass="Medicos" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UlE-go-UCM"/>
                         <viewControllerLayoutGuide type="bottom" id="Qpu-Kj-19q"/>
@@ -277,14 +290,28 @@
                                 <color key="textColor" red="0.57647058823529407" green="0.79607843137254897" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfM-GA-XT3">
-                                <rect key="frame" x="10" y="19" width="31" height="25"/>
-                                <state key="normal" image="back"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FE-ky-rMb">
                                 <rect key="frame" x="340" y="19" width="25" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="lalala" image="add"/>
+                                <state key="normal" image="greenAdd"/>
+                                <connections>
+                                    <segue destination="zwU-sm-byf" kind="showDetail" action="showViewController:sender:" id="qND-r0-fH7"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0oY-MB-qBF">
+                                <rect key="frame" x="24" y="119" width="316" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Pesquisar" translatesAutoresizingMaskIntoConstraints="NO" id="yrM-Rg-1Qe">
+                                <rect key="frame" x="24" y="69" width="316" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfM-GA-XT3">
+                                <rect key="frame" x="10" y="19" width="25" height="25"/>
+                                <state key="normal" image="greenClose"/>
+                                <connections>
+                                    <segue destination="pfo-Hr-ka9" kind="show" id="gWH-pf-Ehz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -294,18 +321,142 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSg-e0-61X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322.5" y="1975.5"/>
+            <point key="canvasLocation" x="878.5" y="1262.5"/>
+        </scene>
+        <!--Adicionar Medico-->
+        <scene sceneID="AbQ-67-X6C">
+            <objects>
+                <viewController id="zwU-sm-byf" customClass="AdicionarMedico" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FpT-E2-E5k"/>
+                        <viewControllerLayoutGuide type="bottom" id="RjC-CO-i8i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ral-vg-tic">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADICIONAR NOVO MÉDICO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-am-jTm">
+                                <rect key="frame" x="0.0" y="23" width="375" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.57647058819999997" green="0.79607843140000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vww-N4-gwj">
+                                <rect key="frame" x="10" y="19" width="31" height="25"/>
+                                <state key="normal" image="greenBack"/>
+                                <connections>
+                                    <segue destination="mo1-PI-I91" kind="show" id="8ov-kL-mgk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2A-F3-sUz">
+                                <rect key="frame" x="334" y="19" width="31" height="25"/>
+                                <state key="normal" image="greenCheck"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67M-aG-VJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322.5" y="2177.5"/>
+        </scene>
+        <!--Ver Medico-->
+        <scene sceneID="LL1-Z0-yaY">
+            <objects>
+                <viewController id="AoL-Y7-ZKd" customClass="VerMedico" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YnT-bl-XPb"/>
+                        <viewControllerLayoutGuide type="bottom" id="26G-IP-WVg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WTm-5U-c3u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do Médico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYx-j2-ltG">
+                                <rect key="frame" x="0.0" y="23" width="375" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.57647058819999997" green="0.79607843140000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q5-xv-Ugl">
+                                <rect key="frame" x="10" y="19" width="31" height="25"/>
+                                <state key="normal" image="greenBack"/>
+                                <connections>
+                                    <segue destination="mo1-PI-I91" kind="show" id="ZWT-Ga-SaK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DD1-mm-hJ3">
+                                <rect key="frame" x="334" y="19" width="31" height="25"/>
+                                <state key="normal" image="greenEdit"/>
+                                <connections>
+                                    <segue destination="sn0-VN-DaV" kind="show" id="lKR-zK-UWD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpE-5p-0qE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878.5" y="2177.5"/>
+        </scene>
+        <!--Editar Medico-->
+        <scene sceneID="Zpg-V5-XjR">
+            <objects>
+                <viewController id="sn0-VN-DaV" customClass="EditarMedico" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="21k-sC-Jkw"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Yf-XM-bGK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UBd-VI-1KP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do Médico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-wk-3Gs">
+                                <rect key="frame" x="0.0" y="23" width="375" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.57647058819999997" green="0.79607843140000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqh-t9-tWn">
+                                <rect key="frame" x="334" y="19" width="31" height="25"/>
+                                <state key="normal" image="greenCheck"/>
+                                <connections>
+                                    <segue destination="AoL-Y7-ZKd" kind="show" id="3FX-87-Hpu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qah-vE-g0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470.5" y="2177.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="25" height="25"/>
-        <image name="back" width="31" height="25"/>
         <image name="background" width="375" height="667"/>
+        <image name="box" width="301" height="203"/>
         <image name="exames" width="62" height="56"/>
+        <image name="greenAdd" width="25" height="25"/>
+        <image name="greenBack" width="31" height="25"/>
+        <image name="greenCheck" width="28" height="20"/>
+        <image name="greenClose" width="19" height="19"/>
+        <image name="greenEdit" width="25" height="25"/>
         <image name="logo" width="142" height="162"/>
         <image name="medicos" width="95" height="69"/>
         <image name="perfil" width="78" height="71"/>
         <image name="settings" width="25" height="25"/>
         <image name="vacinas" width="71" height="72"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gWH-pf-Ehz"/>
+        <segue reference="8ov-kL-mgk"/>
+    </inferredMetricsTieBreakers>
 </document>

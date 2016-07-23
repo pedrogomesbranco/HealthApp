@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class Login: UIViewController {
 
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
         self.animateTextField(false)
     }
     
-    // Sair do teclado clicando na tela
+    // Sair do Keyboard clicando na Screen
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         var touch: UITouch = touches.first!
         if !touch.view!.isMemberOfClass(UITextField.self) {
@@ -98,8 +98,8 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LoginViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LoginViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Login.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Login.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
     }
     
@@ -122,7 +122,7 @@ class LoginViewController: UIViewController {
 
 
 
-extension LoginViewController: UITextFieldDelegate {
+extension Login: UITextFieldDelegate {
     
     // Dismiss Keyboard quando clicar em Return
     func textFieldShouldReturn(textField: UITextField) -> Bool {

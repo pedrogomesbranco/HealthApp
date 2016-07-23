@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  MedicosViewController.swift
 //  HealthApp
 //
 //  Created by Bia Lemos on 7/22/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class Medicos: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true

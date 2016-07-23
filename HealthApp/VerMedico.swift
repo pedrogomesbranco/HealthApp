@@ -1,5 +1,5 @@
 //
-//  MedicosViewController.swift
+//  EditarMedicoViewController.swift
 //  HealthApp
 //
 //  Created by Bia Lemos on 7/22/16.
@@ -8,7 +8,11 @@
 
 import UIKit
 
-class MedicosViewController: UIViewController {
+class VerMedico: UIViewController {
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
