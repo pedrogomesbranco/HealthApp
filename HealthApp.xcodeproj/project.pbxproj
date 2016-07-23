@@ -25,6 +25,7 @@
 		24F75E6F1D3D5D9400F49536 /* Arthur_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E6E1D3D5D9400F49536 /* Arthur_Storyboard.storyboard */; };
 		24F75E711D3D5DA000F49536 /* Bia_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */; };
 		543DF29A1D43EA0A0095DC90 /* DetalheVacina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543DF2991D43EA0A0095DC90 /* DetalheVacina.swift */; };
+		543DF29C1D440FB50095DC90 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543DF29B1D440FB50095DC90 /* Perfil.swift */; };
 		54B4F7941D3FC50B00D294E9 /* Vacinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4F7931D3FC50B00D294E9 /* Vacinas.swift */; };
 		54B4F7961D3FC93D00D294E9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F7951D3FC93D00D294E9 /* .gitignore */; };
 		54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */; };
@@ -57,6 +58,7 @@
 		24F75E6E1D3D5D9400F49536 /* Arthur_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur_Storyboard.storyboard; sourceTree = "<group>"; };
 		24F75E701D3D5DA000F49536 /* Bia_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bia_Storyboard.storyboard; sourceTree = "<group>"; };
 		543DF2991D43EA0A0095DC90 /* DetalheVacina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheVacina.swift; sourceTree = "<group>"; };
+		543DF29B1D440FB50095DC90 /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		54B4F7931D3FC50B00D294E9 /* Vacinas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacinas.swift; sourceTree = "<group>"; };
 		54B4F7951D3FC93D00D294E9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacinaCell.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				CEBE56171D42F07F002689C7 /* AdicionarMedico.swift */,
 				CEBE56191D42F0A7002689C7 /* VerMedico.swift */,
 				CEBE561B1D42F85B002689C7 /* EditarMedico.swift */,
+				543DF29B1D440FB50095DC90 /* Perfil.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBE56181D42F07F002689C7 /* AdicionarMedico.swift in Sources */,
+				543DF29C1D440FB50095DC90 /* Perfil.swift in Sources */,
 				CE1D75AC1D3ED0C90011D5E1 /* Login.swift in Sources */,
 				CEBE561A1D42F0A7002689C7 /* VerMedico.swift in Sources */,
 				240034291D4292EB00CB55A0 /* Medicos.swift in Sources */,
