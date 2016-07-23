@@ -23,27 +23,32 @@ class Cadastro: UIViewController {
     var keyboardHeight: CGFloat!
     
     func animateTextField(up: Bool) {
-        let movement = (up ? -keyboardHeight : keyboardHeight)
         
+        let movement = (up ? -keyboardHeight : keyboardHeight)
         UIView.animateWithDuration(0.3, animations: { self.view.frame = CGRectOffset(self.view.frame, 0, movement) } )
+        
     }
     
     func keyboardWillShow(notification: NSNotification) {
-        if let userInfo = notification.userInfo {
-            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-                keyboardHeight = keyboardSize.height
-                self.animateTextField(true)
-            }
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+            if view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            } else { }
         }
     }
     
     func keyboardWillHide(notification: NSNotification) {
-        self.animateTextField(false)
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+            if view.frame.origin.y != 0 {
+                self.view.frame.origin.y += keyboardSize.height
+            } else { }
+        }
     }
     
     // Sair do Keyboard clicando na Screen
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        var touch: UITouch = touches.first!
+        let touch: UITouch = touches.first!
         if !touch.view!.isMemberOfClass(UITextField.self) {
             touch.view!.endEditing(true)
         }

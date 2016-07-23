@@ -29,6 +29,29 @@ class EditarMedico: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Deixar a Image View circular
+        fotoImageView.layer.cornerRadius = fotoImageView.frame.size.width / 2
+        fotoImageView.clipsToBounds = true
+        
+        // Adicionar estilo aos Text Fields
+        func textFieldStyles(textField: UITextField) {
+            
+            //Criar e personalizar Shadow e Corner Radius
+            textField.layer.masksToBounds = false
+            textField.layer.cornerRadius = 5.0
+            
+            // Criar Indent antes do texto
+            let SpacerView = UIView(frame:CGRect(x:0, y:0, width:10, height:10))
+            textField.leftViewMode = UITextFieldViewMode.Always
+            textField.leftView = SpacerView
+        }
+        
+        textFieldStyles(nomeTextField)
+        textFieldStyles(crmTextField)
+        textFieldStyles(telefoneTextField)
+        textFieldStyles(celularTextField)
+        textFieldStyles(enderecoTextField)
     }
 
     override func didReceiveMemoryWarning() {
