@@ -18,10 +18,17 @@ class Medicos: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool { return true }
     
+    
+    
+    func setImage(iconImage: UIImage, forSearchBarIcon icon: UISearchBarIcon, state: UIControlState) {
+        pesquisarBar.imageForSearchBarIcon(.Search, state: .Disabled)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        UISearchBar.appearance().setImage(UIImage(named: ""), forSearchBarIcon: UISearchBarIcon.Search, state: UIControlState.Disabled)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +48,7 @@ extension Medicos : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return medicosCell
+        let cell: UITableViewCell = self.medicosCell
+        return cell
     }
 }
