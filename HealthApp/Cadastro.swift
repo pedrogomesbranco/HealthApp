@@ -23,14 +23,11 @@ class Cadastro: UIViewController {
     var keyboardHeight: CGFloat!
     
     func animateTextField(up: Bool) {
-        
         let movement = (up ? -keyboardHeight : keyboardHeight)
         UIView.animateWithDuration(0.3, animations: { self.view.frame = CGRectOffset(self.view.frame, 0, movement) } )
-        
     }
     
     func keyboardWillShow(notification: NSNotification) {
-        
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
             if view.frame.origin.y == 0 {
                 self.view.frame.origin.y -= keyboardSize.height

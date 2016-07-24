@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fEX-ma-AGZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zwU-sm-byf">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -448,13 +448,6 @@
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENDEREÇO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="f3G-vL-nR5">
-                                <rect key="frame" x="34" y="540" width="306" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctor" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-T7-M6e">
                                 <rect key="frame" x="137" y="93" width="100" height="100"/>
                             </imageView>
@@ -464,6 +457,13 @@
                                     <action selector="fotoButton:" destination="zwU-sm-byf" eventType="touchUpInside" id="2kX-RU-5Mm"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="319-Q1-q3e">
+                                <rect key="frame" x="34" y="540" width="306" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.13725490868091583" green="0.13725490868091583" blue="0.13725490868091583" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -472,7 +472,7 @@
                     <connections>
                         <outlet property="celularTextField" destination="FjK-qD-Kp6" id="trT-97-o36"/>
                         <outlet property="crmTextField" destination="llr-SH-gDD" id="OgZ-ns-81K"/>
-                        <outlet property="enderecoTextField" destination="f3G-vL-nR5" id="UlA-9c-b6f"/>
+                        <outlet property="enderecoTextView" destination="319-Q1-q3e" id="7tK-1X-2aE"/>
                         <outlet property="especialidadeTextField" destination="GFh-NM-NHd" id="Xfr-Ms-Xle"/>
                         <outlet property="fotoImageView" destination="XBQ-T7-M6e" id="fq9-JY-9UT"/>
                         <outlet property="nomeTextField" destination="b9J-zg-H21" id="t4G-oG-hVp"/>
@@ -554,16 +554,16 @@
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENDEREÇO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZWR-p8-J8Q">
-                                <rect key="frame" x="34" y="540" width="306" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctor" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-cO-yMB">
                                 <rect key="frame" x="137" y="93" width="100" height="100"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YaN-OO-GUY">
+                                <rect key="frame" x="34" y="540" width="306" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.13725490870000001" green="0.13725490870000001" blue="0.13725490870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -572,7 +572,7 @@
                     <connections>
                         <outlet property="celularTextField" destination="g6d-Mb-Lz0" id="2tc-9S-Xh5"/>
                         <outlet property="crmTextField" destination="xOH-NG-ZGt" id="X4V-Nh-Sgy"/>
-                        <outlet property="enderecoTextField" destination="ZWR-p8-J8Q" id="kSt-ir-jSC"/>
+                        <outlet property="enderecoTextView" destination="YaN-OO-GUY" id="GLz-Ea-NNl"/>
                         <outlet property="especialidadeTextField" destination="BM2-hT-Nwp" id="I0i-xd-gvp"/>
                         <outlet property="fotoImageView" destination="SVK-cO-yMB" id="30d-ED-H9a"/>
                         <outlet property="nomeLabel" destination="CYx-j2-ltG" id="14j-5Y-xjX"/>
@@ -648,13 +648,6 @@
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENDEREÇO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nur-tI-lz9">
-                                <rect key="frame" x="34" y="540" width="306" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctor" translatesAutoresizingMaskIntoConstraints="NO" id="wSb-zO-koo">
                                 <rect key="frame" x="137" y="93" width="100" height="100"/>
                             </imageView>
@@ -664,6 +657,13 @@
                                     <action selector="fotoButton:" destination="sn0-VN-DaV" eventType="touchUpInside" id="BnQ-VC-Jva"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b5i-6E-GVq">
+                                <rect key="frame" x="34" y="540" width="306" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.13725490870000001" green="0.13725490870000001" blue="0.13725490870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -672,7 +672,7 @@
                     <connections>
                         <outlet property="celularTextField" destination="Y1a-bI-GwY" id="agV-Ek-VYK"/>
                         <outlet property="crmTextField" destination="cde-rS-j66" id="puG-Ml-sCa"/>
-                        <outlet property="enderecoTextField" destination="Nur-tI-lz9" id="3lq-lT-h0x"/>
+                        <outlet property="enderecoTextView" destination="b5i-6E-GVq" id="6dJ-Ib-DlT"/>
                         <outlet property="especialidadeTextField" destination="3lt-bG-A44" id="Jzd-eH-Xav"/>
                         <outlet property="fotoImageView" destination="wSb-zO-koo" id="5u6-Hl-aMC"/>
                         <outlet property="nomeLabel" destination="mI7-wk-3Gs" id="ZIs-jW-WUM"/>
@@ -703,7 +703,7 @@
         <image name="vacinas" width="71" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8ov-kL-mgk"/>
+        <segue reference="ZWT-Ga-SaK"/>
         <segue reference="mk2-wS-HCc"/>
     </inferredMetricsTieBreakers>
 </document>

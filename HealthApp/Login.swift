@@ -20,14 +20,11 @@ class Login: UIViewController {
     var keyboardHeight: CGFloat!
     
     func animateTextField(up: Bool) {
-        
         let movement = (up ? -keyboardHeight : keyboardHeight)
         UIView.animateWithDuration(0.3, animations: { self.view.frame = CGRectOffset(self.view.frame, 0, movement) } )
-        
     }
     
     func keyboardWillShow(notification: NSNotification) {
-        
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
             if view.frame.origin.y == 0 {
                 self.view.frame.origin.y -= keyboardSize.height
@@ -109,7 +106,6 @@ class Login: UIViewController {
         super.viewWillDisappear(animated)
         
         NSNotificationCenter.defaultCenter().removeObserver(self)
-        
     }
 
     
@@ -142,6 +138,9 @@ extension Login: UITextFieldDelegate {
     // Voltar com o Placeholder se não tiver nada escrito
     func textFieldDidEndEditing(textField: UITextField) {
         print("TextField did end editing")
+        
+        // Tentando mudar o Placeholder para a cor correta
+        //textField.attributedPlaceholder?.setValue(UIColor(red:0.14, green:0.14, blue:0.14, alpha:1.0), forKey: textField.placeholder!)
         
         switch textField {
         case cpfTextField:

@@ -17,7 +17,7 @@ class VerMedico: UIViewController {
     @IBOutlet weak var especialidadeTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
     @IBOutlet weak var celularTextField: UITextField!
-    @IBOutlet weak var enderecoTextField: UITextField!
+    @IBOutlet weak var enderecoTextView: UITextView!
     
     @IBAction func editarButton(sender: AnyObject) {
     }
@@ -27,6 +27,8 @@ class VerMedico: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.enderecoTextView.delegate = self
 
         // Deixar a Image View circular
         fotoImageView.layer.cornerRadius = fotoImageView.frame.size.width / 2
@@ -47,13 +49,46 @@ class VerMedico: UIViewController {
         
         textFieldStyles(nomeTextField)
         textFieldStyles(crmTextField)
+        textFieldStyles(especialidadeTextField)
         textFieldStyles(telefoneTextField)
         textFieldStyles(celularTextField)
-        textFieldStyles(enderecoTextField)
+        
+        // Estilizar o Text View
+        enderecoTextView.layer.masksToBounds = false
+        enderecoTextView.layer.cornerRadius = 5.0
+        enderecoTextView.textContainerInset = UIEdgeInsetsMake(10, 5, 10, 5)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+}
+
+
+
+
+extension VerMedico: UITextViewDelegate {
+    
+    // Limpar o Placeholder quando começar a editar e manter a cor correta do texto
+    func textViewDidBeginEditing(textView: UITextView) {
+        print("TextView did begin editing")
+        
+        if textView.textColor == UIColor(red:0.14, green:0.14, blue:0.14, alpha:1.0) {
+            textView.text = nil
+            textView.textColor = UIColor(red:0.14, green:0.14, blue:0.14, alpha:1.0)
+        }
+    }
+    
+    // Adicionar Placeholder no TextView se não tiver nada escrito
+    func textViewDidEndEditing(textView: UITextView) {
+        print("TextView did end editing")
+        
+        if textView.text.isEmpty {
+            textView.text = "ENDEREÇO"
+            textView.textColor = UIColor(red:0.14, green:0.14, blue:0.14, alpha:1.0)
+        }
+    }
+    
 }
