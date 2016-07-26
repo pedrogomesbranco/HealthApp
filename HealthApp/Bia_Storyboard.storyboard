@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mo1-PI-I91">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mo1-PI-I91">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="GothamRounded-Book.otf">
@@ -61,36 +62,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Yhk-6M-73b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Yhk-6M-73b">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yhk-6M-73b" secondAttribute="height" multiplier="375:667" id="w1w-63-JjV"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="SQl-x5-ESp">
-                                <rect key="frame" x="122" y="50" width="130" height="150"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="944-fq-N1q">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="944-fq-N1q">
                                 <rect key="frame" x="35" y="272" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="944-fq-N1q" secondAttribute="height" multiplier="153:20" id="Wyh-q8-yBc"/>
+                                </constraints>
                                 <color key="textColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kpd-uY-GfE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kpd-uY-GfE">
                                 <rect key="frame" x="35" y="348" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kpd-uY-GfE" secondAttribute="height" multiplier="153:20" id="nJ2-HK-s5e"/>
+                                </constraints>
                                 <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAa-GL-afd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAa-GL-afd">
                                 <rect key="frame" x="20" y="499" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sAa-GL-afd" secondAttribute="height" multiplier="67:6" id="Cy3-8v-WFY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <state key="normal" title="Esqueceu sua senha?">
                                     <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-YU-ejM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-YU-ejM">
                                 <rect key="frame" x="34" y="424" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zDp-YU-ejM" secondAttribute="height" multiplier="153:20" id="dFv-m9-IIF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -99,8 +112,11 @@
                                     <segue destination="pfo-Hr-ka9" kind="show" identifier="goToHome" id="mk2-wS-HCc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfR-Qg-kxg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfR-Qg-kxg">
                                 <rect key="frame" x="20" y="616" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QfR-Qg-kxg" secondAttribute="height" multiplier="67:6" id="osa-2P-giP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <state key="normal" title="Não tem uma conta?">
                                     <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,8 +125,38 @@
                                     <segue destination="oOr-5v-C0M" kind="show" identifier="goToCadastro" id="kH8-mk-mAw"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="SQl-x5-ESp">
+                                <rect key="frame" x="122" y="50" width="130" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SQl-x5-ESp" secondAttribute="height" multiplier="13:15" id="UDr-SV-c8P"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kpd-uY-GfE" firstAttribute="top" secondItem="944-fq-N1q" secondAttribute="bottom" constant="36" id="0hg-XE-dhp"/>
+                            <constraint firstItem="KbE-EL-D0p" firstAttribute="top" secondItem="QfR-Qg-kxg" secondAttribute="bottom" constant="21" id="6Sx-Xa-N5U"/>
+                            <constraint firstAttribute="trailing" secondItem="kpd-uY-GfE" secondAttribute="trailing" constant="34" id="8aj-E3-pu0"/>
+                            <constraint firstAttribute="trailing" secondItem="QfR-Qg-kxg" secondAttribute="trailing" constant="20" id="AoV-Ge-qob"/>
+                            <constraint firstAttribute="trailing" secondItem="zDp-YU-ejM" secondAttribute="trailing" constant="35" id="CqY-1x-j64"/>
+                            <constraint firstItem="zDp-YU-ejM" firstAttribute="top" secondItem="kpd-uY-GfE" secondAttribute="bottom" constant="36" id="D2i-vG-FLH"/>
+                            <constraint firstItem="944-fq-N1q" firstAttribute="leading" secondItem="H9w-3n-NfZ" secondAttribute="leading" constant="35" id="K84-bv-swn"/>
+                            <constraint firstItem="SQl-x5-ESp" firstAttribute="top" secondItem="glk-Yp-9Uy" secondAttribute="bottom" constant="50" id="KNK-bL-6fM"/>
+                            <constraint firstAttribute="trailing" secondItem="Yhk-6M-73b" secondAttribute="trailing" id="OhI-4a-kbz"/>
+                            <constraint firstItem="Yhk-6M-73b" firstAttribute="top" secondItem="H9w-3n-NfZ" secondAttribute="top" id="RNx-vP-nLu"/>
+                            <constraint firstAttribute="trailing" secondItem="SQl-x5-ESp" secondAttribute="trailing" constant="123" id="VI5-EM-n7T"/>
+                            <constraint firstItem="zDp-YU-ejM" firstAttribute="leading" secondItem="H9w-3n-NfZ" secondAttribute="leading" constant="34" id="WVN-Kf-CK3"/>
+                            <constraint firstItem="KbE-EL-D0p" firstAttribute="top" secondItem="Yhk-6M-73b" secondAttribute="bottom" id="ZzL-xJ-jiZ"/>
+                            <constraint firstItem="sAa-GL-afd" firstAttribute="leading" secondItem="H9w-3n-NfZ" secondAttribute="leading" constant="20" id="aGZ-6S-d9d"/>
+                            <constraint firstItem="QfR-Qg-kxg" firstAttribute="leading" secondItem="H9w-3n-NfZ" secondAttribute="leading" constant="20" id="hsX-D8-jQi"/>
+                            <constraint firstItem="sAa-GL-afd" firstAttribute="top" secondItem="zDp-YU-ejM" secondAttribute="bottom" constant="35" id="jht-vF-cKF"/>
+                            <constraint firstAttribute="trailing" secondItem="944-fq-N1q" secondAttribute="trailing" constant="34" id="nen-DJ-0Og"/>
+                            <constraint firstItem="Yhk-6M-73b" firstAttribute="leading" secondItem="H9w-3n-NfZ" secondAttribute="leading" id="rNn-IA-D71"/>
+                            <constraint firstItem="kpd-uY-GfE" firstAttribute="leading" secondItem="H9w-3n-NfZ" secondAttribute="leading" constant="35" id="vpu-0d-ZDh"/>
+                            <constraint firstAttribute="trailing" secondItem="sAa-GL-afd" secondAttribute="trailing" constant="20" id="y47-NT-3fX"/>
+                            <constraint firstItem="SQl-x5-ESp" firstAttribute="leading" secondItem="H9w-3n-NfZ" secondAttribute="leading" constant="122" id="yb8-vQ-KQq"/>
+                            <constraint firstItem="944-fq-N1q" firstAttribute="top" secondItem="SQl-x5-ESp" secondAttribute="bottom" constant="72" id="zMg-RD-ZCn"/>
+                        </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -136,14 +182,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gXl-KX-3YN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gXl-KX-3YN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gXl-KX-3YN" secondAttribute="height" multiplier="375:667" id="j62-rz-GkB"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1sI-Ui-z2x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1sI-Ui-z2x">
                                 <rect key="frame" x="122" y="50" width="130" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1sI-Ui-z2x" secondAttribute="height" multiplier="13:15" id="QTd-Bd-eLi"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUi-lS-F3s">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUi-lS-F3s">
                                 <rect key="frame" x="20" y="616" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pUi-lS-F3s" secondAttribute="height" multiplier="67:6" id="lJu-ax-Qbn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <state key="normal" title="Já possui uma conta?">
                                     <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -152,44 +207,86 @@
                                     <segue destination="fEX-ma-AGZ" kind="show" identifier="goToLogin" id="vx4-Qe-oLs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyC-TS-gF4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyC-TS-gF4">
                                 <rect key="frame" x="34" y="540" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QyC-TS-gF4" secondAttribute="height" multiplier="153:20" id="QfD-WZ-XBN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <state key="normal" title="CADASTRAR">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jp3-VR-33x">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jp3-VR-33x">
                                 <rect key="frame" x="34" y="237" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jp3-VR-33x" secondAttribute="height" multiplier="153:20" id="bIj-26-oSD"/>
+                                </constraints>
                                 <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iul-JV-f0u">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iul-JV-f0u">
                                 <rect key="frame" x="34" y="313" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iul-JV-f0u" secondAttribute="height" multiplier="153:20" id="QhV-EG-FdT"/>
+                                </constraints>
                                 <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sn4-Ph-Mbk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sn4-Ph-Mbk">
                                 <rect key="frame" x="34" y="389" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sn4-Ph-Mbk" secondAttribute="height" multiplier="153:20" id="Qpu-o7-Hhs"/>
+                                </constraints>
                                 <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uOm-nd-jRp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uOm-nd-jRp">
                                 <rect key="frame" x="34" y="464" width="306" height="40"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uOm-nd-jRp" secondAttribute="height" multiplier="153:20" id="eOJ-mZ-vKp"/>
+                                </constraints>
                                 <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uOm-nd-jRp" secondAttribute="trailing" constant="35" id="4rT-Oy-r7f"/>
+                            <constraint firstItem="Onb-Zd-sqH" firstAttribute="top" secondItem="pUi-lS-F3s" secondAttribute="bottom" constant="21" id="75p-ww-jFf"/>
+                            <constraint firstItem="QyC-TS-gF4" firstAttribute="top" secondItem="uOm-nd-jRp" secondAttribute="bottom" constant="36" id="ELY-n3-G3Q"/>
+                            <constraint firstItem="iul-JV-f0u" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" constant="34" id="FI3-bj-yu4"/>
+                            <constraint firstItem="Sn4-Ph-Mbk" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" constant="34" id="GVr-TJ-UW0"/>
+                            <constraint firstAttribute="trailing" secondItem="jp3-VR-33x" secondAttribute="trailing" constant="35" id="IRI-2X-srx"/>
+                            <constraint firstItem="jp3-VR-33x" firstAttribute="top" secondItem="1sI-Ui-z2x" secondAttribute="bottom" constant="37" id="Ke6-NQ-5Vx"/>
+                            <constraint firstItem="1sI-Ui-z2x" firstAttribute="top" secondItem="26T-y8-lro" secondAttribute="bottom" constant="50" id="Ktj-vg-Kj8"/>
+                            <constraint firstItem="1sI-Ui-z2x" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" constant="122" id="LnR-UM-ofM"/>
+                            <constraint firstItem="pUi-lS-F3s" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" constant="20" id="N77-y1-zt1"/>
+                            <constraint firstAttribute="trailing" secondItem="QyC-TS-gF4" secondAttribute="trailing" constant="35" id="NYe-09-ziM"/>
+                            <constraint firstItem="gXl-KX-3YN" firstAttribute="top" secondItem="ufK-Fg-3sQ" secondAttribute="top" id="QH1-yO-AOZ"/>
+                            <constraint firstItem="uOm-nd-jRp" firstAttribute="top" secondItem="Sn4-Ph-Mbk" secondAttribute="bottom" constant="35" id="Sf2-wl-WsM"/>
+                            <constraint firstAttribute="trailing" secondItem="1sI-Ui-z2x" secondAttribute="trailing" constant="123" id="TsV-MN-H6i"/>
+                            <constraint firstItem="Sn4-Ph-Mbk" firstAttribute="top" secondItem="iul-JV-f0u" secondAttribute="bottom" constant="36" id="XI6-Di-Nb0"/>
+                            <constraint firstItem="QyC-TS-gF4" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" constant="34" id="ZxI-pd-gJw"/>
+                            <constraint firstAttribute="trailing" secondItem="gXl-KX-3YN" secondAttribute="trailing" id="b6b-AE-EYS"/>
+                            <constraint firstItem="uOm-nd-jRp" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" constant="34" id="cSD-RA-iyE"/>
+                            <constraint firstItem="iul-JV-f0u" firstAttribute="top" secondItem="jp3-VR-33x" secondAttribute="bottom" constant="36" id="dhz-ha-igC"/>
+                            <constraint firstAttribute="trailing" secondItem="iul-JV-f0u" secondAttribute="trailing" constant="35" id="gnb-jH-sjs"/>
+                            <constraint firstItem="Onb-Zd-sqH" firstAttribute="top" secondItem="gXl-KX-3YN" secondAttribute="bottom" id="l2g-fP-xYB"/>
+                            <constraint firstAttribute="trailing" secondItem="Sn4-Ph-Mbk" secondAttribute="trailing" constant="35" id="nug-fS-zfD"/>
+                            <constraint firstItem="jp3-VR-33x" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" constant="34" id="vZH-fE-pnl"/>
+                            <constraint firstItem="gXl-KX-3YN" firstAttribute="leading" secondItem="ufK-Fg-3sQ" secondAttribute="leading" id="y1o-aO-Xm4"/>
+                            <constraint firstAttribute="trailing" secondItem="pUi-lS-F3s" secondAttribute="trailing" constant="20" id="y5T-oJ-ZHC"/>
+                        </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -221,7 +318,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OLÁ, NOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ch-nL-3jn">
-                                <rect key="frame" x="44" y="19" width="288" height="21"/>
+                                <rect key="frame" x="40" y="19" width="296" height="21"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -234,14 +331,14 @@
                                 <rect key="frame" x="64" y="122" width="78" height="71"/>
                                 <state key="normal" image="perfil"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jK-TZ-Rkf" userLabel="Medicos Button">
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jK-TZ-Rkf" userLabel="Medicos Button">
                                 <rect key="frame" x="220" y="124" width="108" height="69"/>
                                 <state key="normal" image="medicos"/>
                                 <connections>
                                     <segue destination="mo1-PI-I91" kind="show" identifier="goToMedicos" id="Mi3-Ba-rP4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHa-wP-JyZ" userLabel="Exames Button">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHa-wP-JyZ" userLabel="Exames Button">
                                 <rect key="frame" x="73" y="312" width="60" height="54"/>
                                 <state key="normal" image="exames"/>
                             </button>
@@ -249,7 +346,7 @@
                                 <rect key="frame" x="232" y="296" width="71" height="72"/>
                                 <state key="normal" image="vacinas"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-5G-B6P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-5G-B6P">
                                 <rect key="frame" x="72" y="208" width="63" height="21"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -284,7 +381,7 @@
                                         <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="duG-B1-iGb" id="Ydq-jO-YkF">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -703,7 +800,7 @@
         <image name="vacinas" width="71" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gWH-pf-Ehz"/>
-        <segue reference="8ov-kL-mgk"/>
+        <segue reference="mk2-wS-HCc"/>
+        <segue reference="Mi3-Ba-rP4"/>
     </inferredMetricsTieBreakers>
 </document>
