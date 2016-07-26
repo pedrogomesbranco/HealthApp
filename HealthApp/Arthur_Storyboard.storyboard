@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3AX-aO-7XX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3AX-aO-7XX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="GothamRounded-Book.otf">
@@ -43,20 +44,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-fN-q1N">
-                                <rect key="frame" x="0.0" y="28" width="375" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-fN-q1N">
+                                <rect key="frame" x="148" y="30" width="79" height="17"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDx-8V-fFV">
-                                <rect key="frame" x="317" y="24" width="30" height="30"/>
-                                <state key="normal" title="Add"/>
-                                <connections>
-                                    <segue destination="SHm-76-PpR" kind="presentation" id="oDE-go-mcB"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cLC-ic-qJI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cLC-ic-qJI">
                                 <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -101,8 +95,42 @@
                                     <outlet property="delegate" destination="wvX-Lo-sJr" id="pLN-d8-KUc"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDx-8V-fFV">
+                                <rect key="frame" x="317" y="20" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HRt-R9-bcs"/>
+                                    <constraint firstAttribute="width" constant="32" id="YNa-xB-aDQ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="yellowAdd"/>
+                                <connections>
+                                    <segue destination="SHm-76-PpR" kind="presentation" id="oDE-go-mcB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cLC-ic-qJI" firstAttribute="leading" secondItem="D5q-x6-5SW" secondAttribute="leading" id="1jn-Dg-iwW"/>
+                            <constraint firstItem="MRf-fN-q1N" firstAttribute="top" secondItem="cfb-fb-1fD" secondAttribute="bottom" constant="10" id="Eo5-Fd-OJG"/>
+                            <constraint firstItem="cLC-ic-qJI" firstAttribute="leading" secondItem="D5q-x6-5SW" secondAttribute="leadingMargin" id="HPL-W3-YfA"/>
+                            <constraint firstItem="MRf-fN-q1N" firstAttribute="centerX" secondItem="D5q-x6-5SW" secondAttribute="centerX" id="KNC-iM-Oz7"/>
+                            <constraint firstItem="VDx-8V-fFV" firstAttribute="leading" secondItem="MRf-fN-q1N" secondAttribute="trailing" constant="90" id="QVY-rQ-Mfh"/>
+                            <constraint firstItem="ijy-KZ-LUF" firstAttribute="top" secondItem="cLC-ic-qJI" secondAttribute="bottom" id="R1p-Fb-0HN"/>
+                            <constraint firstItem="cLC-ic-qJI" firstAttribute="top" secondItem="MRf-fN-q1N" secondAttribute="bottom" constant="47" id="cE8-EY-C4W"/>
+                            <constraint firstItem="ijy-KZ-LUF" firstAttribute="top" secondItem="cLC-ic-qJI" secondAttribute="bottom" id="dPP-y6-Jnk"/>
+                            <constraint firstAttribute="trailing" secondItem="cLC-ic-qJI" secondAttribute="trailing" id="gTn-ac-MP0"/>
+                            <constraint firstItem="VDx-8V-fFV" firstAttribute="top" secondItem="cfb-fb-1fD" secondAttribute="bottom" id="jJl-vk-u0R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cLC-ic-qJI" secondAttribute="trailing" id="l39-rw-mS2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VDx-8V-fFV" secondAttribute="trailing" constant="10" id="oIW-KD-DxL"/>
+                            <constraint firstItem="VDx-8V-fFV" firstAttribute="top" secondItem="D5q-x6-5SW" secondAttribute="topMargin" constant="10" id="wZO-Hm-5nT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HPL-W3-YfA"/>
+                                <exclude reference="l39-rw-mS2"/>
+                                <exclude reference="wZO-Hm-5nT"/>
+                                <exclude reference="R1p-Fb-0HN"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -523,5 +551,6 @@
     </scenes>
     <resources>
         <image name="userImage" width="153" height="136"/>
+        <image name="yellowAdd" width="75" height="75"/>
     </resources>
 </document>
