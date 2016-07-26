@@ -15,6 +15,7 @@ class DetalheVacina: UIViewController {
     var recebeString2:String!
     var recebeString3:String!
     
+    //outlets
     @IBOutlet var nomeVacina: UILabel!
     @IBOutlet var administracaoVacina: UILabel!
     @IBOutlet var validadeVacina: UILabel!
