@@ -10,6 +10,9 @@ import UIKit
 
 class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBAction func adicionar(sender: AnyObject) {
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
