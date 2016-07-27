@@ -39,8 +39,6 @@ class Medicos: UIViewController {
 }
 
 
-
-
 extension Medicos : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -9,33 +9,38 @@
 import UIKit
 
 class AdicionarVacina: UIViewController {
-
+    
     
     
     //esses são os textfields em que o usuário vai dar input nas informações
     
     @IBOutlet var textField1: UITextField!
-    @IBOutlet var textField2: UITextField!
-    @IBOutlet var textField3: UITextField!
+    
     @IBOutlet var textField4: UITextField!
     
-     override func viewDidLoad() {
+    @IBOutlet var simnao: UISwitch!
+    override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         textFieldStyles(textField1)
-        textFieldStyles(textField2)
-        textFieldStyles(textField3)
         textFieldStyles(textField4)
-
+        
     }
-
+    
+    @IBOutlet var myDatePicker: UIDatePicker!
+    @IBOutlet var myDatePicker2: UIDatePicker!
     
     // a partir daqui: ****KEYBOARD****
     
+    @IBAction func ativar(sender: AnyObject) {
+            myDatePicker2.hidden = !simnao.on
+    }
     
     // Movimentar a View quando o Keyboard surgir
     
     var keyboardHeight: CGFloat!
+    var quando: String = ""
+    var proxima: String = ""
     
     func animateTextField(up: Bool) {
         
@@ -82,4 +87,54 @@ class AdicionarVacina: UIViewController {
         textField.leftView = SpacerView
     }
     
+    @IBAction func datePickerAction(sender: AnyObject) {
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        let strDate = dateFormatter.stringFromDate(myDatePicker.date)
+        self.quando = strDate
+    }
+    
+    @IBAction func datePickerAction2(sender: AnyObject) {
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        let strDate = dateFormatter.stringFromDate(myDatePicker2.date)
+        self.proxima = strDate
+    }
+    
+    
+    @IBAction func adicionar(sender: AnyObject) {
+        
+        var nomeVacinas = NSUserDefaults.standardUserDefaults().objectForKey("nomeVacinas") as! [String]
+        var administracaoVacinas = NSUserDefaults.standardUserDefaults().objectForKey("administracaoVacinas") as! [String]
+        var validadeVacinas = NSUserDefaults.standardUserDefaults().objectForKey("validadeVacinas") as! [String]
+        var proximaDose = NSUserDefaults.standardUserDefaults().objectForKey("proximaDose") as! [String]
+        
+        if(textField1.text != "" && textField4.text != ""){
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            nomeVacinas.append(textField1.text!)
+            administracaoVacinas.append(dateFormatter.stringFromDate(myDatePicker.date))
+            if(proxima == ""){
+                proximaDose.append("")
+            }
+            else{
+                proximaDose.append(dateFormatter.stringFromDate(myDatePicker2.date))
+            }
+            validadeVacinas.append(textField4.text!)
+        }
+        else{
+            let alerta = UIAlertController(title: "Atenção", message: "Preencha todas as informações", preferredStyle: .Alert)
+            alerta.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+            self.presentViewController(alerta, animated: true, completion: nil)
+        }
+        
+        NSUserDefaults.standardUserDefaults().setObject(nomeVacinas, forKey: "nomeVacinas")
+        NSUserDefaults.standardUserDefaults().setObject(administracaoVacinas, forKey: "administracaoVacinas")
+        NSUserDefaults.standardUserDefaults().setObject(validadeVacinas, forKey: "validadeVacinas")
+        NSUserDefaults.standardUserDefaults().setObject(proximaDose, forKey: "proximaDose")
+        
+        self.performSegueWithIdentifier("adicionado", sender: self)
+    }
 }
