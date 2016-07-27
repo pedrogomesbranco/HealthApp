@@ -11,6 +11,15 @@ import UIKit
 
 class VacinaCell: UITableViewCell {
     
+    @IBOutlet var img5: UIImageView!
+    @IBOutlet var img4: UIImageView!
+    
+    @IBOutlet var img3: UIImageView!
+    
+    @IBOutlet var img2: UIImageView!
+    
+    @IBOutlet var img1: UIImageView!
+    
     //labels da célula da TableView de vacinas
     
     //nome da vacina
