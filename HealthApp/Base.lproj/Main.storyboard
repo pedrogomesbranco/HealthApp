@@ -215,9 +215,13 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="45" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALL-wL-Xu0">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="45" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALL-wL-Xu0">
                                 <rect key="frame" x="59" y="575" width="256" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Uc-Ac-wYV"/>
+                                    <constraint firstAttribute="width" constant="256" id="bV4-pi-whd"/>
+                                </constraints>
                                 <state key="normal" title="Atualizar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -247,12 +251,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-c2-Ipu">
-                                <rect key="frame" x="36" y="292" width="222" height="49"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zFi-SS-hhD">
                                 <rect key="frame" x="32" y="287" width="290" height="59"/>
                                 <constraints>
@@ -293,8 +291,14 @@
                                     <action selector="ativar:" destination="qlX-qS-TsC" eventType="valueChanged" id="Luj-nd-B01"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OBS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0k-hB-z1R">
-                                <rect key="frame" x="36" y="468" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-MR-9pi">
+                                <rect key="frame" x="32" y="487" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0k-hB-z1R">
+                                <rect key="frame" x="32" y="468" width="29.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -326,8 +330,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-MR-9pi">
-                                <rect key="frame" x="36" y="487" width="215" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-c2-Ipu">
+                                <rect key="frame" x="32" y="300" width="44.5" height="21"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
                                 <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -349,6 +353,7 @@
                             <constraint firstItem="DMe-az-WeT" firstAttribute="leading" secondItem="fMs-Bv-enw" secondAttribute="trailing" constant="15" id="KEa-M6-dg9"/>
                             <constraint firstItem="ems-1v-N5p" firstAttribute="top" secondItem="zFi-SS-hhD" secondAttribute="bottom" constant="15" id="KFE-VB-0yW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Kgs-kl-CtN" secondAttribute="trailing" constant="33" id="O7F-9Y-mVK"/>
+                            <constraint firstItem="v6M-c2-Ipu" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="12" id="O7p-PA-Tv3"/>
                             <constraint firstItem="ldu-sT-Gjs" firstAttribute="top" secondItem="0jh-4F-BJj" secondAttribute="bottom" id="S9D-6J-jz2"/>
                             <constraint firstItem="zFi-SS-hhD" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="VJy-TE-aMA"/>
                             <constraint firstItem="DMe-az-WeT" firstAttribute="top" secondItem="Scb-tu-NhH" secondAttribute="bottom" constant="16" id="Y3O-aj-UdY"/>
@@ -357,6 +362,7 @@
                             <constraint firstItem="fMs-Bv-enw" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="aaD-4D-TlA"/>
                             <constraint firstItem="gaV-MR-9pi" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="bHp-ZH-6FE"/>
                             <constraint firstItem="d0k-hB-z1R" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="bcR-TG-dJ6"/>
+                            <constraint firstItem="v6M-c2-Ipu" firstAttribute="top" secondItem="fMs-Bv-enw" secondAttribute="bottom" constant="35.5" id="cf9-Vd-8UO"/>
                             <constraint firstItem="xnx-vX-KKW" firstAttribute="top" secondItem="iUw-y7-cKo" secondAttribute="bottom" constant="22" id="cvt-yh-O4L"/>
                             <constraint firstItem="Ovo-bR-oOe" firstAttribute="top" secondItem="ALL-wL-Xu0" secondAttribute="bottom" constant="42" id="cyG-52-LwH"/>
                             <constraint firstItem="ems-1v-N5p" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="12" id="eMn-YE-qBP"/>
@@ -399,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YoX-yL-sBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614.5" y="313.5"/>
+            <point key="canvasLocation" x="601.5" y="425.5"/>
         </scene>
         <!--Adicionar Vacina-->
         <scene sceneID="JY0-4D-8XR">
@@ -430,12 +436,6 @@
                                 <rect key="frame" x="26" y="185" width="70.5" height="20"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADICIONAR VACINA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftT-RM-ySk">
-                                <rect key="frame" x="109" y="30" width="157.5" height="20"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual vacina você tomou?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpp-bl-f7y">
@@ -477,6 +477,20 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ktn-xy-Z8P">
+                                <rect key="frame" x="26.5" y="373" width="322" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="5b0-tE-wNG"/>
+                                    <constraint firstAttribute="width" constant="322" id="Nho-HP-gGz"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="491320571.09228098">
+                                    <!--2016-07-27 13:56:11 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
+                                <connections>
+                                    <action selector="datePickerAction2:" destination="P7L-JB-PGB" eventType="valueChanged" id="wME-I6-KLV"/>
+                                </connections>
+                            </datePicker>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-ei-3H2">
                                 <rect key="frame" x="217" y="334" width="51" height="31"/>
                                 <connections>
@@ -504,20 +518,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ktn-xy-Z8P">
-                                <rect key="frame" x="26.5" y="373" width="322" height="113"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="5b0-tE-wNG"/>
-                                    <constraint firstAttribute="width" constant="322" id="Nho-HP-gGz"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="491320571.09228098">
-                                    <!--2016-07-27 13:56:11 +0000-->
-                                </date>
-                                <locale key="locale" localeIdentifier="pt_BR"/>
-                                <connections>
-                                    <action selector="datePickerAction2:" destination="P7L-JB-PGB" eventType="valueChanged" id="wME-I6-KLV"/>
-                                </connections>
-                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADICIONAR VACINA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftT-RM-ySk">
+                                <rect key="frame" x="109" y="30" width="157.5" height="20"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1267,18 +1273,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGq-2R-UGH">
-                                <rect key="frame" x="151" y="30" width="74" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGq-2R-UGH">
+                                <rect key="frame" x="154" y="30" width="68" height="20"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.31764705879999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHm-JI-JTQ">
-                                <rect key="frame" x="317" y="28" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHm-JI-JTQ">
+                                <rect key="frame" x="314" y="28" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-EC-VMU">
-                                <rect key="frame" x="0.0" y="104" width="375" height="356"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-EC-VMU">
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qfp-f8-LaP">
@@ -1294,9 +1300,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Drs-EC-VMU" firstAttribute="top" secondItem="qHm-JI-JTQ" secondAttribute="bottom" constant="8" symbolic="YES" id="AZD-Rp-U6f"/>
+                            <constraint firstItem="Drs-EC-VMU" firstAttribute="leading" secondItem="aaH-9c-88d" secondAttribute="leading" id="DRs-Gx-QMp"/>
+                            <constraint firstItem="Nm6-Uj-Sp6" firstAttribute="top" secondItem="Drs-EC-VMU" secondAttribute="bottom" id="Dtw-hd-mNP"/>
                             <constraint firstItem="nGq-2R-UGH" firstAttribute="top" secondItem="0cV-o8-Z3f" secondAttribute="bottom" constant="10" id="PHU-3r-FXb"/>
+                            <constraint firstItem="nGq-2R-UGH" firstAttribute="top" secondItem="0cV-o8-Z3f" secondAttribute="bottom" constant="30" id="RUo-Mp-7P9"/>
+                            <constraint firstItem="Drs-EC-VMU" firstAttribute="top" secondItem="nGq-2R-UGH" secondAttribute="bottom" constant="38" id="YmW-sO-NeV"/>
+                            <constraint firstAttribute="trailing" secondItem="Drs-EC-VMU" secondAttribute="trailing" id="apO-0p-bzW"/>
                             <constraint firstItem="nGq-2R-UGH" firstAttribute="centerX" secondItem="aaH-9c-88d" secondAttribute="centerX" id="dyy-V2-NWi"/>
+                            <constraint firstItem="qHm-JI-JTQ" firstAttribute="top" secondItem="0cV-o8-Z3f" secondAttribute="bottom" constant="28" id="gbv-E7-999"/>
+                            <constraint firstItem="Nm6-Uj-Sp6" firstAttribute="top" secondItem="Drs-EC-VMU" secondAttribute="bottom" id="qDq-KL-naI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Drs-EC-VMU" secondAttribute="trailing" id="sFm-O7-Q4D"/>
+                            <constraint firstItem="qHm-JI-JTQ" firstAttribute="leading" secondItem="nGq-2R-UGH" secondAttribute="trailing" constant="92" id="vJv-fT-d6T"/>
+                            <constraint firstItem="Drs-EC-VMU" firstAttribute="leading" secondItem="aaH-9c-88d" secondAttribute="leadingMargin" id="vag-qp-0Zg"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AZD-Rp-U6f"/>
+                                <exclude reference="sFm-O7-Q4D"/>
+                                <exclude reference="vag-qp-0Zg"/>
+                                <exclude reference="PHU-3r-FXb"/>
+                                <exclude reference="qDq-KL-naI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1322,7 +1348,7 @@
         <image name="yellowAdd" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3SW-bi-XLj"/>
+        <segue reference="ecH-SJ-0Y1"/>
         <segue reference="3vp-h4-Ebp"/>
     </inferredMetricsTieBreakers>
 </document>
