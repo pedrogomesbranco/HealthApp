@@ -12,18 +12,35 @@ class AdicionarVacina: UIViewController {
     
     @IBOutlet var validadeSlider: UISlider!
     @IBAction func mudandoValidade(sender: AnyObject) {
+        let currentValue = Int(validadeSlider.value)
+        if(Int(validadeSlider.value) == 11){
+            validadeLabel.text = "Vitalícia"
+        }
+        else{
+            validadeLabel.text = "\(currentValue) anos"
+        }
     }
-    @IBOutlet var validadeLabel: UILabel!
     
-    //esses são os textfields em que o usuário vai dar input nas informações
+    @IBOutlet var validadeLabel: UILabel!
     
     @IBOutlet var textField1: UITextField!
     
     @IBOutlet var textField4: UITextField!
     
     @IBOutlet var simnao: UISwitch!
+    
+    var pessoa: pessoas!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let currentValue = Int(validadeSlider.value)
+
+        if(Int(validadeSlider.value) == 11){
+            validadeLabel.text = "Vitalícia"
+        }
+        else{
+            validadeLabel.text = "\(currentValue) anos"
+        }
         
         textFieldStyles(textField1)
         textFieldStyles(textField4)
@@ -110,23 +127,26 @@ class AdicionarVacina: UIViewController {
     
     @IBAction func adicionar(sender: AnyObject) {
         
-        var nomeVacinas = NSUserDefaults.standardUserDefaults().objectForKey("nomeVacinas") as! [String]
-        var administracaoVacinas = NSUserDefaults.standardUserDefaults().objectForKey("administracaoVacinas") as! [String]
-        var validadeVacinas = NSUserDefaults.standardUserDefaults().objectForKey("validadeVacinas") as! [String]
-        var proximaDose = NSUserDefaults.standardUserDefaults().objectForKey("proximaDose") as! [String]
+        pessoa.vacina.vacinas = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)vacinas") as! [String]
+        pessoa.vacina.administracaoVacinas = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)administracaoVacinas") as! [String]
+        pessoa.vacina.validadeVacinas = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)validadeVacinas") as! [String]
+        pessoa.vacina.proximaDose = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)proximaDose") as! [String]
+        pessoa.vacina.validadeVacinas = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)validadeVacinas") as! [String]
+        pessoa.vacina.numeroDeDoses = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)numeroDeDoses") as! [String]
+        pessoa.vacina.obs = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)obs") as! [String]
         
         if(textField1.text != "" && textField4.text != ""){
             let dateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy"
-            nomeVacinas.append(textField1.text!)
-            administracaoVacinas.append(dateFormatter.stringFromDate(myDatePicker.date))
+            pessoa.vacina.vacinas.append(textField1.text!)
+             pessoa.vacina.administracaoVacinas.append(dateFormatter.stringFromDate(myDatePicker.date))
             if(proxima == ""){
-                proximaDose.append("")
+                 pessoa.vacina.proximaDose.append("")
             }
             else{
-                proximaDose.append(dateFormatter.stringFromDate(myDatePicker2.date))
+                 pessoa.vacina.proximaDose.append(dateFormatter.stringFromDate(myDatePicker2.date))
             }
-            validadeVacinas.append(textField4.text!)
+             pessoa.vacina.validadeVacinas.append(textField4.text!)
         }
         else{
             let alerta = UIAlertController(title: "Atenção", message: "Preencha todas as informações", preferredStyle: .Alert)
@@ -134,10 +154,12 @@ class AdicionarVacina: UIViewController {
             self.presentViewController(alerta, animated: true, completion: nil)
         }
         
-        NSUserDefaults.standardUserDefaults().setObject(nomeVacinas, forKey: "nomeVacinas")
-        NSUserDefaults.standardUserDefaults().setObject(administracaoVacinas, forKey: "administracaoVacinas")
-        NSUserDefaults.standardUserDefaults().setObject(validadeVacinas, forKey: "validadeVacinas")
-        NSUserDefaults.standardUserDefaults().setObject(proximaDose, forKey: "proximaDose")
+        NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.vacinas, forKey: "\(pessoa.nome)vacinas")
+        NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.administracaoVacinas, forKey: "\(pessoa.nome)administracaoVacinas")
+        NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.validadeVacinas, forKey: "\(pessoa.nome)validadeVacinas")
+        NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.proximaDose, forKey: "\(pessoa.nome)proximaDose")
+        NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.numeroDeDoses, forKey: "\(pessoa.nome)numeroDeDoses")
+        NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.obs, forKey: "\(pessoa.nome)obs")
         
         self.performSegueWithIdentifier("adicionado", sender: self)
     }
