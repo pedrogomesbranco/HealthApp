@@ -466,7 +466,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ktn-xy-Z8P">
-                                <rect key="frame" x="26.5" y="373" width="322" height="113"/>
+                                <rect key="frame" x="26" y="373" width="322" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113" id="5b0-tE-wNG"/>
                                     <constraint firstAttribute="width" constant="322" id="Nho-HP-gGz"/>
@@ -479,12 +479,6 @@
                                     <action selector="datePickerAction2:" destination="P7L-JB-PGB" eventType="valueChanged" id="wME-I6-KLV"/>
                                 </connections>
                             </datePicker>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-ei-3H2">
-                                <rect key="frame" x="217" y="334" width="51" height="31"/>
-                                <connections>
-                                    <action selector="ativar:" destination="P7L-JB-PGB" eventType="valueChanged" id="eSt-kU-r8v"/>
-                                </connections>
-                            </switch>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-JM-O0a">
                                 <rect key="frame" x="-2" y="0.0" width="4" height="31"/>
                                 <connections>
@@ -508,6 +502,12 @@
                                 <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-ei-3H2">
+                                <rect key="frame" x="226.5" y="335" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ativar:" destination="P7L-JB-PGB" eventType="valueChanged" id="eSt-kU-r8v"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -526,7 +526,7 @@
                             <constraint firstItem="ktn-xy-Z8P" firstAttribute="top" secondItem="8Ej-ei-3H2" secondAttribute="bottom" constant="8" id="IeN-qg-Jqr"/>
                             <constraint firstItem="pyn-Gk-VV8" firstAttribute="leading" secondItem="qs6-kD-E0H" secondAttribute="trailing" constant="24" id="Lzt-TI-Qao"/>
                             <constraint firstItem="Oa7-3l-uC3" firstAttribute="top" secondItem="vY2-MV-6b7" secondAttribute="bottom" constant="15" id="OLO-au-ebf"/>
-                            <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="15" id="Q7a-PQ-SWu"/>
+                            <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="25" id="Q7a-PQ-SWu"/>
                             <constraint firstItem="Xuh-CN-k9l" firstAttribute="top" secondItem="pyn-Gk-VV8" secondAttribute="bottom" constant="14" id="Rco-ku-Bhf"/>
                             <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="8" id="S0m-ny-xyu"/>
                             <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="14" id="TH9-Dv-GNk"/>
@@ -1330,7 +1330,7 @@
         <image name="yellowAdd" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3SW-bi-XLj"/>
+        <segue reference="ecH-SJ-0Y1"/>
         <segue reference="3vp-h4-Ebp"/>
     </inferredMetricsTieBreakers>
 </document>
