@@ -13,7 +13,7 @@ class AdicionarVacina: UIViewController {
     @IBOutlet var validadeSlider: UISlider!
     @IBAction func mudandoValidade(sender: AnyObject) {
     }
-    
+    @IBOutlet var validadeLabel: UILabel!
     
     //esses são os textfields em que o usuário vai dar input nas informações
     
@@ -105,6 +105,7 @@ class AdicionarVacina: UIViewController {
         let strDate = dateFormatter.stringFromDate(myDatePicker2.date)
         self.proxima = strDate
     }
+    
     
     
     @IBAction func adicionar(sender: AnyObject) {

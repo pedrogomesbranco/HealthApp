@@ -297,6 +297,12 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-y2-TQm">
+                                <rect key="frame" x="115" y="451" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-kl-CtN">
                                 <rect key="frame" x="34" y="413" width="118" height="31"/>
                                 <connections>
@@ -317,6 +323,7 @@
                         <outlet property="simnao" destination="DMe-az-WeT" id="M02-RM-Xhf"/>
                         <outlet property="sliderValidade" destination="Kgs-kl-CtN" id="LZ3-RP-dNE"/>
                         <outlet property="text1" destination="iUw-y7-cKo" id="sXj-Kq-0HO"/>
+                        <outlet property="validadeLabel" destination="S2e-y2-TQm" id="Svb-Vb-olg"/>
                         <outlet property="validadeVacina" destination="crQ-ct-FEk" id="B5q-ty-26O"/>
                         <segue destination="t8u-au-Bag" kind="show" identifier="atualizado" id="3SW-bi-XLj"/>
                     </connections>
@@ -377,7 +384,7 @@
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oa7-3l-uC3">
-                                <rect key="frame" x="26" y="204" width="290" height="124"/>
+                                <rect key="frame" x="26" y="204" width="329" height="126"/>
                                 <date key="date" timeIntervalSinceReferenceDate="491320571.09228098">
                                     <!--2016-07-27 13:56:11 +0000-->
                                 </date>
@@ -423,8 +430,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs6-kD-E0H">
+                                <rect key="frame" x="121" y="572" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-JM-O0a">
-                                <rect key="frame" x="39" y="563" width="118" height="31"/>
+                                <rect key="frame" x="39" y="533" width="118" height="31"/>
                                 <connections>
                                     <action selector="mudandoValidade:" destination="P7L-JB-PGB" eventType="valueChanged" id="EUU-nw-sTS"/>
                                 </connections>
@@ -433,20 +446,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NvC-5L-s0K" firstAttribute="top" secondItem="rpp-bl-f7y" secondAttribute="bottom" constant="10" id="1hl-Cw-z7G"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="2vo-df-4lE"/>
-                            <constraint firstItem="gjx-h2-BzF" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="5KZ-9e-EpT"/>
+                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="171" id="2vo-df-4lE"/>
+                            <constraint firstItem="gjx-h2-BzF" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="6" id="5KZ-9e-EpT"/>
                             <constraint firstItem="vY2-MV-6b7" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="97G-zr-xDJ"/>
                             <constraint firstItem="Xuh-CN-k9l" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="B9S-fN-ogs"/>
-                            <constraint firstItem="t0u-dt-1qr" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="CxL-30-eml"/>
+                            <constraint firstItem="t0u-dt-1qr" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="6" id="CxL-30-eml"/>
                             <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="Fa7-bo-uOe"/>
                             <constraint firstItem="rpp-bl-f7y" firstAttribute="top" secondItem="ftT-RM-ySk" secondAttribute="bottom" constant="50" id="Hqh-Cp-vow"/>
                             <constraint firstItem="rpp-bl-f7y" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="V4s-nk-RYq"/>
                             <constraint firstItem="Y95-Jh-90q" firstAttribute="top" secondItem="Xuh-CN-k9l" secondAttribute="bottom" constant="30" id="dd2-8y-SFN"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="width" secondItem="NvC-5L-s0K" secondAttribute="width" id="ejb-fr-CPO"/>
+                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="width" secondItem="NvC-5L-s0K" secondAttribute="width" constant="-180" id="ejb-fr-CPO"/>
                             <constraint firstItem="vY2-MV-6b7" firstAttribute="top" secondItem="NvC-5L-s0K" secondAttribute="bottom" constant="25" id="j3e-eU-2MT"/>
                             <constraint firstItem="ftT-RM-ySk" firstAttribute="top" secondItem="5o3-Qz-I3Q" secondAttribute="bottom" constant="10" id="lqS-x8-XB8"/>
                             <constraint firstItem="NvC-5L-s0K" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="rll-OX-0I6"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="top" secondItem="gjx-h2-BzF" secondAttribute="bottom" constant="10" id="tnE-wa-egO"/>
+                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="top" secondItem="gjx-h2-BzF" secondAttribute="bottom" constant="46" id="tnE-wa-egO"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -456,6 +469,7 @@
                         <outlet property="simnao" destination="8Ej-ei-3H2" id="TTw-J5-8aP"/>
                         <outlet property="textField1" destination="NvC-5L-s0K" id="gtA-g0-eJH"/>
                         <outlet property="textField4" destination="pyn-Gk-VV8" id="Utf-hE-nl5"/>
+                        <outlet property="validadeLabel" destination="qs6-kD-E0H" id="xkd-mK-GTB"/>
                         <outlet property="validadeSlider" destination="Uoc-JM-O0a" id="DKk-O1-Sj7"/>
                         <segue destination="t8u-au-Bag" kind="show" identifier="adicionado" id="ecH-SJ-0Y1"/>
                     </connections>

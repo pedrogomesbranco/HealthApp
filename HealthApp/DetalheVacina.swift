@@ -10,6 +10,7 @@ import UIKit
 
 class DetalheVacina: UIViewController {
     
+    @IBOutlet var validadeLabel: UILabel!
     @IBOutlet var sliderValidade: UISlider!
     @IBAction func mudandoValidade(sender: AnyObject) {
     }
