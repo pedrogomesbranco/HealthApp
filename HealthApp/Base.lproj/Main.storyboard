@@ -53,10 +53,6 @@
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
-            <string>GothamRounded-Medium</string>
-            <string>GothamRounded-Medium</string>
-            <string>GothamRounded-Medium</string>
-            <string>GothamRounded-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -72,6 +68,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdG-WA-GIy">
+                                <rect key="frame" x="148" y="30" width="79" height="17"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7R-0F-H5P">
+                                <rect key="frame" x="20" y="24" width="41" height="30"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <segue destination="kDH-6Y-qcE" kind="show" id="pV4-nG-29o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUu-qS-Wwy">
+                                <rect key="frame" x="317" y="20" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BB4-Xn-uYI"/>
+                                    <constraint firstAttribute="width" constant="32" id="bpq-Aq-Sgj"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="yellowAdd"/>
+                                <connections>
+                                    <action selector="adicionar:" destination="t8u-au-Bag" eventType="touchUpInside" id="McY-IR-VpU"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FQT-Ts-jhw">
                                 <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -137,30 +157,6 @@
                                     <outlet property="delegate" destination="t8u-au-Bag" id="FHi-S0-Z8B"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdG-WA-GIy">
-                                <rect key="frame" x="148" y="30" width="79" height="17"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7R-0F-H5P">
-                                <rect key="frame" x="20" y="24" width="41" height="30"/>
-                                <state key="normal" title="Voltar"/>
-                                <connections>
-                                    <segue destination="kDH-6Y-qcE" kind="show" id="pV4-nG-29o"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUu-qS-Wwy">
-                                <rect key="frame" x="317" y="20" width="32" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BB4-Xn-uYI"/>
-                                    <constraint firstAttribute="width" constant="32" id="bpq-Aq-Sgj"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="yellowAdd"/>
-                                <connections>
-                                    <action selector="adicionar:" destination="t8u-au-Bag" eventType="touchUpInside" id="McY-IR-VpU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -198,40 +194,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-j5-eSl">
-                                <rect key="frame" x="32" y="87" width="286" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="286" id="7e4-N1-1NX"/>
-                                    <constraint firstAttribute="height" constant="30" id="oPs-ch-lKo"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crQ-ct-FEk">
+                                <rect key="frame" x="154" y="420" width="50" height="18"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
                                 <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crQ-ct-FEk">
-                                <rect key="frame" x="32" y="381" width="44.5" height="21"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtW-yS-QKp">
-                                <rect key="frame" x="32" y="171" width="286" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="0zk-Lh-bQN"/>
-                                    <constraint firstAttribute="width" constant="286" id="7Ha-0d-qUE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TIPO DE IMUNIZAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-OM-0DO">
-                                <rect key="frame" x="32" y="58" width="145" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIPO DE IMUNIZAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-OM-0DO">
+                                <rect key="frame" x="32" y="58" width="158" height="14.5"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADMINISTRADA EM:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-vX-KKW">
-                                <rect key="frame" x="32" y="139" width="132" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMINISTRADA EM:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-vX-KKW">
+                                <rect key="frame" x="32" y="137" width="143" height="14.5"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -264,16 +240,8 @@
                                     <action selector="editar:" destination="qlX-qS-TsC" eventType="touchUpInside" id="riC-0U-0ax"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-y7-cKo">
-                                <rect key="frame" x="32" y="87" width="290" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="mV2-zH-rjZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <datePicker hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zFi-SS-hhD">
-                                <rect key="frame" x="32" y="287" width="290" height="59"/>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zFi-SS-hhD">
+                                <rect key="frame" x="32" y="283" width="290" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="DXt-jR-xao"/>
                                     <constraint firstAttribute="width" constant="290" id="ulj-H2-IJP"/>
@@ -286,14 +254,33 @@
                                     <action selector="datePickerAction:" destination="P7L-JB-PGB" eventType="valueChanged" id="sfu-SE-sYp"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRÓXIMA DOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-Bv-enw">
-                                <rect key="frame" x="32" y="248" width="105" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRÓXIMA DOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-Bv-enw">
+                                <rect key="frame" x="32" y="244" width="113.5" height="14.5"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-tu-NhH">
-                                <rect key="frame" x="32" y="168" width="290" height="59"/>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-az-WeT">
+                                <rect key="frame" x="160.5" y="239" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ativar:" destination="qlX-qS-TsC" eventType="valueChanged" id="Luj-nd-B01"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-kl-CtN">
+                                <rect key="frame" x="30" y="385" width="298" height="31"/>
+                                <connections>
+                                    <action selector="mudandoValidade:" destination="qlX-qS-TsC" eventType="valueChanged" id="Bnu-Uv-Zw7"/>
+                                    <action selector="mudandoValidade:" destination="P7L-JB-PGB" eventType="valueChanged" id="pbc-9k-aO7"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÁLIDA ATÉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ems-1v-N5p">
+                                <rect key="frame" x="28" y="357" width="87" height="14.5"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-tu-NhH">
+                                <rect key="frame" x="32" y="164" width="290" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="SLx-b0-1Dx"/>
                                     <constraint firstAttribute="width" constant="290" id="fxO-I8-Xw7"/>
@@ -306,61 +293,29 @@
                                     <action selector="datePickerAction:" destination="P7L-JB-PGB" eventType="valueChanged" id="zDm-XY-5c9"/>
                                 </connections>
                             </datePicker>
-                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-az-WeT">
-                                <rect key="frame" x="152" y="243" width="51" height="31"/>
-                                <connections>
-                                    <action selector="ativar:" destination="qlX-qS-TsC" eventType="valueChanged" id="Luj-nd-B01"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-MR-9pi">
-                                <rect key="frame" x="32" y="487" width="44.5" height="21"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OBS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0k-hB-z1R">
-                                <rect key="frame" x="32" y="468" width="29.5" height="16.5"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-kl-CtN">
-                                <rect key="frame" x="30" y="391" width="298" height="31"/>
-                                <connections>
-                                    <action selector="mudandoValidade:" destination="qlX-qS-TsC" eventType="valueChanged" id="Bnu-Uv-Zw7"/>
-                                    <action selector="mudandoValidade:" destination="P7L-JB-PGB" eventType="valueChanged" id="pbc-9k-aO7"/>
-                                </connections>
-                            </slider>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2V-lV-Wa7">
-                                <rect key="frame" x="32" y="489.5" width="290" height="30"/>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-y7-cKo">
+                                <rect key="frame" x="32" y="85" width="290" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="OIj-OQ-yvd"/>
+                                    <constraint firstAttribute="width" constant="290" id="mV2-zH-rjZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VÁLIDA ATÉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ems-1v-N5p">
-                                <rect key="frame" x="28" y="361" width="76.5" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUAL DOSE?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rz-MZ-I7s">
+                                <rect key="frame" x="25" y="448" width="95" height="14.5"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-y2-TQm">
-                                <rect key="frame" x="158" y="429" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-c2-Ipu">
-                                <rect key="frame" x="32" y="300" width="44.5" height="21"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAw-j3-hsj">
+                                <rect key="frame" x="0.0" y="488" width="375" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="thE-jO-1SX"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xtW-yS-QKp" firstAttribute="top" secondItem="xnx-vX-KKW" secondAttribute="bottom" constant="15.5" id="3DV-te-bA4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ldu-sT-Gjs" secondAttribute="trailing" id="5Hd-Zr-pLr"/>
                             <constraint firstItem="crQ-ct-FEk" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="6Dl-aI-d4r"/>
                             <constraint firstItem="Scb-tu-NhH" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="6Xh-mA-EKt"/>
@@ -369,64 +324,54 @@
                             <constraint firstItem="zFi-SS-hhD" firstAttribute="top" secondItem="DMe-az-WeT" secondAttribute="bottom" constant="13" id="92j-C9-OrD"/>
                             <constraint firstItem="iUw-y7-cKo" firstAttribute="top" secondItem="rtd-OM-0DO" secondAttribute="bottom" constant="12.5" id="9HB-i1-UbL"/>
                             <constraint firstItem="Kgs-kl-CtN" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="Cil-Jz-GbK"/>
-                            <constraint firstItem="S2e-y2-TQm" firstAttribute="centerX" secondItem="Kgs-kl-CtN" secondAttribute="centerX" id="JTl-Bt-cHc"/>
-                            <constraint firstItem="AgC-j5-eSl" firstAttribute="top" secondItem="rtd-OM-0DO" secondAttribute="bottom" constant="12.5" id="Jwm-w3-y9m"/>
+                            <constraint firstAttribute="trailing" secondItem="OAw-j3-hsj" secondAttribute="trailing" id="Gu4-g4-kvI"/>
                             <constraint firstItem="DMe-az-WeT" firstAttribute="leading" secondItem="fMs-Bv-enw" secondAttribute="trailing" constant="15" id="KEa-M6-dg9"/>
                             <constraint firstItem="ems-1v-N5p" firstAttribute="top" secondItem="zFi-SS-hhD" secondAttribute="bottom" constant="15" id="KFE-VB-0yW"/>
+                            <constraint firstItem="crQ-ct-FEk" firstAttribute="centerX" secondItem="Kgs-kl-CtN" secondAttribute="centerX" id="KJJ-Mp-T0y"/>
+                            <constraint firstItem="OAw-j3-hsj" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leading" id="M92-D8-8oO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Kgs-kl-CtN" secondAttribute="trailing" constant="33" id="O7F-9Y-mVK"/>
-                            <constraint firstItem="v6M-c2-Ipu" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="12" id="O7p-PA-Tv3"/>
+                            <constraint firstItem="crQ-ct-FEk" firstAttribute="top" secondItem="Kgs-kl-CtN" secondAttribute="bottom" constant="5" id="Rjq-16-7Ks"/>
                             <constraint firstItem="ldu-sT-Gjs" firstAttribute="top" secondItem="0jh-4F-BJj" secondAttribute="bottom" id="S9D-6J-jz2"/>
                             <constraint firstItem="zFi-SS-hhD" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="VJy-TE-aMA"/>
                             <constraint firstItem="DMe-az-WeT" firstAttribute="top" secondItem="Scb-tu-NhH" secondAttribute="bottom" constant="16" id="Y3O-aj-UdY"/>
                             <constraint firstItem="DJq-pE-7O8" firstAttribute="top" secondItem="0jh-4F-BJj" secondAttribute="bottom" id="Y5e-2N-SsF"/>
                             <constraint firstItem="rtd-OM-0DO" firstAttribute="top" secondItem="DJq-pE-7O8" secondAttribute="bottom" constant="8" id="ZxA-Ql-EQH"/>
                             <constraint firstItem="fMs-Bv-enw" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="aaD-4D-TlA"/>
-                            <constraint firstItem="gaV-MR-9pi" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="bHp-ZH-6FE"/>
-                            <constraint firstItem="d0k-hB-z1R" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="bcR-TG-dJ6"/>
-                            <constraint firstItem="v6M-c2-Ipu" firstAttribute="top" secondItem="fMs-Bv-enw" secondAttribute="bottom" constant="35.5" id="cf9-Vd-8UO"/>
                             <constraint firstItem="xnx-vX-KKW" firstAttribute="top" secondItem="iUw-y7-cKo" secondAttribute="bottom" constant="22" id="cvt-yh-O4L"/>
                             <constraint firstItem="Ovo-bR-oOe" firstAttribute="top" secondItem="ALL-wL-Xu0" secondAttribute="bottom" constant="42" id="cyG-52-LwH"/>
                             <constraint firstItem="ems-1v-N5p" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="12" id="eMn-YE-qBP"/>
-                            <constraint firstItem="S2e-y2-TQm" firstAttribute="top" secondItem="Kgs-kl-CtN" secondAttribute="bottom" constant="8" id="gbq-Ga-lSj"/>
-                            <constraint firstItem="gaV-MR-9pi" firstAttribute="top" secondItem="S2e-y2-TQm" secondAttribute="bottom" constant="37" id="iVW-Ca-8XR"/>
-                            <constraint firstItem="r2V-lV-Wa7" firstAttribute="top" secondItem="d0k-hB-z1R" secondAttribute="bottom" constant="5" id="ipT-5b-99l"/>
+                            <constraint firstItem="OAw-j3-hsj" firstAttribute="top" secondItem="7rz-MZ-I7s" secondAttribute="bottom" constant="25.5" id="kjy-hg-Qbb"/>
                             <constraint firstItem="Kgs-kl-CtN" firstAttribute="top" secondItem="ems-1v-N5p" secondAttribute="bottom" constant="13.5" id="mY4-7x-Czw"/>
-                            <constraint firstItem="d0k-hB-z1R" firstAttribute="top" secondItem="S2e-y2-TQm" secondAttribute="bottom" constant="18" id="nkN-nh-7R4"/>
                             <constraint firstItem="fMs-Bv-enw" firstAttribute="top" secondItem="Scb-tu-NhH" secondAttribute="bottom" constant="21" id="o1m-YK-6p8"/>
                             <constraint firstItem="rtd-OM-0DO" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="ona-EP-Es6"/>
                             <constraint firstItem="Scb-tu-NhH" firstAttribute="top" secondItem="xnx-vX-KKW" secondAttribute="bottom" constant="12.5" id="q3F-v9-Gsp"/>
-                            <constraint firstItem="S2e-y2-TQm" firstAttribute="centerX" secondItem="Kgs-kl-CtN" secondAttribute="centerX" id="sjb-p0-AAp"/>
-                            <constraint firstItem="xtW-yS-QKp" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="t7w-GE-gTq"/>
+                            <constraint firstItem="7rz-MZ-I7s" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="9" id="rv2-H6-ZRp"/>
                             <constraint firstItem="ALL-wL-Xu0" firstAttribute="centerX" secondItem="KA4-KL-ctN" secondAttribute="centerX" id="uJR-wH-8SD"/>
+                            <constraint firstItem="7rz-MZ-I7s" firstAttribute="top" secondItem="Kgs-kl-CtN" secondAttribute="bottom" constant="33" id="uXP-RA-tjD"/>
                             <constraint firstItem="DJq-pE-7O8" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" id="w4s-J9-sjb"/>
-                            <constraint firstItem="AgC-j5-eSl" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="wFz-Cl-uey"/>
-                            <constraint firstItem="r2V-lV-Wa7" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="yXh-A5-Yc7"/>
                             <constraint firstItem="xnx-vX-KKW" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="zSp-Wf-ceE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="sjb-p0-AAp"/>
+                                <exclude reference="6Dl-aI-d4r"/>
+                                <exclude reference="8fF-Av-YzC"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="administracaoVacina" destination="xtW-yS-QKp" id="18K-cP-OkR"/>
                         <outlet property="data1" destination="Scb-tu-NhH" id="2Gz-PU-2dh"/>
                         <outlet property="data2" destination="zFi-SS-hhD" id="ZVS-Yf-MJ1"/>
-                        <outlet property="nomeVacina" destination="AgC-j5-eSl" id="ecG-OS-LPc"/>
-                        <outlet property="proximaDose" destination="v6M-c2-Ipu" id="UtK-Kc-cPQ"/>
                         <outlet property="simnao" destination="DMe-az-WeT" id="M02-RM-Xhf"/>
                         <outlet property="sliderValidade" destination="Kgs-kl-CtN" id="LZ3-RP-dNE"/>
                         <outlet property="text1" destination="iUw-y7-cKo" id="sXj-Kq-0HO"/>
-                        <outlet property="validadeLabel" destination="S2e-y2-TQm" id="Svb-Vb-olg"/>
                         <outlet property="validadeVacina" destination="crQ-ct-FEk" id="B5q-ty-26O"/>
                         <segue destination="t8u-au-Bag" kind="show" identifier="atualizado" id="3SW-bi-XLj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YoX-yL-sBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601.5" y="425.5"/>
+            <point key="canvasLocation" x="574.5" y="325.5"/>
         </scene>
         <!--Adicionar Vacina-->
         <scene sceneID="JY0-4D-8XR">
@@ -1363,7 +1308,7 @@
         <image name="yellowAdd" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="3SW-bi-XLj"/>
         <segue reference="3vp-h4-Ebp"/>
-        <segue reference="ecH-SJ-0Y1"/>
     </inferredMetricsTieBreakers>
 </document>
