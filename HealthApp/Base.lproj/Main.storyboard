@@ -157,7 +157,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="adicionar" destination="VUu-qS-Wwy" id="00i-pn-YYe"/>
                         <outlet property="table" destination="FQT-Ts-jhw" id="PHB-h7-3Nf"/>
                         <segue destination="qlX-qS-TsC" kind="presentation" identifier="segue" id="aXg-lI-QyY"/>
                         <segue destination="P7L-JB-PGB" kind="show" identifier="adicionar" id="5dV-xa-HJx"/>
@@ -505,10 +504,6 @@
                                     <action selector="mudandoValidade:" destination="P7L-JB-PGB" eventType="valueChanged" id="EUU-nw-sTS"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-Xq-RFD">
-                                <rect key="frame" x="205" y="525" width="73" height="30"/>
-                                <state key="normal" title="Outra data"/>
-                            </button>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-Gk-VV8">
                                 <rect key="frame" x="187" y="563" width="110" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -538,12 +533,10 @@
                             <constraint firstItem="vY2-MV-6b7" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="97G-zr-xDJ"/>
                             <constraint firstItem="Xuh-CN-k9l" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="B9S-fN-ogs"/>
                             <constraint firstItem="t0u-dt-1qr" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="6" id="CxL-30-eml"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="top" secondItem="LdV-Xq-RFD" secondAttribute="bottom" constant="8" id="Dgm-qi-Lsc"/>
                             <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="Fa7-bo-uOe"/>
                             <constraint firstItem="t0u-dt-1qr" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="Fs9-2P-Ui9"/>
                             <constraint firstItem="rpp-bl-f7y" firstAttribute="top" secondItem="ftT-RM-ySk" secondAttribute="bottom" constant="50" id="Hqh-Cp-vow"/>
                             <constraint firstItem="ktn-xy-Z8P" firstAttribute="top" secondItem="8Ej-ei-3H2" secondAttribute="bottom" constant="8" id="IeN-qg-Jqr"/>
-                            <constraint firstItem="LdV-Xq-RFD" firstAttribute="centerX" secondItem="pyn-Gk-VV8" secondAttribute="centerX" id="LUG-0l-cHw"/>
                             <constraint firstItem="pyn-Gk-VV8" firstAttribute="leading" secondItem="qs6-kD-E0H" secondAttribute="trailing" constant="24" id="Lzt-TI-Qao"/>
                             <constraint firstItem="Oa7-3l-uC3" firstAttribute="top" secondItem="vY2-MV-6b7" secondAttribute="bottom" constant="15" id="OLO-au-ebf"/>
                             <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="15" id="Q7a-PQ-SWu"/>
@@ -1350,7 +1343,7 @@
         <image name="yellowAdd" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ecH-SJ-0Y1"/>
         <segue reference="3vp-h4-Ebp"/>
+        <segue reference="ecH-SJ-0Y1"/>
     </inferredMetricsTieBreakers>
 </document>

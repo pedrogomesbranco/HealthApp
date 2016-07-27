@@ -11,6 +11,7 @@ import UIKit
 class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBAction func adicionar(sender: AnyObject) {
+        self.performSegueWithIdentifier("adicionar", sender: self)
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -153,6 +154,10 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if (segue.identifier == "segue") {
             let viewController = segue.destinationViewController as! DetalheVacina
             viewController.index = row
+            viewController.pessoa = self.pessoa
+        }
+        else if(segue.identifier == "adicionar"){
+            let viewController = segue.destinationViewController as! AdicionarVacina
             viewController.pessoa = self.pessoa
         }
     }
