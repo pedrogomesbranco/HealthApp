@@ -10,6 +10,9 @@ import UIKit
 
 class DetalheVacina: UIViewController {
     
+    @IBOutlet var sliderValidade: UISlider!
+    @IBAction func mudandoValidade(sender: AnyObject) {
+    }
     //variaveis que armazenam as informação que estão vindo da classe Vacina
     var recebeString:String!
     var recebeString2:String!

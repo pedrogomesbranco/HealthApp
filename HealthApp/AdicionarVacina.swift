@@ -10,6 +10,9 @@ import UIKit
 
 class AdicionarVacina: UIViewController {
     
+    @IBOutlet var validadeSlider: UISlider!
+    @IBAction func mudandoValidade(sender: AnyObject) {
+    }
     
     
     //esses são os textfields em que o usuário vai dar input nas informações
