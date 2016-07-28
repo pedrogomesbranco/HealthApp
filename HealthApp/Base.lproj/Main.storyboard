@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cRa-3i-UdT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kDH-6Y-qcE">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -41,7 +41,6 @@
             <string>GothamRounded-Book</string>
         </mutableArray>
         <mutableArray key="GothamRounded-Medium.otf">
-            <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
@@ -1173,70 +1172,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cn7-4f-eCW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cn7-4f-eCW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OLÁ, NOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-Bq-4TJ">
-                                <rect key="frame" x="40" y="19" width="296" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OLÁ, NOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-Bq-4TJ">
+                                <rect key="frame" x="137" y="79" width="102" height="17"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31T-ff-t9b" userLabel="Configuracoes Button">
-                                <rect key="frame" x="340" y="19" width="25" height="25"/>
-                                <state key="normal" image="settings"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayu-Qr-s4u" userLabel="Perfil Button">
-                                <rect key="frame" x="64" y="122" width="78" height="71"/>
-                                <state key="normal" image="perfil"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-MM-4T3" userLabel="Medicos Button">
-                                <rect key="frame" x="220" y="124" width="108" height="69"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-MM-4T3" userLabel="Medicos Button">
+                                <rect key="frame" x="16" y="141" width="344" height="69"/>
                                 <state key="normal" image="medicos"/>
                                 <connections>
                                     <segue destination="90m-7b-4QD" kind="show" id="3vp-h4-Ebp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnB-9t-aXR" userLabel="Exames Button">
-                                <rect key="frame" x="73" y="312" width="60" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnB-9t-aXR" userLabel="Exames Button">
+                                <rect key="frame" x="157" y="306" width="62" height="56"/>
                                 <state key="normal" image="exames"/>
                                 <connections>
                                     <segue destination="cRa-3i-UdT" kind="show" id="OEW-8s-BoE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-fI-h8m" userLabel="Vacinas Button">
-                                <rect key="frame" x="232" y="296" width="71" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-fI-h8m" userLabel="Vacinas Button">
+                                <rect key="frame" x="153" y="458" width="71" height="72"/>
                                 <state key="normal" image="vacinas"/>
                                 <connections>
                                     <segue destination="t8u-au-Bag" kind="show" id="Ttq-2V-lwg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z9-fP-2Gz">
-                                <rect key="frame" x="72" y="208" width="63" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MÉDICOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-16-BAu">
+                                <rect key="frame" x="149" y="230" width="78" height="16"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MÉDICOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-16-BAu">
-                                <rect key="frame" x="235" y="208" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRt-4U-To5">
+                                <rect key="frame" x="154" y="382" width="69" height="16"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRt-4U-To5">
-                                <rect key="frame" x="64" y="381" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rih-MW-VMC">
+                                <rect key="frame" x="151" y="550" width="75" height="16"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rih-MW-VMC">
-                                <rect key="frame" x="228" y="381" width="78" height="21"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31T-ff-t9b" userLabel="Configuracoes Button">
+                                <rect key="frame" x="300" y="71" width="25" height="25"/>
+                                <state key="normal" image="settings"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bbi-Bq-4TJ" firstAttribute="centerX" secondItem="tbn-rK-JjP" secondAttribute="centerX" id="0CB-CC-NYb"/>
+                            <constraint firstAttribute="trailing" secondItem="31T-ff-t9b" secondAttribute="trailing" constant="50" id="1CH-VI-w7F"/>
+                            <constraint firstItem="aDZ-MM-4T3" firstAttribute="top" secondItem="31T-ff-t9b" secondAttribute="bottom" constant="45" id="1bJ-MO-eFU"/>
+                            <constraint firstItem="aDZ-MM-4T3" firstAttribute="top" secondItem="bbi-Bq-4TJ" secondAttribute="bottom" constant="45" id="1qC-En-cyK"/>
+                            <constraint firstItem="lRt-4U-To5" firstAttribute="centerX" secondItem="YnB-9t-aXR" secondAttribute="centerX" id="227-0o-vIx"/>
+                            <constraint firstItem="rih-MW-VMC" firstAttribute="top" secondItem="xe5-fI-h8m" secondAttribute="bottom" constant="20" id="2kv-of-KQV"/>
+                            <constraint firstItem="YnB-9t-aXR" firstAttribute="centerX" secondItem="tbn-rK-JjP" secondAttribute="centerX" id="6Ld-Cy-9HD"/>
+                            <constraint firstItem="31T-ff-t9b" firstAttribute="trailing" secondItem="tbn-rK-JjP" secondAttribute="trailingMargin" constant="55" id="7I9-HI-abD"/>
+                            <constraint firstAttribute="trailing" secondItem="cn7-4f-eCW" secondAttribute="trailing" id="BhO-lP-kNd"/>
+                            <constraint firstItem="YnB-9t-aXR" firstAttribute="top" secondItem="Adz-16-BAu" secondAttribute="bottom" constant="60" id="E2E-Bo-DZN"/>
+                            <constraint firstItem="lRt-4U-To5" firstAttribute="top" secondItem="YnB-9t-aXR" secondAttribute="bottom" constant="20" id="EFc-vm-JNN"/>
+                            <constraint firstItem="xe5-fI-h8m" firstAttribute="centerX" secondItem="lRt-4U-To5" secondAttribute="centerX" id="HEV-QD-bf3"/>
+                            <constraint firstItem="rih-MW-VMC" firstAttribute="centerX" secondItem="xe5-fI-h8m" secondAttribute="centerX" id="IMA-v2-4fM"/>
+                            <constraint firstItem="cn7-4f-eCW" firstAttribute="top" secondItem="qOJ-9z-bWm" secondAttribute="bottom" id="SEa-So-kXO"/>
+                            <constraint firstItem="YnB-9t-aXR" firstAttribute="centerY" secondItem="tbn-rK-JjP" secondAttribute="centerY" id="VdV-nc-a3p"/>
+                            <constraint firstItem="BzE-u3-nkS" firstAttribute="top" secondItem="cn7-4f-eCW" secondAttribute="bottom" id="YDq-b0-YKi"/>
+                            <constraint firstItem="aDZ-MM-4T3" firstAttribute="leading" secondItem="tbn-rK-JjP" secondAttribute="leadingMargin" id="l9Y-iI-cRz"/>
+                            <constraint firstItem="Adz-16-BAu" firstAttribute="centerX" secondItem="aDZ-MM-4T3" secondAttribute="centerX" id="mdv-M7-4FR"/>
+                            <constraint firstItem="aDZ-MM-4T3" firstAttribute="centerX" secondItem="bbi-Bq-4TJ" secondAttribute="centerX" id="oKE-ad-T5z"/>
+                            <constraint firstItem="Adz-16-BAu" firstAttribute="top" secondItem="aDZ-MM-4T3" secondAttribute="bottom" constant="20" id="oyJ-HS-haK"/>
+                            <constraint firstItem="xe5-fI-h8m" firstAttribute="top" secondItem="lRt-4U-To5" secondAttribute="bottom" constant="60" id="rb4-tL-D1I"/>
+                            <constraint firstItem="Adz-16-BAu" firstAttribute="centerX" secondItem="bbi-Bq-4TJ" secondAttribute="centerX" id="wVt-Hy-onJ"/>
+                            <constraint firstItem="cn7-4f-eCW" firstAttribute="leading" secondItem="tbn-rK-JjP" secondAttribute="leading" id="wu4-z7-cUI"/>
+                            <constraint firstItem="31T-ff-t9b" firstAttribute="top" secondItem="qOJ-9z-bWm" secondAttribute="bottom" constant="55" id="zkI-EW-46C"/>
+                            <constraint firstItem="Adz-16-BAu" firstAttribute="centerX" secondItem="aDZ-MM-4T3" secondAttribute="centerX" id="zsl-y2-jPw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mdv-M7-4FR"/>
+                                <exclude reference="wVt-Hy-onJ"/>
+                                <exclude reference="7I9-HI-abD"/>
+                                <exclude reference="zkI-EW-46C"/>
+                            </mask>
+                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -1246,7 +1270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MHv-ZI-4tH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369.5" y="-163.5"/>
+            <point key="canvasLocation" x="-369.5" y="-223.5"/>
         </scene>
         <!--Exames-->
         <scene sceneID="gep-yF-h1o">
@@ -1512,7 +1536,6 @@
         <image name="greenClose" width="19" height="19"/>
         <image name="greenEdit" width="25" height="25"/>
         <image name="medicos" width="95" height="69"/>
-        <image name="perfil" width="78" height="71"/>
         <image name="redAdd" width="25" height="25"/>
         <image name="settings" width="25" height="25"/>
         <image name="vacinas" width="71" height="72"/>
@@ -1520,7 +1543,7 @@
         <image name="yellowBack" width="93" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ecH-SJ-0Y1"/>
+        <segue reference="Ttq-2V-lwg"/>
         <segue reference="3vp-h4-Ebp"/>
     </inferredMetricsTieBreakers>
 </document>
