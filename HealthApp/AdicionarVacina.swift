@@ -42,14 +42,14 @@ class AdicionarVacina: UIViewController {
         
         
         
-        let currentValue = Int(validadeSlider.value)
-
-        if(Int(validadeSlider.value) == 11){
-            validadeLabel.text = "Vitalícia"
-        }
-        else{
-            validadeLabel.text = "\(currentValue) anos"
-        }
+//        let currentValue = Int(validadeSlider.value)
+//
+//        if(Int(validadeSlider.value) == 11){
+//            validadeLabel.text = "Vitalícia"
+//        }
+//        else{
+//            validadeLabel.text = "\(currentValue) anos"
+//        }
         
         textFieldStyles(textField1)
 //        textFieldStyles(textField4)
@@ -142,7 +142,7 @@ class AdicionarVacina: UIViewController {
         pessoa.vacina.numeroDeDoses = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)numeroDeDoses") as! [String]
         pessoa.vacina.obs = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)obs") as! [String]
         
-        if(textField1.text != "" && textField4.text != ""){
+        if(textField1.text != ""){
             let dateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy"
             pessoa.vacina.vacinas.append(textField1.text!)
@@ -153,7 +153,7 @@ class AdicionarVacina: UIViewController {
             else{
                  pessoa.vacina.proximaDose.append(dateFormatter.stringFromDate(myDatePicker2.date))
             }
-             pessoa.vacina.validadeVacinas.append(textField4.text!)
+//             pessoa.vacina.validadeVacinas.append(textField4.text!)
         }
         else{
             let alerta = UIAlertController(title: "Atenção", message: "Preencha todas as informações", preferredStyle: .Alert)

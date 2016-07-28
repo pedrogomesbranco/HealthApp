@@ -33,6 +33,8 @@
 		543DF2A41D441C890095DC90 /* Cell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543DF2A31D441C890095DC90 /* Cell4.swift */; };
 		543DF2A61D441C900095DC90 /* Cell5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543DF2A51D441C900095DC90 /* Cell5.swift */; };
 		543DF2A81D441C970095DC90 /* Cell6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543DF2A71D441C970095DC90 /* Cell6.swift */; };
+		54844BE81D4A772C007627FF /* Exames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54844BE71D4A772C007627FF /* Exames.swift */; };
+		54844BEA1D4A7841007627FF /* ExameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54844BE91D4A7841007627FF /* ExameCell.swift */; };
 		54B4F7941D3FC50B00D294E9 /* Vacinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4F7931D3FC50B00D294E9 /* Vacinas.swift */; };
 		54B4F7961D3FC93D00D294E9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 54B4F7951D3FC93D00D294E9 /* .gitignore */; };
 		54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */; };
@@ -73,6 +75,8 @@
 		543DF2A31D441C890095DC90 /* Cell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell4.swift; sourceTree = "<group>"; };
 		543DF2A51D441C900095DC90 /* Cell5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell5.swift; sourceTree = "<group>"; };
 		543DF2A71D441C970095DC90 /* Cell6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell6.swift; sourceTree = "<group>"; };
+		54844BE71D4A772C007627FF /* Exames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exames.swift; sourceTree = "<group>"; };
+		54844BE91D4A7841007627FF /* ExameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExameCell.swift; sourceTree = "<group>"; };
 		54B4F7931D3FC50B00D294E9 /* Vacinas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacinas.swift; sourceTree = "<group>"; };
 		54B4F7951D3FC93D00D294E9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacinaCell.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 				CEBE56191D42F0A7002689C7 /* VerMedico.swift */,
 				CEBE561B1D42F85B002689C7 /* EditarMedico.swift */,
 				543DF29B1D440FB50095DC90 /* Perfil.swift */,
+				54844BE71D4A772C007627FF /* Exames.swift */,
+				54844BE91D4A7841007627FF /* ExameCell.swift */,
 				543DF2A91D441C9B0095DC90 /* Células da Tela de Perfil */,
 			);
 			name = Controllers;
@@ -300,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54844BEA1D4A7841007627FF /* ExameCell.swift in Sources */,
 				543DF2A81D441C970095DC90 /* Cell6.swift in Sources */,
 				543DF2A41D441C890095DC90 /* Cell4.swift in Sources */,
 				543DF2A21D441C810095DC90 /* Cell3.swift in Sources */,
@@ -316,6 +323,7 @@
 				543DF2A01D441C7B0095DC90 /* Cell2.swift in Sources */,
 				54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */,
 				24F75E5F1D3D5D7700F49536 /* ViewController.swift in Sources */,
+				54844BE81D4A772C007627FF /* Exames.swift in Sources */,
 				24F75E5D1D3D5D7700F49536 /* AppDelegate.swift in Sources */,
 				543DF29A1D43EA0A0095DC90 /* DetalheVacina.swift in Sources */,
 				54B4F7941D3FC50B00D294E9 /* Vacinas.swift in Sources */,
