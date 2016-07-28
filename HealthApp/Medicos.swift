@@ -11,7 +11,15 @@ import UIKit
 class Medicos: UIViewController {
     
     @IBOutlet weak var pesquisarBar: UISearchBar!
-    @IBOutlet weak var medicosCell: UITableViewCell!
+    @IBOutlet var table: UITableView!
+    
+    @IBAction func dismmis(sender: AnyObject) {
+    
+    self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    
+    }
+    
+    
     
     @IBAction func addMedicoButton(sender: AnyObject) {
     }
@@ -27,7 +35,8 @@ class Medicos: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.table.delegate = self
+        self.table.dataSource = self
         UISearchBar.appearance().setImage(UIImage(named: ""), forSearchBarIcon: UISearchBarIcon.Search, state: UIControlState.Disabled)
     }
 
@@ -42,11 +51,12 @@ class Medicos: UIViewController {
 extension Medicos : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = self.medicosCell
-        return cell
+
+        let cell = tableView.dequeueReusableCellWithIdentifier("medCell")
+        return cell!
     }
 }

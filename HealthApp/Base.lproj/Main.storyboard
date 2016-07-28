@@ -618,6 +618,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qeh-fL-5kh" userLabel="Fechar Button">
                                 <rect key="frame" x="10" y="19" width="25" height="25"/>
                                 <state key="normal" image="greenClose"/>
+                                <connections>
+                                    <action selector="dismmis:" destination="90m-7b-4QD" eventType="touchUpInside" id="xDf-Uq-bZ7"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b0w-dc-8c0">
                                 <rect key="frame" x="24" y="119" width="316" height="548"/>
@@ -632,10 +635,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="90m-7b-4QD" id="6yF-ed-x6n"/>
-                                    <outlet property="delegate" destination="90m-7b-4QD" id="r9h-Nn-fRJ"/>
-                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Pesquisar" translatesAutoresizingMaskIntoConstraints="NO" id="Und-lB-E0a">
                                 <rect key="frame" x="24" y="69" width="316" height="44"/>
@@ -647,8 +646,8 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="medicosTableView" destination="b0w-dc-8c0" id="eaX-pt-1sD"/>
                         <outlet property="pesquisarBar" destination="Und-lB-E0a" id="DbO-9x-7q2"/>
+                        <outlet property="table" destination="b0w-dc-8c0" id="bxJ-gi-bwL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5y-nN-Vdo" userLabel="First Responder" sceneMemberID="firstResponder"/>

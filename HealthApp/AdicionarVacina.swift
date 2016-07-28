@@ -18,7 +18,7 @@ class AdicionarVacina: UIViewController {
     
     @IBAction func dismissViewController(sender: AnyObject) {
         
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        git 
         
     }
     
