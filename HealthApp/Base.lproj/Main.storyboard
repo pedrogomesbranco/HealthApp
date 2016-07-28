@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kDH-6Y-qcE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P7L-JB-PGB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -223,13 +223,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIPO DE IMUNIZAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-OM-0DO">
-                                <rect key="frame" x="32" y="58" width="158" height="14.5"/>
+                                <rect key="frame" x="32" y="58" width="158" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMINISTRADA EM:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-vX-KKW">
-                                <rect key="frame" x="32" y="137" width="143" height="14.5"/>
+                                <rect key="frame" x="32" y="137" width="143" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -277,13 +277,13 @@
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRÓXIMA DOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-Bv-enw">
-                                <rect key="frame" x="32" y="244" width="113.5" height="14.5"/>
+                                <rect key="frame" x="32" y="244" width="114" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-az-WeT">
-                                <rect key="frame" x="160.5" y="239" width="51" height="31"/>
+                                <rect key="frame" x="161" y="239" width="51" height="31"/>
                                 <connections>
                                     <action selector="ativar:" destination="qlX-qS-TsC" eventType="valueChanged" id="Luj-nd-B01"/>
                                 </connections>
@@ -296,7 +296,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÁLIDA ATÉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ems-1v-N5p">
-                                <rect key="frame" x="28" y="357" width="87" height="14.5"/>
+                                <rect key="frame" x="28" y="357" width="87" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -404,165 +404,149 @@
                         <viewControllerLayoutGuide type="bottom" id="Y95-Jh-90q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Twc-Ot-Qix">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-tT-cgT">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvC-5L-s0K">
-                                <rect key="frame" x="26" y="124" width="290" height="30"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOP-Bx-zAW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADICIONAR VACINA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftT-RM-ySk">
+                                        <rect key="frame" x="99" y="25" width="177" height="17"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-tT-cgT">
+                                        <rect key="frame" x="187" y="334" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvC-5L-s0K">
+                                        <rect key="frame" x="81" y="114" width="213" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="290" id="RPm-7C-pkx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="RPm-7C-pkx"/>
+                                            </mask>
+                                        </variation>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quando?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-MV-6b7">
+                                        <rect key="frame" x="150" y="173" width="76" height="17"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual vacina você tomou?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpp-bl-f7y">
+                                        <rect key="frame" x="81" y="82" width="213" height="17"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-CN-k9l">
+                                        <rect key="frame" x="65" y="318" width="65" height="30"/>
+                                        <state key="normal" title="Adicionar"/>
+                                        <connections>
+                                            <action selector="adicionar:" destination="P7L-JB-PGB" eventType="touchUpInside" id="pqA-aS-tXV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Próxima dose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-dt-1qr">
+                                        <rect key="frame" x="114" y="294" width="115" height="17"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Validade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjx-h2-BzF">
+                                        <rect key="frame" x="93" y="350" width="73" height="17"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker hidden="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ktn-xy-Z8P">
+                                        <rect key="frame" x="25" y="537" width="322" height="113"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="491320571.09228098">
+                                            <!--2016-07-27 13:56:11 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="pt_BR"/>
+                                        <connections>
+                                            <action selector="datePickerAction2:" destination="P7L-JB-PGB" eventType="valueChanged" id="wME-I6-KLV"/>
+                                        </connections>
+                                    </datePicker>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-JM-O0a">
+                                        <rect key="frame" x="25" y="246" width="326" height="31"/>
+                                        <connections>
+                                            <action selector="mudandoValidade:" destination="P7L-JB-PGB" eventType="valueChanged" id="EUU-nw-sTS"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs6-kD-E0H">
+                                        <rect key="frame" x="187" y="368" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-ei-3H2">
+                                        <rect key="frame" x="251" y="294" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="ativar:" destination="P7L-JB-PGB" eventType="valueChanged" id="eSt-kU-r8v"/>
+                                        </connections>
+                                    </switch>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oa7-3l-uC3">
+                                        <rect key="frame" x="28" y="205" width="320" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="Bxp-Xm-eoC"/>
+                                            <constraint firstAttribute="height" constant="60" id="WYv-tR-O0e"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="491320571.09228098">
+                                            <!--2016-07-27 13:56:11 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="pt_PT"/>
+                                        <connections>
+                                            <action selector="datePickerAction:" destination="P7L-JB-PGB" eventType="valueChanged" id="KH9-zA-Pr3"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="RPm-7C-pkx"/>
+                                    <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="Cl4-in-QlD"/>
+                                    <constraint firstItem="NvC-5L-s0K" firstAttribute="width" secondItem="rpp-bl-f7y" secondAttribute="width" id="EtM-4r-AMw"/>
+                                    <constraint firstItem="NvC-5L-s0K" firstAttribute="top" secondItem="rpp-bl-f7y" secondAttribute="bottom" constant="15" id="FFH-ur-VvJ"/>
+                                    <constraint firstItem="Oa7-3l-uC3" firstAttribute="top" secondItem="vY2-MV-6b7" secondAttribute="bottom" constant="15" id="Kty-kh-8pq"/>
+                                    <constraint firstItem="NvC-5L-s0K" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="TLo-hN-aDN"/>
+                                    <constraint firstItem="ftT-RM-ySk" firstAttribute="top" secondItem="QOP-Bx-zAW" secondAttribute="top" constant="25" id="VCK-RD-BX7"/>
+                                    <constraint firstItem="vY2-MV-6b7" firstAttribute="centerX" secondItem="NvC-5L-s0K" secondAttribute="centerX" id="Vd5-fW-M2N"/>
+                                    <constraint firstItem="Oa7-3l-uC3" firstAttribute="centerX" secondItem="vY2-MV-6b7" secondAttribute="centerX" id="Y5n-w8-Bq1"/>
+                                    <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="dyU-eS-Pla"/>
+                                    <constraint firstItem="rpp-bl-f7y" firstAttribute="top" secondItem="ftT-RM-ySk" secondAttribute="bottom" constant="40" id="hbm-5e-Srx"/>
+                                    <constraint firstItem="vY2-MV-6b7" firstAttribute="top" secondItem="NvC-5L-s0K" secondAttribute="bottom" constant="29" id="qLS-du-Qe5"/>
+                                    <constraint firstItem="rpp-bl-f7y" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="sz9-r2-YmQ"/>
+                                    <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="teI-CB-lE7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quando?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-MV-6b7">
-                                <rect key="frame" x="26" y="179" width="76" height="17"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual vacina você tomou?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpp-bl-f7y">
-                                <rect key="frame" x="26" y="97" width="213" height="17"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-CN-k9l">
-                                <rect key="frame" x="155" y="607" width="65" height="30"/>
-                                <state key="normal" title="Adicionar"/>
-                                <connections>
-                                    <action selector="adicionar:" destination="P7L-JB-PGB" eventType="touchUpInside" id="pqA-aS-tXV"/>
-                                </connections>
-                            </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oa7-3l-uC3">
-                                <rect key="frame" x="27" y="211" width="320" height="99"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="BGk-bY-3qi"/>
-                                    <constraint firstAttribute="height" constant="99" id="exA-Os-GW4"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="491320571.09228098">
-                                    <!--2016-07-27 13:56:11 +0000-->
-                                </date>
-                                <locale key="locale" localeIdentifier="pt_PT"/>
-                                <connections>
-                                    <action selector="datePickerAction:" destination="P7L-JB-PGB" eventType="valueChanged" id="KH9-zA-Pr3"/>
-                                </connections>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Próxima dose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-dt-1qr">
-                                <rect key="frame" x="26" y="351" width="114.5" height="17"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjx-h2-BzF">
-                                <rect key="frame" x="22" y="500" width="73" height="17"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ktn-xy-Z8P">
-                                <rect key="frame" x="26" y="376" width="322" height="113"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="5b0-tE-wNG"/>
-                                    <constraint firstAttribute="width" constant="322" id="Nho-HP-gGz"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="491320571.09228098">
-                                    <!--2016-07-27 13:56:11 +0000-->
-                                </date>
-                                <locale key="locale" localeIdentifier="pt_BR"/>
-                                <connections>
-                                    <action selector="datePickerAction2:" destination="P7L-JB-PGB" eventType="valueChanged" id="wME-I6-KLV"/>
-                                </connections>
-                            </datePicker>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-JM-O0a">
-                                <rect key="frame" x="-2" y="0.0" width="4" height="31"/>
-                                <connections>
-                                    <action selector="mudandoValidade:" destination="P7L-JB-PGB" eventType="valueChanged" id="EUU-nw-sTS"/>
-                                </connections>
-                            </slider>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-Gk-VV8">
-                                <rect key="frame" x="187" y="563" width="110" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs6-kD-E0H">
-                                <rect key="frame" x="121" y="572" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADICIONAR VACINA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftT-RM-ySk">
-                                <rect key="frame" x="99.5" y="30" width="176.5" height="17"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-ei-3H2">
-                                <rect key="frame" x="226.5" y="335" width="51" height="31"/>
-                                <connections>
-                                    <action selector="ativar:" destination="P7L-JB-PGB" eventType="valueChanged" id="eSt-kU-r8v"/>
-                                </connections>
-                            </switch>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Cl4-in-QlD"/>
+                                        <exclude reference="teI-CB-lE7"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ktn-xy-Z8P" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="06w-mp-0nT"/>
-                            <constraint firstItem="ktn-xy-Z8P" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="6" id="1UH-uR-Y49"/>
-                            <constraint firstItem="NvC-5L-s0K" firstAttribute="top" secondItem="rpp-bl-f7y" secondAttribute="bottom" constant="10" id="1hl-Cw-z7G"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="171" id="2vo-df-4lE"/>
-                            <constraint firstItem="gjx-h2-BzF" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="6" id="5KZ-9e-EpT"/>
-                            <constraint firstItem="Oa7-3l-uC3" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="8HH-IN-HXU"/>
-                            <constraint firstItem="vY2-MV-6b7" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="97G-zr-xDJ"/>
-                            <constraint firstItem="Xuh-CN-k9l" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="B9S-fN-ogs"/>
-                            <constraint firstItem="t0u-dt-1qr" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="6" id="CxL-30-eml"/>
-                            <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="Twc-Ot-Qix" secondAttribute="centerX" id="Fa7-bo-uOe"/>
-                            <constraint firstItem="t0u-dt-1qr" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="Fs9-2P-Ui9"/>
-                            <constraint firstItem="rpp-bl-f7y" firstAttribute="top" secondItem="ftT-RM-ySk" secondAttribute="bottom" constant="50" id="Hqh-Cp-vow"/>
-                            <constraint firstItem="ktn-xy-Z8P" firstAttribute="top" secondItem="8Ej-ei-3H2" secondAttribute="bottom" constant="8" id="IeN-qg-Jqr"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="leading" secondItem="qs6-kD-E0H" secondAttribute="trailing" constant="24" id="Lzt-TI-Qao"/>
-                            <constraint firstItem="Oa7-3l-uC3" firstAttribute="top" secondItem="vY2-MV-6b7" secondAttribute="bottom" constant="15" id="OLO-au-ebf"/>
-                            <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="25" id="Q7a-PQ-SWu"/>
-                            <constraint firstItem="Xuh-CN-k9l" firstAttribute="top" secondItem="pyn-Gk-VV8" secondAttribute="bottom" constant="14" id="Rco-ku-Bhf"/>
-                            <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="8" id="S0m-ny-xyu"/>
-                            <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="14" id="TH9-Dv-GNk"/>
-                            <constraint firstItem="rpp-bl-f7y" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="V4s-nk-RYq"/>
-                            <constraint firstItem="gjx-h2-BzF" firstAttribute="top" secondItem="ktn-xy-Z8P" secondAttribute="bottom" constant="11" id="WQL-xz-Cso"/>
-                            <constraint firstItem="t0u-dt-1qr" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="21" id="cO0-Jf-4ac"/>
-                            <constraint firstItem="Y95-Jh-90q" firstAttribute="top" secondItem="Xuh-CN-k9l" secondAttribute="bottom" constant="30" id="dd2-8y-SFN"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="width" secondItem="NvC-5L-s0K" secondAttribute="width" constant="-180" id="ejb-fr-CPO"/>
-                            <constraint firstItem="Xuh-CN-k9l" firstAttribute="top" secondItem="qs6-kD-E0H" secondAttribute="bottom" constant="14" id="hD8-hA-a7s"/>
-                            <constraint firstItem="vY2-MV-6b7" firstAttribute="top" secondItem="NvC-5L-s0K" secondAttribute="bottom" constant="25" id="j3e-eU-2MT"/>
-                            <constraint firstItem="ftT-RM-ySk" firstAttribute="top" secondItem="5o3-Qz-I3Q" secondAttribute="bottom" constant="10" id="lqS-x8-XB8"/>
-                            <constraint firstItem="ktn-xy-Z8P" firstAttribute="top" secondItem="t0u-dt-1qr" secondAttribute="bottom" constant="8" id="qyj-zl-VJE"/>
-                            <constraint firstItem="t0u-dt-1qr" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="21" id="rIl-J9-dKV"/>
-                            <constraint firstItem="NvC-5L-s0K" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leadingMargin" constant="10" id="rll-OX-0I6"/>
-                            <constraint firstItem="pyn-Gk-VV8" firstAttribute="top" secondItem="gjx-h2-BzF" secondAttribute="bottom" constant="46" id="tnE-wa-egO"/>
-                            <constraint firstItem="8Ej-ei-3H2" firstAttribute="leading" secondItem="t0u-dt-1qr" secondAttribute="trailing" constant="86" id="uD1-6O-zBk"/>
+                            <constraint firstItem="Y95-Jh-90q" firstAttribute="top" secondItem="QOP-Bx-zAW" secondAttribute="bottom" id="AbF-cK-H9r"/>
+                            <constraint firstAttribute="trailing" secondItem="QOP-Bx-zAW" secondAttribute="trailing" id="YDK-NN-v6D"/>
+                            <constraint firstItem="QOP-Bx-zAW" firstAttribute="top" secondItem="Twc-Ot-Qix" secondAttribute="top" id="g3F-z8-NGn"/>
+                            <constraint firstItem="QOP-Bx-zAW" firstAttribute="leading" secondItem="Twc-Ot-Qix" secondAttribute="leading" id="yiP-Y2-d8V"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="CxL-30-eml"/>
-                                <exclude reference="cO0-Jf-4ac"/>
-                                <exclude reference="rIl-J9-dKV"/>
-                                <exclude reference="1UH-uR-Y49"/>
-                                <exclude reference="IeN-qg-Jqr"/>
-                                <exclude reference="S0m-ny-xyu"/>
-                                <exclude reference="TH9-Dv-GNk"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="750"/>
                     <connections>
                         <outlet property="myDatePicker" destination="Oa7-3l-uC3" id="2vV-mJ-ud4"/>
                         <outlet property="myDatePicker2" destination="ktn-xy-Z8P" id="EEx-su-xaW"/>
                         <outlet property="simnao" destination="8Ej-ei-3H2" id="TTw-J5-8aP"/>
                         <outlet property="textField1" destination="NvC-5L-s0K" id="gtA-g0-eJH"/>
-                        <outlet property="textField4" destination="pyn-Gk-VV8" id="Utf-hE-nl5"/>
                         <outlet property="validadeLabel" destination="qs6-kD-E0H" id="xkd-mK-GTB"/>
                         <outlet property="validadeSlider" destination="Uoc-JM-O0a" id="DKk-O1-Sj7"/>
                         <segue destination="t8u-au-Bag" kind="show" identifier="adicionado" id="ecH-SJ-0Y1"/>
@@ -570,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjk-Sg-Hy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120.5" y="1113.5"/>
+            <point key="canvasLocation" x="120.5" y="1379"/>
         </scene>
         <!--Medicos-->
         <scene sceneID="F3z-24-ORW">
@@ -1330,7 +1314,7 @@
         <image name="yellowAdd" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3SW-bi-XLj"/>
+        <segue reference="ecH-SJ-0Y1"/>
         <segue reference="3vp-h4-Ebp"/>
     </inferredMetricsTieBreakers>
 </document>
