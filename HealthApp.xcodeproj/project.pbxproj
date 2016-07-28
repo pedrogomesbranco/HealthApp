@@ -259,6 +259,7 @@
 				TargetAttributes = {
 					24F75E581D3D5D7700F49536 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 47F9HJUG7H;
 					};
 				};
 			};
@@ -445,9 +446,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HealthApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pedrogomesbranco.HealthApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ArthurCarvalho.HealthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -456,9 +458,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Arthur Carvalho (47F9HJUG7H)";
 				INFOPLIST_FILE = HealthApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pedrogomesbranco.HealthApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ArthurCarvalho.HealthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
