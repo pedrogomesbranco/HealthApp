@@ -73,6 +73,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdG-WA-GIy">
+                                <rect key="frame" x="137" y="49" width="90" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="lm5-mW-KD6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7R-0F-H5P">
                                 <rect key="frame" x="20" y="40" width="45" height="35"/>
                                 <constraints>
@@ -183,15 +192,6 @@
                                     <outlet property="delegate" destination="t8u-au-Bag" id="FHi-S0-Z8B"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdG-WA-GIy">
-                                <rect key="frame" x="137" y="49" width="90" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="lm5-mW-KD6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1391,7 +1391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWq-Dj-UzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369.5" y="636.5"/>
+            <point key="canvasLocation" x="-383.5" y="558.5"/>
         </scene>
         <!--Adicionar Exame-->
         <scene sceneID="wpO-Eb-Ivs">
