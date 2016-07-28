@@ -10,7 +10,13 @@ import UIKit
 
 class AdicionarVacina: UIViewController {
     
+    //MARK: Outlets
+    
     @IBOutlet var validadeSlider: UISlider!
+    @IBOutlet var myDatePicker: UIDatePicker!
+    @IBOutlet var myDatePicker2: UIDatePicker!
+    
+    
     @IBAction func mudandoValidade(sender: AnyObject) {
         let currentValue = Int(validadeSlider.value)
         if(Int(validadeSlider.value) == 11){
@@ -21,18 +27,21 @@ class AdicionarVacina: UIViewController {
         }
     }
     
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var validadeLabel: UILabel!
-    
     @IBOutlet var textField1: UITextField!
-    
     @IBOutlet var textField4: UITextField!
-    
     @IBOutlet var simnao: UISwitch!
     
     var pessoa: pessoas!
     
+    //MARK: viewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         let currentValue = Int(validadeSlider.value)
 
         if(Int(validadeSlider.value) == 11){
@@ -43,13 +52,11 @@ class AdicionarVacina: UIViewController {
         }
         
         textFieldStyles(textField1)
-        textFieldStyles(textField4)
+//        textFieldStyles(textField4)
         
     }
     
-    @IBOutlet var myDatePicker: UIDatePicker!
-    @IBOutlet var myDatePicker2: UIDatePicker!
-    
+  
     // a partir daqui: ****KEYBOARD****
     
     @IBAction func ativar(sender: AnyObject) {
