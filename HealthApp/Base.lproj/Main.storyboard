@@ -227,19 +227,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crQ-ct-FEk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crQ-ct-FEk">
                                 <rect key="frame" x="154" y="420" width="50" height="18"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
                                 <color key="textColor" red="1" green="0.74117647060000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIPO DE IMUNIZAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-OM-0DO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TIPO DE IMUNIZAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-OM-0DO">
                                 <rect key="frame" x="32" y="58" width="158" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMINISTRADA EM:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-vX-KKW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADMINISTRADA EM:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-vX-KKW">
                                 <rect key="frame" x="32" y="137" width="143" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -259,14 +259,14 @@
                                     <action selector="atualizar:" destination="qlX-qS-TsC" eventType="touchUpInside" id="vw6-I6-EFj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJq-pE-7O8">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJq-pE-7O8">
                                 <rect key="frame" x="16" y="20" width="41" height="30"/>
                                 <state key="normal" title="Voltar"/>
                                 <connections>
                                     <action selector="dismissViewController:" destination="qlX-qS-TsC" eventType="touchUpInside" id="Rl2-Qu-ALe"/>
                                 </connections>
                             </button>
-                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zFi-SS-hhD">
+                            <datePicker hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zFi-SS-hhD">
                                 <rect key="frame" x="32" y="283" width="290" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="DXt-jR-xao"/>
@@ -280,32 +280,32 @@
                                     <action selector="datePickerAction:" destination="P7L-JB-PGB" eventType="valueChanged" id="sfu-SE-sYp"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRÓXIMA DOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-Bv-enw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRÓXIMA DOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-Bv-enw">
                                 <rect key="frame" x="32" y="244" width="114" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-az-WeT">
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-az-WeT">
                                 <rect key="frame" x="161" y="239" width="51" height="31"/>
                                 <connections>
                                     <action selector="ativar:" destination="qlX-qS-TsC" eventType="valueChanged" id="Luj-nd-B01"/>
                                 </connections>
                             </switch>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-kl-CtN">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-kl-CtN">
                                 <rect key="frame" x="30" y="385" width="298" height="31"/>
                                 <connections>
                                     <action selector="mudandoValidade:" destination="qlX-qS-TsC" eventType="valueChanged" id="Bnu-Uv-Zw7"/>
                                     <action selector="mudandoValidade:" destination="P7L-JB-PGB" eventType="valueChanged" id="pbc-9k-aO7"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÁLIDA ATÉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ems-1v-N5p">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VÁLIDA ATÉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ems-1v-N5p">
                                 <rect key="frame" x="28" y="357" width="87" height="15"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-tu-NhH">
+                            <datePicker hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-tu-NhH">
                                 <rect key="frame" x="32" y="164" width="290" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="SLx-b0-1Dx"/>
@@ -319,7 +319,7 @@
                                     <action selector="datePickerAction:" destination="P7L-JB-PGB" eventType="valueChanged" id="zDm-XY-5c9"/>
                                 </connections>
                             </datePicker>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-y7-cKo">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-y7-cKo">
                                 <rect key="frame" x="32" y="85" width="290" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="mV2-zH-rjZ"/>
@@ -327,7 +327,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAw-j3-hsj">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAw-j3-hsj">
                                 <rect key="frame" x="0.0" y="488" width="375" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="thE-jO-1SX"/>
@@ -409,8 +409,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOP-Bx-zAW">
-                                <rect key="frame" x="-12" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOP-Bx-zAW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADICIONAR VACINA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftT-RM-ySk">
                                         <rect key="frame" x="99" y="50" width="177" height="17"/>
@@ -419,7 +419,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-tT-cgT">
-                                        <rect key="frame" x="-62" y="-65" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="54" y="-27" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -516,6 +516,14 @@
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My7-Ho-OVY">
+                                        <rect key="frame" x="15" y="41" width="45" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Eqn-yr-4Eg"/>
+                                            <constraint firstAttribute="width" constant="45" id="rD3-LU-AvU"/>
+                                        </constraints>
+                                        <state key="normal" image="yellowDismiss"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8Ej-ei-3H2" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="30" id="2zO-ZI-UMK"/>
@@ -525,6 +533,7 @@
                                     <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="Cl4-in-QlD"/>
                                     <constraint firstItem="NvC-5L-s0K" firstAttribute="width" secondItem="rpp-bl-f7y" secondAttribute="width" id="EtM-4r-AMw"/>
                                     <constraint firstItem="NvC-5L-s0K" firstAttribute="top" secondItem="rpp-bl-f7y" secondAttribute="bottom" constant="15" id="FFH-ur-VvJ"/>
+                                    <constraint firstItem="My7-Ho-OVY" firstAttribute="top" secondItem="QOP-Bx-zAW" secondAttribute="top" constant="41" id="GiK-Ky-pVu"/>
                                     <constraint firstItem="Oa7-3l-uC3" firstAttribute="top" secondItem="vY2-MV-6b7" secondAttribute="bottom" constant="5" id="Kty-kh-8pq"/>
                                     <constraint firstItem="ktn-xy-Z8P" firstAttribute="top" secondItem="8Ej-ei-3H2" secondAttribute="bottom" constant="10" id="Obr-4E-2R5"/>
                                     <constraint firstItem="ktn-xy-Z8P" firstAttribute="width" secondItem="Oa7-3l-uC3" secondAttribute="width" id="QXo-sh-FHS"/>
@@ -537,6 +546,7 @@
                                     <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="dyU-eS-Pla"/>
                                     <constraint firstItem="rpp-bl-f7y" firstAttribute="top" secondItem="ftT-RM-ySk" secondAttribute="bottom" constant="40" id="hbm-5e-Srx"/>
                                     <constraint firstItem="t0u-dt-1qr" firstAttribute="top" secondItem="Oa7-3l-uC3" secondAttribute="bottom" constant="30" id="kPN-Fv-WE1"/>
+                                    <constraint firstItem="My7-Ho-OVY" firstAttribute="leading" secondItem="QOP-Bx-zAW" secondAttribute="leading" constant="15" id="mjX-DO-cSY"/>
                                     <constraint firstItem="ktn-xy-Z8P" firstAttribute="centerX" secondItem="t0u-dt-1qr" secondAttribute="centerX" id="oGi-tQ-gSX"/>
                                     <constraint firstItem="vY2-MV-6b7" firstAttribute="top" secondItem="NvC-5L-s0K" secondAttribute="bottom" constant="50" id="qLS-du-Qe5"/>
                                     <constraint firstItem="rpp-bl-f7y" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="sz9-r2-YmQ"/>
@@ -574,7 +584,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjk-Sg-Hy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272.5" y="1338.5"/>
+            <point key="canvasLocation" x="71.5" y="1432.5"/>
         </scene>
         <!--Medicos-->
         <scene sceneID="F3z-24-ORW">
@@ -1288,7 +1298,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGq-2R-UGH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGq-2R-UGH">
                                 <rect key="frame" x="151" y="40" width="74" height="17"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.31764705879999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1298,7 +1308,7 @@
                                 <rect key="frame" x="317" y="28" width="30" height="30"/>
                                 <state key="normal" backgroundImage="redAdd"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-EC-VMU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-EC-VMU">
                                 <rect key="frame" x="0.0" y="95" width="375" height="572"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -1480,6 +1490,14 @@
                                             <action selector="adicionar:" destination="4aW-Lg-9Pb" eventType="touchUpInside" id="fnh-6N-hEc"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O89-bs-FYs">
+                                        <rect key="frame" x="15" y="41" width="45" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Xtf-0c-Ofj"/>
+                                            <constraint firstAttribute="width" constant="45" id="i0s-Vy-4SZ"/>
+                                        </constraints>
+                                        <state key="normal" image="redDismiss"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="t1L-7i-dwb" firstAttribute="centerX" secondItem="saP-ig-1E3" secondAttribute="centerX" id="639-ER-193"/>
@@ -1487,6 +1505,8 @@
                                     <constraint firstItem="rUb-yp-RWQ" firstAttribute="top" secondItem="1x2-Qf-lLc" secondAttribute="top" constant="50" id="BEb-Ab-63p"/>
                                     <constraint firstItem="cjh-XM-vHp" firstAttribute="top" secondItem="4MX-1D-tjh" secondAttribute="bottom" constant="15" id="CeY-F3-0Bg"/>
                                     <constraint firstItem="Zbo-ps-we5" firstAttribute="top" secondItem="cjh-XM-vHp" secondAttribute="bottom" constant="50" id="QE6-zo-ZwG"/>
+                                    <constraint firstItem="O89-bs-FYs" firstAttribute="leading" secondItem="1x2-Qf-lLc" secondAttribute="leading" constant="15" id="Tcf-bB-LCs"/>
+                                    <constraint firstItem="O89-bs-FYs" firstAttribute="top" secondItem="1x2-Qf-lLc" secondAttribute="top" constant="41" id="UZf-X3-r3O"/>
                                     <constraint firstItem="cjh-XM-vHp" firstAttribute="centerX" secondItem="1x2-Qf-lLc" secondAttribute="centerX" id="VXP-MP-YxO"/>
                                     <constraint firstItem="saP-ig-1E3" firstAttribute="top" secondItem="Zbo-ps-we5" secondAttribute="bottom" constant="5" id="Yar-E4-4FO"/>
                                     <constraint firstItem="4MX-1D-tjh" firstAttribute="centerX" secondItem="1x2-Qf-lLc" secondAttribute="centerX" id="YjX-TR-Btw"/>
@@ -1541,13 +1561,15 @@
         <image name="greenEdit" width="25" height="25"/>
         <image name="medicos" width="95" height="69"/>
         <image name="redAdd" width="25" height="25"/>
+        <image name="redDismiss" width="19" height="19"/>
         <image name="settings" width="25" height="25"/>
         <image name="vacinas" width="71" height="72"/>
         <image name="yellowAdd" width="75" height="75"/>
         <image name="yellowBack" width="93" height="75"/>
+        <image name="yellowDismiss" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ttq-2V-lwg"/>
-        <segue reference="3vp-h4-Ebp"/>
+        <segue reference="ecH-SJ-0Y1"/>
+        <segue reference="0Vl-1R-gKy"/>
     </inferredMetricsTieBreakers>
 </document>
