@@ -1176,7 +1176,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OLÁ, NOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-Bq-4TJ">
-                                <rect key="frame" x="137" y="79" width="102" height="17"/>
+                                <rect key="frame" x="137" y="45" width="102" height="17"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1221,7 +1221,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31T-ff-t9b" userLabel="Configuracoes Button">
-                                <rect key="frame" x="300" y="71" width="25" height="25"/>
+                                <rect key="frame" x="300" y="41" width="25" height="25"/>
                                 <state key="normal" image="settings"/>
                             </button>
                         </subviews>
@@ -1240,6 +1240,7 @@
                             <constraint firstItem="lRt-4U-To5" firstAttribute="top" secondItem="YnB-9t-aXR" secondAttribute="bottom" constant="20" id="EFc-vm-JNN"/>
                             <constraint firstItem="xe5-fI-h8m" firstAttribute="centerX" secondItem="lRt-4U-To5" secondAttribute="centerX" id="HEV-QD-bf3"/>
                             <constraint firstItem="rih-MW-VMC" firstAttribute="centerX" secondItem="xe5-fI-h8m" secondAttribute="centerX" id="IMA-v2-4fM"/>
+                            <constraint firstItem="31T-ff-t9b" firstAttribute="top" secondItem="qOJ-9z-bWm" secondAttribute="bottom" constant="41" id="K5z-qh-m9w"/>
                             <constraint firstItem="cn7-4f-eCW" firstAttribute="top" secondItem="qOJ-9z-bWm" secondAttribute="bottom" id="SEa-So-kXO"/>
                             <constraint firstItem="YnB-9t-aXR" firstAttribute="centerY" secondItem="tbn-rK-JjP" secondAttribute="centerY" id="VdV-nc-a3p"/>
                             <constraint firstItem="BzE-u3-nkS" firstAttribute="top" secondItem="cn7-4f-eCW" secondAttribute="bottom" id="YDq-b0-YKi"/>
@@ -1248,6 +1249,7 @@
                             <constraint firstItem="aDZ-MM-4T3" firstAttribute="centerX" secondItem="bbi-Bq-4TJ" secondAttribute="centerX" id="oKE-ad-T5z"/>
                             <constraint firstItem="Adz-16-BAu" firstAttribute="top" secondItem="aDZ-MM-4T3" secondAttribute="bottom" constant="20" id="oyJ-HS-haK"/>
                             <constraint firstItem="xe5-fI-h8m" firstAttribute="top" secondItem="lRt-4U-To5" secondAttribute="bottom" constant="60" id="rb4-tL-D1I"/>
+                            <constraint firstItem="bbi-Bq-4TJ" firstAttribute="top" secondItem="qOJ-9z-bWm" secondAttribute="bottom" constant="45" id="wRI-4F-49h"/>
                             <constraint firstItem="Adz-16-BAu" firstAttribute="centerX" secondItem="bbi-Bq-4TJ" secondAttribute="centerX" id="wVt-Hy-onJ"/>
                             <constraint firstItem="cn7-4f-eCW" firstAttribute="leading" secondItem="tbn-rK-JjP" secondAttribute="leading" id="wu4-z7-cUI"/>
                             <constraint firstItem="31T-ff-t9b" firstAttribute="top" secondItem="qOJ-9z-bWm" secondAttribute="bottom" constant="55" id="zkI-EW-46C"/>
@@ -1255,6 +1257,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="1bJ-MO-eFU"/>
+                                <exclude reference="1qC-En-cyK"/>
                                 <exclude reference="mdv-M7-4FR"/>
                                 <exclude reference="wVt-Hy-onJ"/>
                                 <exclude reference="7I9-HI-abD"/>
