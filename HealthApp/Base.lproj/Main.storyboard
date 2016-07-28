@@ -542,12 +542,9 @@
                                     <constraint firstItem="ktn-xy-Z8P" firstAttribute="top" secondItem="8Ej-ei-3H2" secondAttribute="bottom" constant="10" id="3a8-8U-PF0"/>
                                     <constraint firstItem="Xuh-CN-k9l" firstAttribute="top" secondItem="ktn-xy-Z8P" secondAttribute="bottom" constant="10" id="9y1-bz-rQH"/>
                                     <constraint firstItem="t0u-dt-1qr" firstAttribute="centerX" secondItem="Oa7-3l-uC3" secondAttribute="centerX" id="CPc-W6-It1"/>
-                                    <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="Cl4-in-QlD"/>
-                                    <constraint firstItem="NvC-5L-s0K" firstAttribute="width" secondItem="rpp-bl-f7y" secondAttribute="width" id="EtM-4r-AMw"/>
                                     <constraint firstItem="NvC-5L-s0K" firstAttribute="top" secondItem="rpp-bl-f7y" secondAttribute="bottom" constant="15" id="FFH-ur-VvJ"/>
                                     <constraint firstItem="My7-Ho-OVY" firstAttribute="top" secondItem="QOP-Bx-zAW" secondAttribute="top" constant="41" id="GiK-Ky-pVu"/>
                                     <constraint firstItem="Oa7-3l-uC3" firstAttribute="top" secondItem="vY2-MV-6b7" secondAttribute="bottom" constant="5" id="Kty-kh-8pq"/>
-                                    <constraint firstItem="ktn-xy-Z8P" firstAttribute="top" secondItem="8Ej-ei-3H2" secondAttribute="bottom" constant="10" id="Obr-4E-2R5"/>
                                     <constraint firstItem="ktn-xy-Z8P" firstAttribute="width" secondItem="Oa7-3l-uC3" secondAttribute="width" id="QXo-sh-FHS"/>
                                     <constraint firstItem="NvC-5L-s0K" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="TLo-hN-aDN"/>
                                     <constraint firstItem="ftT-RM-ySk" firstAttribute="top" secondItem="QOP-Bx-zAW" secondAttribute="top" constant="50" id="VCK-RD-BX7"/>
@@ -563,18 +560,9 @@
                                     <constraint firstItem="vY2-MV-6b7" firstAttribute="top" secondItem="NvC-5L-s0K" secondAttribute="bottom" constant="50" id="qLS-du-Qe5"/>
                                     <constraint firstItem="rpp-bl-f7y" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="sz9-r2-YmQ"/>
                                     <constraint firstItem="NvC-5L-s0K" firstAttribute="width" secondItem="Oa7-3l-uC3" secondAttribute="width" id="tDx-mR-MvG"/>
-                                    <constraint firstItem="ftT-RM-ySk" firstAttribute="centerX" secondItem="QOP-Bx-zAW" secondAttribute="centerX" id="teI-CB-lE7"/>
                                     <constraint firstItem="ktn-xy-Z8P" firstAttribute="height" secondItem="Oa7-3l-uC3" secondAttribute="height" id="xxS-hn-ZiW"/>
                                     <constraint firstItem="Xuh-CN-k9l" firstAttribute="centerX" secondItem="ktn-xy-Z8P" secondAttribute="centerX" id="z3z-ah-sSH"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Cl4-in-QlD"/>
-                                        <exclude reference="teI-CB-lE7"/>
-                                        <exclude reference="EtM-4r-AMw"/>
-                                        <exclude reference="Obr-4E-2R5"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -596,7 +584,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjk-Sg-Hy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.5" y="1270.5"/>
+            <point key="canvasLocation" x="102.5" y="1432.5"/>
         </scene>
         <!--Medicos-->
         <scene sceneID="F3z-24-ORW">
@@ -1296,7 +1284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MHv-ZI-4tH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369.5" y="-223.5"/>
+            <point key="canvasLocation" x="-351.5" y="-271.5"/>
         </scene>
         <!--Exames-->
         <scene sceneID="gep-yF-h1o">
@@ -1584,7 +1572,7 @@
         <image name="yellowDismiss" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ecH-SJ-0Y1"/>
-        <segue reference="0Vl-1R-gKy"/>
+        <segue reference="Ttq-2V-lwg"/>
+        <segue reference="3vp-h4-Ebp"/>
     </inferredMetricsTieBreakers>
 </document>
