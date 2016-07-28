@@ -323,18 +323,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUAL DOSE?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rz-MZ-I7s">
-                                <rect key="frame" x="25" y="448" width="95" height="14.5"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAw-j3-hsj">
                                 <rect key="frame" x="0.0" y="488" width="375" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="thE-jO-1SX"/>
                                 </constraints>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ÚLTIMA DOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rz-MZ-I7s">
+                                <rect key="frame" x="32" y="448" width="100" height="15"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -367,7 +367,7 @@
                             <constraint firstItem="fMs-Bv-enw" firstAttribute="top" secondItem="Scb-tu-NhH" secondAttribute="bottom" constant="21" id="o1m-YK-6p8"/>
                             <constraint firstItem="rtd-OM-0DO" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="16" id="ona-EP-Es6"/>
                             <constraint firstItem="Scb-tu-NhH" firstAttribute="top" secondItem="xnx-vX-KKW" secondAttribute="bottom" constant="12.5" id="q3F-v9-Gsp"/>
-                            <constraint firstItem="7rz-MZ-I7s" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="9" id="rv2-H6-ZRp"/>
+                            <constraint firstItem="7rz-MZ-I7s" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" constant="12" id="rv2-H6-ZRp"/>
                             <constraint firstItem="ALL-wL-Xu0" firstAttribute="centerX" secondItem="KA4-KL-ctN" secondAttribute="centerX" id="uJR-wH-8SD"/>
                             <constraint firstItem="7rz-MZ-I7s" firstAttribute="top" secondItem="Kgs-kl-CtN" secondAttribute="bottom" constant="33" id="uXP-RA-tjD"/>
                             <constraint firstItem="DJq-pE-7O8" firstAttribute="leading" secondItem="KA4-KL-ctN" secondAttribute="leadingMargin" id="w4s-J9-sjb"/>
@@ -387,13 +387,13 @@
                         <outlet property="simnao" destination="DMe-az-WeT" id="M02-RM-Xhf"/>
                         <outlet property="sliderValidade" destination="Kgs-kl-CtN" id="LZ3-RP-dNE"/>
                         <outlet property="text1" destination="iUw-y7-cKo" id="sXj-Kq-0HO"/>
-                        <outlet property="validadeVacina" destination="crQ-ct-FEk" id="B5q-ty-26O"/>
+                        <outlet property="validadeLabel" destination="crQ-ct-FEk" id="g6m-3e-Dtl"/>
                         <segue destination="t8u-au-Bag" kind="show" identifier="atualizado" id="3SW-bi-XLj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YoX-yL-sBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574.5" y="325.5"/>
+            <point key="canvasLocation" x="574.5" y="409.5"/>
         </scene>
         <!--Adicionar Vacina-->
         <scene sceneID="JY0-4D-8XR">
@@ -570,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjk-Sg-Hy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.5" y="1379.5"/>
+            <point key="canvasLocation" x="120.5" y="1113.5"/>
         </scene>
         <!--Medicos-->
         <scene sceneID="F3z-24-ORW">

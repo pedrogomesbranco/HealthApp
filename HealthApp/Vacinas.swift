@@ -24,21 +24,22 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var administracao: String!
     var validade: String!
     var row: Int!
-
+    
     @IBOutlet var table: UITableView!
-
+    
     
     //array para salvar o nome das vacinas
-
-    var pessoa: pessoas = pessoas.init(nome: "Pedro", vacina: vacinas.init(tipo: Tipos.Adulto, vacinas: adulto, administracaoVacinas: [""], validadeVacinas: [""], proximaDose: [""], numeroDeDoses: [""], obs: [""]), sexo: Sexo.Masculino, nascimento: "08/05/1993", gravida: false, foto: UIImage(named:"doctor")!)
+    
+    var pessoa: pessoas!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.table.delegate = self
         self.table.dataSource = self
+        pessoa = pessoas.init(nome: "Pedro", vacina: vacinas.init(tipo: Tipos.Adulto, vacinas: adulto, administracaoVacinas: [""], validadeVacinas: [""], proximaDose: [""], numeroDeDoses: [""], obs: [""]), sexo: Sexo.Masculino, nascimento: "08/05/1993", gravida: false, foto: UIImage(named:"doctor")!)
         
-        if NSUserDefaults.standardUserDefaults().objectForKey("nomeVacinas") == nil{
+        if NSUserDefaults.standardUserDefaults().objectForKey("Pedrovacinas") == nil{
             pessoa.vacina.administracaoVacinas.removeAll()
             pessoa.vacina.validadeVacinas.removeAll()
             pessoa.vacina.proximaDose.removeAll()
