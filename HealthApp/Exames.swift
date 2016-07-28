@@ -11,6 +11,11 @@ import UIKit
 class Exames: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
+    @IBAction func backButton(sender: AnyObject) {
+        
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

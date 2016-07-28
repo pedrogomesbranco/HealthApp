@@ -185,6 +185,7 @@
                                 </constraints>
                                 <state key="normal" image="yellowBack"/>
                                 <connections>
+                                    <action selector="backButton:" destination="t8u-au-Bag" eventType="touchUpInside" id="yt2-bp-GbJ"/>
                                     <segue destination="kDH-6Y-qcE" kind="show" id="pV4-nG-29o"/>
                                 </connections>
                             </button>
@@ -523,6 +524,9 @@
                                             <constraint firstAttribute="width" constant="45" id="rD3-LU-AvU"/>
                                         </constraints>
                                         <state key="normal" image="yellowDismiss"/>
+                                        <connections>
+                                            <action selector="dismissViewController:" destination="P7L-JB-PGB" eventType="touchUpInside" id="gL8-Ch-9k8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -584,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjk-Sg-Hy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71.5" y="1432.5"/>
+            <point key="canvasLocation" x="111.5" y="1270.5"/>
         </scene>
         <!--Medicos-->
         <scene sceneID="F3z-24-ORW">
@@ -1298,8 +1302,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGq-2R-UGH">
-                                <rect key="frame" x="151" y="40" width="74" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGq-2R-UGH">
+                                <rect key="frame" x="150" y="41" width="74" height="17"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.31764705879999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1359,32 +1363,31 @@
                                     <outlet property="delegate" destination="cRa-3i-UdT" id="96u-2q-aY2"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUM-pV-3Hz">
+                                <rect key="frame" x="16" y="32" width="45" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fj5-JX-23Y"/>
+                                    <constraint firstAttribute="width" constant="45" id="xUO-nb-m0l"/>
+                                </constraints>
+                                <state key="normal" image="redBack"/>
+                                <connections>
+                                    <action selector="backButton:" destination="cRa-3i-UdT" eventType="touchUpInside" id="oug-8A-oDa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Drs-EC-VMU" firstAttribute="top" secondItem="qHm-JI-JTQ" secondAttribute="bottom" constant="8" symbolic="YES" id="AZD-Rp-U6f"/>
                             <constraint firstItem="Drs-EC-VMU" firstAttribute="leading" secondItem="aaH-9c-88d" secondAttribute="leading" id="DRs-Gx-QMp"/>
+                            <constraint firstItem="wUM-pV-3Hz" firstAttribute="leading" secondItem="aaH-9c-88d" secondAttribute="leadingMargin" id="DV9-oP-l5q"/>
                             <constraint firstItem="Nm6-Uj-Sp6" firstAttribute="top" secondItem="Drs-EC-VMU" secondAttribute="bottom" id="Dtw-hd-mNP"/>
-                            <constraint firstItem="nGq-2R-UGH" firstAttribute="top" secondItem="0cV-o8-Z3f" secondAttribute="bottom" constant="10" id="PHU-3r-FXb"/>
                             <constraint firstItem="nGq-2R-UGH" firstAttribute="top" secondItem="0cV-o8-Z3f" secondAttribute="bottom" constant="40" id="RUo-Mp-7P9"/>
                             <constraint firstItem="Drs-EC-VMU" firstAttribute="top" secondItem="nGq-2R-UGH" secondAttribute="bottom" constant="38" id="YmW-sO-NeV"/>
                             <constraint firstAttribute="trailing" secondItem="Drs-EC-VMU" secondAttribute="trailing" id="apO-0p-bzW"/>
                             <constraint firstItem="nGq-2R-UGH" firstAttribute="centerX" secondItem="aaH-9c-88d" secondAttribute="centerX" id="dyy-V2-NWi"/>
                             <constraint firstItem="qHm-JI-JTQ" firstAttribute="top" secondItem="0cV-o8-Z3f" secondAttribute="bottom" constant="28" id="gbv-E7-999"/>
-                            <constraint firstItem="Nm6-Uj-Sp6" firstAttribute="top" secondItem="Drs-EC-VMU" secondAttribute="bottom" id="qDq-KL-naI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Drs-EC-VMU" secondAttribute="trailing" id="sFm-O7-Q4D"/>
+                            <constraint firstItem="wUM-pV-3Hz" firstAttribute="top" secondItem="0cV-o8-Z3f" secondAttribute="bottom" constant="32" id="pYI-mr-LeW"/>
                             <constraint firstItem="qHm-JI-JTQ" firstAttribute="leading" secondItem="nGq-2R-UGH" secondAttribute="trailing" constant="92" id="vJv-fT-d6T"/>
-                            <constraint firstItem="Drs-EC-VMU" firstAttribute="leading" secondItem="aaH-9c-88d" secondAttribute="leadingMargin" id="vag-qp-0Zg"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="AZD-Rp-U6f"/>
-                                <exclude reference="sFm-O7-Q4D"/>
-                                <exclude reference="vag-qp-0Zg"/>
-                                <exclude reference="PHU-3r-FXb"/>
-                                <exclude reference="qDq-KL-naI"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1395,10 +1398,10 @@
             </objects>
             <point key="canvasLocation" x="-369.5" y="636.5"/>
         </scene>
-        <!--Adicionar Vacina-->
+        <!--Adicionar Exame-->
         <scene sceneID="wpO-Eb-Ivs">
             <objects>
-                <viewController id="4aW-Lg-9Pb" customClass="AdicionarVacina" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4aW-Lg-9Pb" customClass="AdicionarExame" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hlg-iX-Zpv"/>
                         <viewControllerLayoutGuide type="bottom" id="4y4-2g-R2p"/>
@@ -1497,6 +1500,9 @@
                                             <constraint firstAttribute="width" constant="45" id="i0s-Vy-4SZ"/>
                                         </constraints>
                                         <state key="normal" image="redDismiss"/>
+                                        <connections>
+                                            <action selector="dismissViewController:" destination="4aW-Lg-9Pb" eventType="touchUpInside" id="tvQ-ce-T2W"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1561,6 +1567,7 @@
         <image name="greenEdit" width="25" height="25"/>
         <image name="medicos" width="95" height="69"/>
         <image name="redAdd" width="25" height="25"/>
+        <image name="redBack" width="31" height="25"/>
         <image name="redDismiss" width="19" height="19"/>
         <image name="settings" width="25" height="25"/>
         <image name="vacinas" width="71" height="72"/>
@@ -1569,7 +1576,7 @@
         <image name="yellowDismiss" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ecH-SJ-0Y1"/>
+        <segue reference="3SW-bi-XLj"/>
         <segue reference="0Vl-1R-gKy"/>
     </inferredMetricsTieBreakers>
 </document>

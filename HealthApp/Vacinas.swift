@@ -10,6 +10,12 @@ import UIKit
 
 class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBAction func backButton(sender: AnyObject) {
+        
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
     @IBAction func adicionar(sender: AnyObject) {
         self.performSegueWithIdentifier("adicionar", sender: self)
     }

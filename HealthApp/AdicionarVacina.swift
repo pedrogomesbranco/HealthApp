@@ -16,6 +16,11 @@ class AdicionarVacina: UIViewController {
     @IBOutlet var myDatePicker: UIDatePicker!
     @IBOutlet var myDatePicker2: UIDatePicker!
     
+    @IBAction func dismissViewController(sender: AnyObject) {
+        
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
     @IBAction func mudandoValidade(sender: AnyObject) {
         let currentValue = Int(validadeSlider.value)
