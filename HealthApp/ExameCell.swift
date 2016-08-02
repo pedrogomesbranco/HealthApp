@@ -12,7 +12,7 @@ class ExameCellTableViewCell: UITableViewCell {
 
     @IBOutlet var nomeExame: UILabel!
     @IBOutlet var dataRealizacaoExame: UILabel!
-    @IBOutlet var imagemExame: UIImageView!
+    @IBOutlet var web: UIWebView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

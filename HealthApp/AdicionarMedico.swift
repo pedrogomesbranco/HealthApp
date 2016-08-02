@@ -16,15 +16,16 @@ class AdicionarMedico: UIViewController {
     @IBOutlet weak var especialidadeTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
     @IBOutlet weak var celularTextField: UITextField!
-    @IBOutlet weak var enderecoTextView: UITextView!
+    @IBOutlet weak var emailTextField: UITextField!
     
     @IBAction func fotoButton(sender: AnyObject) {
+        
     }
     
     @IBAction func confirmarButton(sender: AnyObject) {
+        self.performSegueWithIdentifier("adicionado", sender: self)
     }
     
-    override func prefersStatusBarHidden() -> Bool { return true }
     
     
     override func viewDidLoad() {
@@ -35,7 +36,7 @@ class AdicionarMedico: UIViewController {
         self.especialidadeTextField.delegate = self
         self.telefoneTextField.delegate = self
         self.celularTextField.delegate = self
-        self.enderecoTextView.delegate = self
+        self.emailTextField.delegate = self
         
         // Deixar a Image View circular
         fotoImageView.layer.cornerRadius = fotoImageView.frame.size.width / 2
@@ -59,11 +60,9 @@ class AdicionarMedico: UIViewController {
         textFieldStyles(especialidadeTextField)
         textFieldStyles(telefoneTextField)
         textFieldStyles(celularTextField)
-        
-        // Estilizar o Text View
-        enderecoTextView.layer.masksToBounds = false
-        enderecoTextView.layer.cornerRadius = 5.0
-        enderecoTextView.textContainerInset = UIEdgeInsetsMake(10, 5, 10, 5)
+        textFieldStyles(emailTextField)
+
+
         
     }
 

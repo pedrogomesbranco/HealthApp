@@ -25,7 +25,6 @@ class EditarMedico: UIViewController {
     @IBAction func confirmarButton(sender: AnyObject) {
     }
     
-    override func prefersStatusBarHidden() -> Bool { return true }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -123,7 +123,7 @@ var adolescenteNumeroDeDoses = [String]()
 var adolescenteObs = [String]()
 
 // adulto
-var adulto = ["Hepatite B", "Febre Amarela", "Triplice Viral", "Dupla Adulto"]
+var adulto = ["Hepatite B", "Febre Amarela", "Triplice Viral", "Dupla Adulto", "Antitetânica"]
 var adultoAdministracaoVacinas = [String]()
 var adultoValidadeVacinas = [String]()
 var adultoProximaDose = [String]()

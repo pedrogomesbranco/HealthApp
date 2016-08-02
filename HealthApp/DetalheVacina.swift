@@ -10,16 +10,24 @@ import UIKit
 
 class DetalheVacina: UIViewController {
     
-    @IBOutlet var validadeLabel: UILabel!
-    @IBOutlet var sliderValidade: UISlider!
-    @IBAction func mudandoValidade(sender: AnyObject) {
-        let currentValue = Int(sliderValidade.value)
-        if(Int(sliderValidade.value) == 11){
-            validadeLabel.text = "Vitalícia"
+    @IBOutlet var nomeVacina: UILabel!
+    @IBOutlet var prox: UILabel!
+    var i = false
+    @IBOutlet var NAO: UIButton!
+    @IBAction func nao(sender: AnyObject) {
+        if(i == false){
+            data2.hidden = true
+            prox.hidden = false
+            NAO.setTitle("NECESSÁRIA?", forState: .Normal)
+            i = true
         }
         else{
-            validadeLabel.text = "\(currentValue) anos"
+            data2.hidden = !true
+            prox.hidden = !false
+            NAO.setTitle("NÃO NECESSÁRIA?", forState: .Normal)
+            i = false
         }
+        
     }
     
     var recebeString:String!
@@ -27,27 +35,16 @@ class DetalheVacina: UIViewController {
     var recebeString3:String!
     var index: Int!
     var pessoa: pessoas!
-    
-    @IBOutlet var simnao: UISwitch!
-    @IBOutlet var validadeVacina: UILabel!
-    @IBOutlet var text1: UITextField!
+
     
     @IBOutlet var data2: UIDatePicker!
     @IBOutlet var data1: UIDatePicker!
     
-    @IBAction func dismissViewController(sender: AnyObject) {
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
-        
-    }
-    
-    @IBAction func ativar(sender: AnyObject) {
-        data2.hidden = !simnao.on
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pessoa.nome = "Pedro"
         pessoa.vacina.vacinas = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)vacinas") as! [String]
         pessoa.vacina.administracaoVacinas = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)administracaoVacinas") as! [String]
         pessoa.vacina.validadeVacinas = NSUserDefaults.standardUserDefaults().objectForKey("\(pessoa.nome)validadeVacinas") as! [String]
@@ -61,25 +58,8 @@ class DetalheVacina: UIViewController {
         formatter.locale = NSLocale(localeIdentifier: "BR_pt")
         formatter.dateFormat = "dd/MM/yyyy"
         
-        let currentValue = Int(sliderValidade.value)
         
-        if(Int(sliderValidade.value) == 11){
-            validadeLabel.text = "Vitalícia"
-        }
-        else{
-            validadeLabel.text = "\(currentValue) anos"
-        }
-        
-        simnao.hidden = false
-        text1.hidden = false
-        data1.hidden = false
-        if(pessoa.vacina.proximaDose[index] != ""){
-            simnao.on = true
-            data2.hidden = false
-        }
-        validadeLabel.hidden = false
-        sliderValidade.hidden = false
-        text1.text = pessoa.vacina.vacinas[index]
+        nomeVacina.text = pessoa.vacina.vacinas[index]
         if pessoa.vacina.administracaoVacinas[index] != ""{
             data1.date = formatter.dateFromString(pessoa.vacina.administracaoVacinas[index])!}
         if(pessoa.vacina.proximaDose[index] != ""){
@@ -91,29 +71,20 @@ class DetalheVacina: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func editar(sender: AnyObject) {
-        
-    }
-    
     @IBAction func atualizar(sender: AnyObject) {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy"
-        if(text1.text != ""){
-            pessoa.vacina.vacinas[index] = text1.text!
             pessoa.vacina.administracaoVacinas[index] = dateFormatter.stringFromDate(data1.date)
-            if simnao.on == false{
+            if dateFormatter.stringFromDate(data1.date) == dateFormatter.stringFromDate(data2.date){
                 pessoa.vacina.proximaDose[index] = ""
+            }
+            else if dateFormatter.stringFromDate(data2.date) == ""{
+                pessoa.vacina.proximaDose[index] = "Não necessária"
             }
             else{
                 pessoa.vacina.proximaDose[index] = dateFormatter.stringFromDate(data2.date)
             }
-        }
-        else{
-            let alerta = UIAlertController(title: "Atenção", message: "Preencha corretamente as informações", preferredStyle: .Alert)
-            alerta.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-            self.presentViewController(alerta, animated: true, completion: nil)
-        }
+        
         NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.vacinas, forKey: "\(pessoa.nome)vacinas")
         NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.administracaoVacinas, forKey: "\(pessoa.nome)administracaoVacinas")
         NSUserDefaults.standardUserDefaults().setObject(pessoa.vacina.validadeVacinas, forKey: "\(pessoa.nome)validadeVacinas")

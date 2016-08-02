@@ -16,7 +16,6 @@ class Cadastro: UIViewController {
     @IBOutlet weak var confirmarSenhaTextField: UITextField!
     @IBOutlet weak var cadastrarButton: UIButton!
     
-    override func prefersStatusBarHidden() -> Bool { return true }
     
     // Movimentar a View quando o Keyboard surgir
     var keyboardHeight: CGFloat!

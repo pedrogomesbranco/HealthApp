@@ -10,20 +10,6 @@ import UIKit
 
 class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBAction func backButton(sender: AnyObject) {
-        
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
-        
-    }
-    
-    @IBAction func adicionar(sender: AnyObject) {
-        self.performSegueWithIdentifier("adicionar", sender: self)
-    }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
-    
     //variaveis auxiliares para passar as Labels da Cell pra outra VC
     
     var nome: String!
@@ -32,7 +18,6 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var row: Int!
     
     @IBOutlet var table: UITableView!
-    
     
     //array para salvar o nome das vacinas
     
@@ -43,6 +28,8 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         self.table.delegate = self
         self.table.dataSource = self
+        self.table.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+
         pessoa = pessoas.init(nome: "Pedro", vacina: vacinas.init(tipo: Tipos.Adulto, vacinas: adulto, administracaoVacinas: [""], validadeVacinas: [""], proximaDose: [""], numeroDeDoses: [""], obs: [""]), sexo: Sexo.Masculino, nascimento: "08/05/1993", gravida: false, foto: UIImage(named:"doctor")!)
         
         if NSUserDefaults.standardUserDefaults().objectForKey("Pedrovacinas") == nil{
@@ -106,22 +93,28 @@ class Vacinas: UIViewController, UITableViewDataSource, UITableViewDelegate {
          ********************************** SHADOW *****************************************
          **********************************************************************************/
         
-        let shadowFrame: CGRect = (cell?.layer.bounds)!
-        let shadowPath: CGPathRef = UIBezierPath(rect: shadowFrame).CGPath
-        cell?.layer.shadowPath = shadowPath
-        
-        cell?.layer.shadowOffset = CGSizeMake(0, 1)
-        cell?.layer.shadowColor = UIColor.blackColor().CGColor
-        cell?.layer.shadowRadius = 1
-        cell?.layer.shadowOpacity = 0.3
-        cell?.clipsToBounds = false
+//        let shadowFrame: CGRect = (cell?.layer.bounds)!
+//        let shadowPath: CGPathRef = UIBezierPath(rect: shadowFrame).CGPath
+//        cell?.layer.shadowPath = shadowPath
+//        
+//        cell?.layer.shadowOffset = CGSizeMake(0, 1)
+//        cell?.layer.shadowColor = UIColor.blackColor().CGColor
+//        cell?.layer.shadowRadius = 1
+//        cell?.layer.shadowOpacity = 0.3
+//        cell?.clipsToBounds = false
         
         /********************************************************************************
          *********************************************************************************
          *********************************************************************************/
         cell!.title.text = pessoa.vacina.vacinas[indexPath.row]
-        cell!.administracao.text = "Administrada: " + pessoa.vacina.administracaoVacinas[indexPath.row]
-        cell!.validade.text = "Validade: " + pessoa.vacina.validadeVacinas[indexPath.row]
+        cell!.administracao.text = "ÚLTIMA DOSE: " + pessoa.vacina.administracaoVacinas[indexPath.row]
+        cell!.validade.text = "PRÓXIMA DOSE: " + pessoa.vacina.proximaDose[indexPath.row]
+        if(pessoa.vacina.administracaoVacinas[indexPath.row] != ""){
+            cell?.img2.hidden = false
+        }
+        if(pessoa.vacina.proximaDose[indexPath.row] == ""){
+            cell!.validade.text = "PRÓXIMA DOSE: -- "
+        }
         return cell!
         
     }

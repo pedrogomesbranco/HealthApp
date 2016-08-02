@@ -31,8 +31,18 @@
             <string>GothamRounded-Book</string>
             <string>GothamRounded-Book</string>
             <string>GothamRounded-Book</string>
+            <string>GothamRounded-Book</string>
+            <string>GothamRounded-Book</string>
+            <string>GothamRounded-Book</string>
+            <string>GothamRounded-Book</string>
+            <string>GothamRounded-Book</string>
         </mutableArray>
         <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
             <string>GothamRounded-Medium</string>
@@ -960,6 +970,199 @@
             </objects>
             <point key="canvasLocation" x="1570.5" y="2177.5"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="NCk-Jx-3y9">
+            <objects>
+                <viewController id="oxK-Uh-t0J" customClass="Home" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ImT-ln-Fj1"/>
+                        <viewControllerLayoutGuide type="bottom" id="axW-bO-SjL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vEd-uE-zQm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-0U-zoR">
+                                <rect key="frame" x="-22" y="0.0" width="342" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e34-lV-LHO" userLabel="Configuracoes Button">
+                                <rect key="frame" x="340" y="19" width="25" height="25"/>
+                                <state key="normal" image="settings"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkQ-XW-GEL" userLabel="Perfil Button">
+                                <rect key="frame" x="41" y="107" width="78" height="71"/>
+                                <state key="normal" image="perfil"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRv-Fr-3mi" userLabel="Exames Button">
+                                <rect key="frame" x="50" y="268" width="60" height="54"/>
+                                <state key="normal" image="exames"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFy-7T-jRL">
+                                <rect key="frame" x="49" y="193" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXAMES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thm-4F-Upz">
+                                <rect key="frame" x="41" y="337" width="78" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OLÁ, NOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fna-wr-Oyw">
+                                <rect key="frame" x="12" y="23" width="296" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gap-8C-eaB">
+                                <rect key="frame" x="41" y="379" width="250" height="133"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OR-qO-q13" userLabel="Medicos Button">
+                                <rect key="frame" x="176" y="107" width="108" height="69"/>
+                                <state key="normal" image="medicos"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdU-BC-MDm" userLabel="Vacinas Button">
+                                <rect key="frame" x="195" y="252" width="71" height="72"/>
+                                <state key="normal" image="vacinas"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MÉDICOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-Xe-hiB">
+                                <rect key="frame" x="191" y="191" width="78" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VACINAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWG-t4-pAE">
+                                <rect key="frame" x="191" y="337" width="78" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="olaLabel" destination="Fna-wr-Oyw" id="dRc-TL-dTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHx-bk-7m8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="-374"/>
+        </scene>
+        <!--Cadastro-->
+        <scene sceneID="hve-Qg-vWj">
+            <objects>
+                <viewController id="mqO-JV-3IH" customClass="Cadastro" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tUO-a5-dA8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jzd-lV-EgU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hT8-W2-jhR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="45" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-Ge-x1k">
+                                <rect key="frame" x="35" y="401" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2xB-cZ-qUS"/>
+                                    <constraint firstAttribute="width" constant="256" id="TWl-Fd-Ez9"/>
+                                </constraints>
+                                <state key="normal" title="10 a 19 ">
+                                    <color key="titleColor" red="0.50980392159999999" green="0.76862745099999996" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECIONE SUA IDADE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJH-2S-bkO">
+                                <rect key="frame" x="35" y="361" width="178" height="20"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="eBf-Hm-Q4g">
+                                <rect key="frame" x="107" y="25" width="106" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eBf-Hm-Q4g" secondAttribute="height" multiplier="13:15" id="BWr-pa-fk5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OLÁ, PREENCHA OS DADOS ABAIXO PARA USAR SUA FICHA MÉDICA." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZM-je-FnO">
+                                <rect key="frame" x="28" y="150" width="264" height="80"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ki9-zh-E1Z">
+                                <rect key="frame" x="35" y="305" width="257" height="33"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ki9-zh-E1Z" secondAttribute="height" multiplier="153:20" id="edX-q3-vGn"/>
+                                </constraints>
+                                <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEU NOME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-vW-l7N">
+                                <rect key="frame" x="35" y="277" width="82" height="20"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="45" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmI-sU-cPN">
+                                <rect key="frame" x="118" y="401" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f2S-K1-tOM"/>
+                                    <constraint firstAttribute="width" constant="256" id="qJG-8Q-toa"/>
+                                </constraints>
+                                <state key="normal" title="20 a 59">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.21960784310000001" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="45" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OD2-cC-JIt">
+                                <rect key="frame" x="202" y="401" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Sfx-7W-4Jt"/>
+                                    <constraint firstAttribute="width" constant="256" id="cZc-uL-NSJ"/>
+                                </constraints>
+                                <state key="normal" title="60 ou +">
+                                    <color key="titleColor" red="0.99860441680000001" green="0.67227230900000001" blue="0.19049547489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFJ-Ez-ZeO">
+                                <rect key="frame" x="35" y="481" width="251" height="33"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.75686274509999996" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XFJ-Ez-ZeO" secondAttribute="height" multiplier="153:20" id="qax-Ea-L3l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                                <state key="normal" title="COMEÇAR">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eBf-Hm-Q4g" secondAttribute="trailing" constant="123" id="RKw-qV-nrP"/>
+                            <constraint firstItem="eBf-Hm-Q4g" firstAttribute="leading" secondItem="hT8-W2-jhR" secondAttribute="leading" constant="122" id="aVf-LQ-5g3"/>
+                            <constraint firstItem="Ki9-zh-E1Z" firstAttribute="leading" secondItem="hT8-W2-jhR" secondAttribute="leading" constant="34" id="fsR-UY-uQA"/>
+                            <constraint firstAttribute="trailing" secondItem="XFJ-Ez-ZeO" secondAttribute="trailing" constant="35" id="nag-6u-izT"/>
+                            <constraint firstItem="eBf-Hm-Q4g" firstAttribute="top" secondItem="tUO-a5-dA8" secondAttribute="bottom" constant="50" id="qJs-3o-hkw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ki9-zh-E1Z" secondAttribute="trailing" constant="35" id="szR-96-Awk"/>
+                            <constraint firstItem="XFJ-Ez-ZeO" firstAttribute="leading" secondItem="hT8-W2-jhR" secondAttribute="leading" constant="34" id="xB4-TJ-1V2"/>
+                            <constraint firstItem="Ki9-zh-E1Z" firstAttribute="top" secondItem="eBf-Hm-Q4g" secondAttribute="bottom" constant="37" id="xF2-WM-qxZ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cadastrarButton" destination="XFJ-Ez-ZeO" id="fYl-XY-6lg"/>
+                        <outlet property="cpfTextField" destination="Ki9-zh-E1Z" id="3WY-MB-sPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cgx-KC-RJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-488" y="-374"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="375" height="667"/>
@@ -971,6 +1174,7 @@
         <image name="greenCheck" width="28" height="20"/>
         <image name="greenClose" width="19" height="19"/>
         <image name="greenEdit" width="25" height="25"/>
+        <image name="home" width="375" height="667"/>
         <image name="logo" width="142" height="162"/>
         <image name="medicos" width="95" height="69"/>
         <image name="perfil" width="78" height="71"/>
@@ -978,7 +1182,7 @@
         <image name="vacinas" width="71" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gWH-pf-Ehz"/>
+        <segue reference="mk2-wS-HCc"/>
         <segue reference="Mi3-Ba-rP4"/>
     </inferredMetricsTieBreakers>
 </document>

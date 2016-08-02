@@ -7,34 +7,144 @@
 //
 
 import UIKit
+import MapKit
 
-class VerMedico: UIViewController {
+class VerMedico: UIViewController, MKMapViewDelegate {
     
-    @IBOutlet weak var nomeLabel: UILabel!
+
     @IBOutlet weak var fotoImageView: UIImageView!
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var crmTextField: UITextField!
     @IBOutlet weak var especialidadeTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
+    @IBOutlet var emailLabel: UILabel!
     @IBOutlet weak var celularTextField: UITextField!
-    @IBOutlet weak var enderecoTextView: UITextView!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet var nomeLabel: UILabel!
+    @IBOutlet var celularLabel: UILabel!
+    @IBOutlet var telefoneLabel: UILabel!
+    @IBOutlet var especialidadeLabel: UILabel!
+    @IBOutlet var crmLabel: UILabel!
     
-    @IBAction func editarButton(sender: AnyObject) {
+    var foto: UIImage!
+    var nome: String!
+    var crm: String!
+    var especialidade: String!
+    var celular: String!
+    var telefone: String!
+    var email: String!
+    
+    @IBOutlet var label6: UILabel!
+    @IBOutlet var label5: UILabel!
+    @IBOutlet var label4: UILabel!
+    @IBOutlet var label3: UILabel!
+    @IBOutlet var label2: UILabel!
+    @IBOutlet var label1: UILabel!
+    
+    @IBAction func trocarFoto(sender: AnyObject) {
     }
     
+    @IBOutlet var fotoBotao: UIImageView!
+    @IBOutlet var atualizar: UIButton!
     
-    override func prefersStatusBarHidden() -> Bool { return true }
+    @IBOutlet var MAPA: MKMapView!
+    @IBAction func editarButton(sender: AnyObject) {
+//        nomeTextField.hidden = false
+//        crmTextField.hidden = false
+//        especialidadeTextField.hidden = false
+//        celularTextField.hidden = false
+//        telefoneTextField.hidden = false
+//        emailTextField.hidden = false
+//        fotoBotao.hidden = false
+//        atualizar.hidden = false
+//        nomeLabel.hidden = true
+//        crmLabel.hidden = true
+//        especialidadeLabel.hidden = true
+//        celularLabel.hidden = true
+//        telefoneLabel.hidden = true
+//        emailLabel.hidden = true
+//        label1.hidden = true
+//        label2.hidden = true
+//        label3.hidden = true
+//        label4.hidden = true
+//        label5.hidden = true
+//        label6.hidden = true
+    }
 
+    @IBAction func atualizar(sender: AnyObject) {
+    
+        nomeTextField.hidden = !false
+        crmTextField.hidden = !false
+        especialidadeTextField.hidden = !false
+        celularTextField.hidden = !false
+        telefoneTextField.hidden = !false
+        emailTextField.hidden = !false
+        fotoBotao.hidden = !false
+        atualizar.hidden = !false
+        nomeLabel.hidden = !true
+        crmLabel.hidden = !true
+        especialidadeLabel.hidden = !true
+        celularLabel.hidden = !true
+        telefoneLabel.hidden = !true
+        emailLabel.hidden = !true
+        label1.hidden = !true
+        label2.hidden = !true
+        label3.hidden = !true
+        label4.hidden = !true
+        label5.hidden = !true
+        label6.hidden = !true
+        
+        foto = fotoImageView.image
+        crm = crmTextField.text
+        especialidade = especialidadeTextField.text
+        celular = celularTextField.text
+        telefone = telefoneTextField.text
+        email = emailTextField.text
+        if(nomeTextField.text != ""){
+            nome = nomeTextField.text
+            self.performSegueWithIdentifier("atualizar", sender: self)
+        }
+        else{
+            let alerta = UIAlertController(title: "Atenção", message: "Digite o nome do médico", preferredStyle: .Alert)
+            alerta.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+            self.presentViewController(alerta, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.enderecoTextView.delegate = self
-
-        // Deixar a Image View circular
+        fotoImageView.image = foto
+        nomeTextField.text = nome
+        crmTextField.text = crm
+        especialidadeTextField.text = especialidade
+        celularTextField.text = celular
+        telefoneTextField.text = telefone
+        emailTextField.text = email
+        
+        nomeLabel.text = nome
+        crmLabel.text = crm
+        especialidadeLabel.text = especialidade
+        celularLabel.text = celular
+        telefoneLabel.text = telefone
+        emailLabel.text = email
+        
         fotoImageView.layer.cornerRadius = fotoImageView.frame.size.width / 2
         fotoImageView.clipsToBounds = true
+        self.MAPA.delegate = self
+        let startLocation = CLLocation(latitude: -23.003003, longitude: -43.326456)
+        let range = MKCoordinateRegionMakeWithDistance(startLocation.coordinate, 400, 400)
+        self.MAPA.setRegion(range, animated: true)
+        MAPA.showsTraffic = false
+        MAPA.showsPointsOfInterest = false
+        MAPA.camera.heading = 240.0
+        MAPA.mapType = .HybridFlyover
+        
+        let anotation = MKPointAnnotation()
+        anotation.coordinate = CLLocationCoordinate2D(latitude: -23.003003, longitude:-43.326456)
+        anotation.title = "Consultório do \(nome)"
+        MAPA.addAnnotation(anotation)
 
-        // Adicionar estilo aos Text Fields
         func textFieldStyles(textField: UITextField) {
             
             //Criar e personalizar Shadow e Corner Radius
@@ -52,11 +162,7 @@ class VerMedico: UIViewController {
         textFieldStyles(especialidadeTextField)
         textFieldStyles(telefoneTextField)
         textFieldStyles(celularTextField)
-        
-        // Estilizar o Text View
-        enderecoTextView.layer.masksToBounds = false
-        enderecoTextView.layer.cornerRadius = 5.0
-        enderecoTextView.textContainerInset = UIEdgeInsetsMake(10, 5, 10, 5)
+        textFieldStyles(emailTextField)
         
     }
 
@@ -65,8 +171,6 @@ class VerMedico: UIViewController {
     }
 
 }
-
-
 
 
 extension VerMedico: UITextViewDelegate {

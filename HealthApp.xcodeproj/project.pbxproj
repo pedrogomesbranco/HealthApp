@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		240034271D428A8100CB55A0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240034261D428A8100CB55A0 /* Home.swift */; };
 		240034291D4292EB00CB55A0 /* Medicos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240034281D4292EB00CB55A0 /* Medicos.swift */; };
+		2421BA8D1D4AE8AB009261FE /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421BA8C1D4AE8AB009261FE /* MedCell.swift */; };
 		243A575D1D3FEAFF00D4431F /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A57551D3FEA9E00D4431F /* GothamRounded-Bold.otf */; };
 		243A575E1D3FEAFF00D4431F /* GothamRounded-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A57561D3FEA9E00D4431F /* GothamRounded-BoldItalic.otf */; };
 		243A575F1D3FEAFF00D4431F /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A57571D3FEA9E00D4431F /* GothamRounded-Book.otf */; };
@@ -18,6 +19,15 @@
 		243A57631D3FEAFF00D4431F /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A575B1D3FEA9E00D4431F /* GothamRounded-Medium.otf */; };
 		243A57641D3FEAFF00D4431F /* GothamRounded-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 243A575C1D3FEA9E00D4431F /* GothamRounded-MediumItalic.otf */; };
 		249A094A1D490D0A006A8B80 /* Objetos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A09491D490D0A006A8B80 /* Objetos.swift */; };
+		24EC8EA91D4B113300019979 /* homeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EC8EA81D4B113300019979 /* homeCell.swift */; };
+		24EC8EAB1D4B3CFD00019979 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EC8EAA1D4B3CFD00019979 /* Info.swift */; };
+		24EC8EAF1D4B48A900019979 /* myPdf1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 24EC8EAE1D4B48A900019979 /* myPdf1.pdf */; };
+		24EC8EB11D4B4F4C00019979 /* E-mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EC8EB01D4B4F4C00019979 /* E-mail.swift */; };
+		24EC8EB31D4B503900019979 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EC8EB21D4B503900019979 /* EmailCell.swift */; };
+		24EC8EB71D4BAA2100019979 /* myPdf4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 24EC8EB41D4BAA2100019979 /* myPdf4.pdf */; };
+		24EC8EB81D4BAA2100019979 /* myPdf3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 24EC8EB51D4BAA2100019979 /* myPdf3.pdf */; };
+		24EC8EB91D4BAA2100019979 /* myPdf2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 24EC8EB61D4BAA2100019979 /* myPdf2.pdf */; };
+		24EC8EBB1D4BAE4E00019979 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EC8EBA1D4BAE4D00019979 /* File.swift */; };
 		24F75E5D1D3D5D7700F49536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F75E5C1D3D5D7700F49536 /* AppDelegate.swift */; };
 		24F75E5F1D3D5D7700F49536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F75E5E1D3D5D7700F49536 /* ViewController.swift */; };
 		24F75E621D3D5D7700F49536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F75E601D3D5D7700F49536 /* Main.storyboard */; };
@@ -50,6 +60,7 @@
 /* Begin PBXFileReference section */
 		240034261D428A8100CB55A0 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		240034281D4292EB00CB55A0 /* Medicos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicos.swift; sourceTree = "<group>"; };
+		2421BA8C1D4AE8AB009261FE /* MedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
 		243A57551D3FEA9E00D4431F /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
 		243A57561D3FEA9E00D4431F /* GothamRounded-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-BoldItalic.otf"; sourceTree = "<group>"; };
 		243A57571D3FEA9E00D4431F /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
@@ -59,6 +70,15 @@
 		243A575B1D3FEA9E00D4431F /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
 		243A575C1D3FEA9E00D4431F /* GothamRounded-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-MediumItalic.otf"; sourceTree = "<group>"; };
 		249A09491D490D0A006A8B80 /* Objetos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objetos.swift; sourceTree = "<group>"; };
+		24EC8EA81D4B113300019979 /* homeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeCell.swift; sourceTree = "<group>"; };
+		24EC8EAA1D4B3CFD00019979 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		24EC8EAE1D4B48A900019979 /* myPdf1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = myPdf1.pdf; sourceTree = "<group>"; };
+		24EC8EB01D4B4F4C00019979 /* E-mail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "E-mail.swift"; sourceTree = "<group>"; };
+		24EC8EB21D4B503900019979 /* EmailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		24EC8EB41D4BAA2100019979 /* myPdf4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = myPdf4.pdf; sourceTree = "<group>"; };
+		24EC8EB51D4BAA2100019979 /* myPdf3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = myPdf3.pdf; sourceTree = "<group>"; };
+		24EC8EB61D4BAA2100019979 /* myPdf2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = myPdf2.pdf; sourceTree = "<group>"; };
+		24EC8EBA1D4BAE4D00019979 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		24F75E591D3D5D7700F49536 /* HealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F75E5C1D3D5D7700F49536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24F75E5E1D3D5D7700F49536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2421BA8E1D4AEB4E009261FE /* Retired */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE561B1D42F85B002689C7 /* EditarMedico.swift */,
+			);
+			name = Retired;
+			sourceTree = "<group>";
+		};
 		24F75E501D3D5D7700F49536 = {
 			isa = PBXGroup;
 			children = (
@@ -168,24 +196,29 @@
 		24F75E761D3D5DE900F49536 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				240034281D4292EB00CB55A0 /* Medicos.swift */,
+				CEBE56171D42F07F002689C7 /* AdicionarMedico.swift */,
+				543DF29B1D440FB50095DC90 /* Perfil.swift */,
+				CEBE56191D42F0A7002689C7 /* VerMedico.swift */,
+				240034261D428A8100CB55A0 /* Home.swift */,
 				24F75E5E1D3D5D7700F49536 /* ViewController.swift */,
+				24EC8EAE1D4B48A900019979 /* myPdf1.pdf */,
+				24EC8EB41D4BAA2100019979 /* myPdf4.pdf */,
+				24EC8EB51D4BAA2100019979 /* myPdf3.pdf */,
+				24EC8EB61D4BAA2100019979 /* myPdf2.pdf */,
 				CE1D75AB1D3ED0C90011D5E1 /* Login.swift */,
 				249A09491D490D0A006A8B80 /* Objetos.swift */,
 				CE6586B51D3F17F500100D4C /* Cadastro.swift */,
 				54B4F7931D3FC50B00D294E9 /* Vacinas.swift */,
+				24EC8EAA1D4B3CFD00019979 /* Info.swift */,
 				543DF2991D43EA0A0095DC90 /* DetalheVacina.swift */,
-				54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */,
-				240034261D428A8100CB55A0 /* Home.swift */,
-				240034281D4292EB00CB55A0 /* Medicos.swift */,
 				54EE5C811D42924C008A6AD6 /* AdicionarVacina.swift */,
-				CEBE56171D42F07F002689C7 /* AdicionarMedico.swift */,
-				CEBE56191D42F0A7002689C7 /* VerMedico.swift */,
-				CEBE561B1D42F85B002689C7 /* EditarMedico.swift */,
-				543DF29B1D440FB50095DC90 /* Perfil.swift */,
+				24EC8EBA1D4BAE4D00019979 /* File.swift */,
 				54844BE71D4A772C007627FF /* Exames.swift */,
-				54844BE91D4A7841007627FF /* ExameCell.swift */,
+				24EC8EB01D4B4F4C00019979 /* E-mail.swift */,
 				54844BEB1D4A8432007627FF /* AdicionarExame.swift */,
-				543DF2A91D441C9B0095DC90 /* Células da Tela de Perfil */,
+				2421BA8E1D4AEB4E009261FE /* Retired */,
+				543DF2A91D441C9B0095DC90 /* Cells */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -199,17 +232,22 @@
 			name = Internals;
 			sourceTree = "<group>";
 		};
-		543DF2A91D441C9B0095DC90 /* Células da Tela de Perfil */ = {
+		543DF2A91D441C9B0095DC90 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2421BA8C1D4AE8AB009261FE /* MedCell.swift */,
+				54844BE91D4A7841007627FF /* ExameCell.swift */,
+				24EC8EA81D4B113300019979 /* homeCell.swift */,
 				543DF29D1D441C700095DC90 /* Cell1.swift */,
 				543DF29F1D441C7B0095DC90 /* Cell2.swift */,
+				54B4F7971D3FD8C600D294E9 /* VacinaCell.swift */,
+				24EC8EB21D4B503900019979 /* EmailCell.swift */,
 				543DF2A11D441C810095DC90 /* Cell3.swift */,
 				543DF2A31D441C890095DC90 /* Cell4.swift */,
 				543DF2A51D441C900095DC90 /* Cell5.swift */,
 				543DF2A71D441C970095DC90 /* Cell6.swift */,
 			);
-			name = "Células da Tela de Perfil";
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		CEA44E381D3ECA1F000A9619 /* Resources */ = {
@@ -259,7 +297,7 @@
 				TargetAttributes = {
 					24F75E581D3D5D7700F49536 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 47F9HJUG7H;
+						DevelopmentTeam = Y93WP7899G;
 					};
 				};
 			};
@@ -292,11 +330,15 @@
 				243A57601D3FEAFF00D4431F /* GothamRounded-BookItalic.otf in Resources */,
 				243A57611D3FEAFF00D4431F /* GothamRounded-Light.otf in Resources */,
 				243A57621D3FEAFF00D4431F /* GothamRounded-LightItalic.otf in Resources */,
+				24EC8EB91D4BAA2100019979 /* myPdf2.pdf in Resources */,
+				24EC8EB71D4BAA2100019979 /* myPdf4.pdf in Resources */,
 				243A57631D3FEAFF00D4431F /* GothamRounded-Medium.otf in Resources */,
+				24EC8EB81D4BAA2100019979 /* myPdf3.pdf in Resources */,
 				243A57641D3FEAFF00D4431F /* GothamRounded-MediumItalic.otf in Resources */,
 				24F75E671D3D5D7700F49536 /* LaunchScreen.storyboard in Resources */,
 				24F75E6F1D3D5D9400F49536 /* Arthur_Storyboard.storyboard in Resources */,
 				24F75E641D3D5D7700F49536 /* Assets.xcassets in Resources */,
+				24EC8EAF1D4B48A900019979 /* myPdf1.pdf in Resources */,
 				24F75E621D3D5D7700F49536 /* Main.storyboard in Resources */,
 				54B4F7961D3FC93D00D294E9 /* .gitignore in Resources */,
 				24F75E711D3D5DA000F49536 /* Bia_Storyboard.storyboard in Resources */,
@@ -311,7 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54844BEA1D4A7841007627FF /* ExameCell.swift in Sources */,
+				2421BA8D1D4AE8AB009261FE /* MedCell.swift in Sources */,
 				543DF2A81D441C970095DC90 /* Cell6.swift in Sources */,
+				24EC8EAB1D4B3CFD00019979 /* Info.swift in Sources */,
 				543DF2A41D441C890095DC90 /* Cell4.swift in Sources */,
 				543DF2A21D441C810095DC90 /* Cell3.swift in Sources */,
 				543DF29E1D441C700095DC90 /* Cell1.swift in Sources */,
@@ -324,12 +368,16 @@
 				240034291D4292EB00CB55A0 /* Medicos.swift in Sources */,
 				CEBE561C1D42F85B002689C7 /* EditarMedico.swift in Sources */,
 				54EE5C821D42924C008A6AD6 /* AdicionarVacina.swift in Sources */,
+				24EC8EB11D4B4F4C00019979 /* E-mail.swift in Sources */,
 				249A094A1D490D0A006A8B80 /* Objetos.swift in Sources */,
 				543DF2A01D441C7B0095DC90 /* Cell2.swift in Sources */,
 				54B4F7981D3FD8C600D294E9 /* VacinaCell.swift in Sources */,
 				24F75E5F1D3D5D7700F49536 /* ViewController.swift in Sources */,
 				54844BE81D4A772C007627FF /* Exames.swift in Sources */,
+				24EC8EA91D4B113300019979 /* homeCell.swift in Sources */,
+				24EC8EB31D4B503900019979 /* EmailCell.swift in Sources */,
 				24F75E5D1D3D5D7700F49536 /* AppDelegate.swift in Sources */,
+				24EC8EBB1D4BAE4E00019979 /* File.swift in Sources */,
 				543DF29A1D43EA0A0095DC90 /* DetalheVacina.swift in Sources */,
 				54B4F7941D3FC50B00D294E9 /* Vacinas.swift in Sources */,
 				240034271D428A8100CB55A0 /* Home.swift in Sources */,
@@ -447,10 +495,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HealthApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ArthurCarvalho.HealthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -458,11 +508,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Arthur Carvalho (47F9HJUG7H)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HealthApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ArthurCarvalho.HealthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

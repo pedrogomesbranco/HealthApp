@@ -10,15 +10,14 @@ import UIKit
 
 class AdicionarExame: UIViewController {
     
-    @IBAction func dismissViewController(sender: AnyObject) {
-        
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
-        
-    }
+    @IBOutlet var web: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let pdf = NSBundle.mainBundle().URLForResource("myPdf1", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+            let req = NSURLRequest(URL: pdf)
+            web.loadRequest(req)
+        }
         // Do any additional setup after loading the view.
     }
 
